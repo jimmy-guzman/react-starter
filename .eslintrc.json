@@ -14,13 +14,24 @@
     "import/no-absolute-path": "off",
     "import/no-unresolved": ["error", { "ignore": ["\\.svg$"] }],
     "import/no-anonymous-default-export": "off",
-    "jest/no-deprecated-functions": "off",
-    "jest/require-hook": [
-      "error",
-      {
-        "allowedFunctionCalls": ["vi.mock"]
-      }
-    ],
+
     "@typescript-eslint/explicit-module-boundary-types": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "rules": {
+        "jest/no-deprecated-functions": "off",
+        "jest/require-hook": [
+          "error",
+          {
+            "allowedFunctionCalls": ["vi.mock"]
+          }
+        ]
+      }
+    }
+  ]
 }
