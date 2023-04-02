@@ -13,6 +13,7 @@
     // https://vitejs.dev/guide/assets.html#the-public-directory
     "import/no-absolute-path": "off",
     "import/no-unresolved": ["error", { "ignore": ["\\.svg$"] }],
+    "import/no-anonymous-default-export": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off"
   }
 }
