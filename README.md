@@ -20,6 +20,7 @@
 - 🩺 [eslint](https://eslint.org) for static analysis, with:
   - [eslint-config-jimmy-guzman](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman) for opinionated guidelines
 - 🎨 [prettier](https://prettier.io) for formatting
+- ⚡️ [turborepo](https://turbo.build/repo) for high performant tasks
 - ⚡️ [pnpm](https://pnpm.io) for fast and consistent installs
 
 ## Getting Started
@@ -36,15 +37,29 @@ First install dependencies with [pnpm](https://pnpm.io/installation), by running
 pnpm install
 ```
 
+Install [turborepo](https://turbo.build/repo/docs/installing#install-globally), by running the following command:
+
+```
+pnpm add turbo --global
+```
+
 Then to run the development server, run the following command:
 
 ```
 pnpm dev
 ```
 
+Or with turborepo:
+
+```
+turbo dev
+```
+
 Your application will be available at http://localhost:5173/ ❤️
 
-## Available Scripts
+## Available Tasks
+
+**_Each of the following tasks can be ran with `turbo` instead of `pnpm`, which will be [cached](https://turbo.build/repo/docs/core-concepts/caching)_**
 
 To build for production, run the following command:
 
@@ -87,6 +102,12 @@ pnpm format
 ```
 
 _you can run `pnpm format:fix` to fix all format errors_
+
+To validate everything, run the following command:
+
+```
+pnpm validate
+```
 
 ## Recommendations
 
