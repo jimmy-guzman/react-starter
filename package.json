@@ -12,7 +12,8 @@
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "e2e": "playwright test"
   },
   "dependencies": {
     "clsx": "1.2.1",
@@ -20,6 +21,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@playwright/test": "1.32.1",
     "@tailwindcss/typography": "0.5.9",
     "@testing-library/dom": "9.2.0",
     "@testing-library/jest-dom": "5.16.5",

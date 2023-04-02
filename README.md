@@ -16,6 +16,7 @@
   - [testing-library](https://testing-library.com/docs/guiding-principles) for encouraging good testing practices, with:
     - [jest-dom](https://testing-library.com/docs/ecosystem-jest-dom/) for providing DOM element matchers for
     - [user-event](https://testing-library.com/docs/user-event/intro) for simulating user events
+- 🧪 [Playwright](https://playwright.dev/) for fast and reliable e2e testing
 - 🩺 [eslint](https://eslint.org) for static analysis, with:
   - [eslint-config-jimmy-guzman](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman) for opinionated guidelines
 - 🎨 [prettier](https://prettier.io) for formatting

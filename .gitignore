@@ -25,3 +25,6 @@ dist-ssr
 
 # vitest
 coverage
+/test-results/
+/playwright-report/
+/playwright/.cache/

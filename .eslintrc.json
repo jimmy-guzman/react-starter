@@ -32,6 +32,14 @@
           }
         ]
       }
+    },
+    {
+      "files": ["**/e2e/**/*.[jt]s?(x)"],
+      "rules": {
+        "jest/no-done-callback": "off",
+        "jest/require-hook": "off",
+        "testing-library/prefer-screen-queries": "off"
+      }
     }
   ]
 }

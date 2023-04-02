@@ -1,3 +1,4 @@
 dist
 pnmp-lock.yaml
 coverage
+playwright-report
