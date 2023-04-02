@@ -1,0 +1,29 @@
+{
+  "name": "react-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint --color .",
+    "lint:fix": "pnpm lint --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.32",
+    "@types/react-dom": "18.0.11",
+    "@vitejs/plugin-react-swc": "3.2.0",
+    "eslint": "8.37.0",
+    "eslint-config-jimmy-guzman": "9.1.0",
+    "prettier": "2.8.7",
+    "typescript": "5.0.3",
+    "vite": "4.2.1"
+  }
+}
