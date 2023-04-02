@@ -21,3 +21,69 @@
   - [eslint-config-jimmy-guzman](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman) for opinionated guidelines
 - 🎨 [prettier](https://prettier.io) for formatting
 - ⚡️ [pnpm](https://pnpm.io) for fast and consistent installs
+
+## Getting Started
+
+Make sure you're using [node 18](https://nodejs.dev/en/about/releases), I recommend using [fnm](https://github.com/Schniz/fnm) which will allow to simply run:
+
+```
+fnm use
+```
+
+First install dependencies with [pnpm](https://pnpm.io/installation), by running the following command:
+
+```
+pnpm install
+```
+
+Then to run the development server, run the following command:
+
+```
+pnpm dev
+```
+
+Your application will be available at http://localhost:5173/ ❤️
+
+## Available Scripts
+
+To build for production, run the following command:
+
+```
+pnpm build
+```
+
+To build preview production build, run the following command:
+
+```
+pnpm preview
+```
+
+_must have ran `pnpm build` previously_
+
+To run unit tests, run the following command:
+
+```
+pnpm test
+```
+
+To run e2e tests, run the following command:
+
+```
+pnpm e2e
+```
+
+To lint, run the following command:
+
+```
+pnpm lint
+```
+
+_you can run `pnpm lint:fix` to fix all lint errors_
+
+To format, run the following command:
+
+```
+pnpm format
+```
+
+_you can run `pnpm format:fix` to fix all format errors_
