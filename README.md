@@ -8,6 +8,7 @@
   - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) for a even faster dev Server
 - 🏷️ [TypeScript](https://www.typescriptlang.org) for a less frustrating & consistent experience, with:
   - configuration tune to [strict](https://github.com/tsconfig/bases/blob/main/bases/strictest.json)
+  - absolute imports and module path aliases for easier imports
 - 💄 [tailwindcss](https://tailwindcss.com) for utility-first CSS, with:
   - [daisyUI components](https://daisyui.com) for faster development
   - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin) for typographic defaults

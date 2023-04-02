@@ -1,7 +1,7 @@
-import { render, screen } from '@testing-library/react'
+import viteLogo from '@/assets/vite.svg'
+import { render, screen } from '@/test/utils'
 
 import { Logo } from './Logo'
-import viteLogo from '../assets/vite.svg'
 
 describe('logo', () => {
   it('should render link and image', () => {
