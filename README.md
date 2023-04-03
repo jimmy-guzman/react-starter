@@ -1,27 +1,39 @@
 # React Starter
 
-> 🍱 another opinionated React starter
+> 🍱 another opinionated [React][react] starter
 
 ## Features
 
-- ⚡️ [vite](https://vitejs.dev/guide/why.html) for fast server start and HMR, with:
+[![vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)][vite]
+[![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)][react]
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)][TypeScript]
+[![tailwindcss](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)][tailwindcss]
+[![vitest](https://img.shields.io/badge/vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)][vitest]
+[![Testing Library](https://img.shields.io/badge/-testinglibrary-%23E33332?style=for-the-badge&logo=testinglibrary&logoColor=white)][Testing Library]
+[![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=for-the-badge&logo=Playwright&logoColor=white)][Playwright]
+[![eslint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)][eslint]
+[![prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)][prettier]
+[![Turborepo](https://img.shields.io/badge/-Turborepo-EF4444?logo=turborepo&style=for-the-badge&logoColor=white)][turborepo]
+[![pnpm](https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220)][pnpm]
+
+- ⚡️ [vite][vite] for fast server start and HMR, with:
   - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) for a even faster dev Server
-- 🏷️ [TypeScript](https://www.typescriptlang.org) for a less frustrating & consistent experience, with:
+- 🏷️ [TypeScript][TypeScript] for a less frustrating & consistent experience, with:
   - configuration tune to [strict](https://github.com/tsconfig/bases/blob/main/bases/strictest.json)
   - absolute imports and module path aliases for easier imports
-- 💄 [tailwindcss](https://tailwindcss.com) for utility-first CSS, with:
+- 💄 [tailwindcss][tailwindcss] for utility-first CSS, with:
   - [daisyUI components](https://daisyui.com) for faster development
   - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin) for typographic defaults
-- 🧪 [vitest](https://vitest.dev/guide/why.html) for fast testing, with:
-  - [testing-library](https://testing-library.com/docs/guiding-principles) for encouraging good testing practices, with:
-    - [jest-dom](https://testing-library.com/docs/ecosystem-jest-dom/) for providing DOM element matchers for
+- 🧪 [vitest][vitest] for fast testing, with:
+  - [Testing Library][Testing Library] for encouraging good testing practices, with:
+    - [jest-dom](https://testing-library.com/docs/ecosystem-jest-dom) for providing DOM element matchers for
     - [user-event](https://testing-library.com/docs/user-event/intro) for simulating user events
-- 🧪 [Playwright](https://playwright.dev/) for fast and reliable e2e testing
-- 🩺 [eslint](https://eslint.org) for static analysis, with:
+- 🧪 [Playwright][Playwright] for fast and reliable e2e testing
+- 🩺 [eslint][eslint] for static analysis, with:
   - [eslint-config-jimmy-guzman](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman) for opinionated guidelines
-- 🎨 [prettier](https://prettier.io) for formatting
-- ⚡️ [turborepo](https://turbo.build/repo) for high performant tasks
-- ⚡️ [pnpm](https://pnpm.io) for fast and consistent installs
+- 🎨 [prettier][prettier] for formatting
+- ⚡️ [turborepo][turborepo] for high performant tasks
+- ⚡️ [pnpm][pnpm] for fast and consistent installs
 
 ## Getting Started
 
@@ -121,3 +133,17 @@ If you need to do more, I recommend the following libraries:
 - [React Hook Form](https://react-hook-form.com/) for when you need to build **forms**
 - [TanStack Table (React Table)](https://tanstack.com/table/v8) for when you need to build complex **tables** or **data grids**
 - [fathom](https://usefathom.com/) for **analytics** which is easy to use
+
+<!-- features links -->
+
+[vite]: https://vitejs.dev
+[react]: https://react.dev
+[TypeScript]: https://www.typescriptlang.org
+[tailwindcss]: https://tailwindcss.com
+[eslint]: https://eslint.org
+[vitest]: https://vitest.dev/guide/why.html
+[Testing Library]: https://testing-library.com/docs/guiding-principles
+[Playwright]: https://playwright.dev
+[prettier]: https://prettier.io
+[turborepo]: https://turbo.build/repo
+[pnpm]: https://pnpm.io
