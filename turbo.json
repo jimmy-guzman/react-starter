@@ -12,7 +12,7 @@
       "outputs": ["coverage/**"]
     },
     "e2e": {
-      "outputs": ["playwright-report/**"]
+      "outputs": ["playwright-report/**", "test-results"]
     }
   }
 }
