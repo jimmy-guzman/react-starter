@@ -1,0 +1,39 @@
+name: Install
+description: Install everything for the repo
+
+inputs:
+  node-version:
+    description: Version of Node to use
+    default: 18.x
+
+  pnpm-version:
+    description: Version of pnpm to use
+    default: 7.x
+
+runs:
+  using: composite
+  steps:
+    - name: 🏗 Setup pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: ${{ inputs.pnpm-version }}
+
+    - name: 🏗 Setup pnpm cache
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version }}
+        cache: pnpm
+
+    - name: 🏗 Setup turbo cache
+      uses: actions/cache@v3
+      with:
+        path: |
+          node_modules/.cache/turbo
+          .turbo
+        key: ${{ runner.os }}-turbo-${{ github.sha }}
+        restore-keys: |
+          ${{ runner.os }}-turbo-
+
+    - name: 📦 Install deps
+      run: pnpm install
+      shell: bash

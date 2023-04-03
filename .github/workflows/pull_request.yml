@@ -1,0 +1,22 @@
+name: pull_request
+
+on: [pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ['18']
+
+    steps:
+      - name: 🏗 Setup Repository
+        uses: actions/checkout@v3
+
+      - name: 📦 Install
+        uses: ./.github/actions/install
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: 🦺 validate
+        run: pnpm validate
