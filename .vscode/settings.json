@@ -1,0 +1,15 @@
+{
+  "cSpell.words": [
+    "clsx",
+    "daisyui",
+    "noreferrer",
+    "Parens",
+    "tailwindcss",
+    "turborepo",
+    "vite",
+    "vitest",
+    "zustand"
+  ],
+  "editor.formatOnSave": true,
+  "css.lint.unknownAtRules": "ignore"
+}
