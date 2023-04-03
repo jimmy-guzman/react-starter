@@ -15,6 +15,7 @@
 [![prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)][prettier]
 [![Turborepo](https://img.shields.io/badge/-Turborepo-EF4444?logo=turborepo&style=for-the-badge&logoColor=white)][turborepo]
 [![pnpm](https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220)][pnpm]
+[![Github Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)][Github Actions]
 
 - ⚡️ [vite][vite] for fast server start and HMR, with:
   - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) for a even faster dev Server
@@ -34,6 +35,7 @@
 - 🎨 [prettier][prettier] for formatting
 - ⚡️ [turborepo][turborepo] for high performant tasks
 - ⚡️ [pnpm][pnpm] for fast and consistent installs
+- 👷 [Github Actions][Github Actions] for easy workflow automation
 
 ## Getting Started
 
@@ -134,7 +136,7 @@ If you need to do more, I recommend the following libraries:
 - [TanStack Table (React Table)](https://tanstack.com/table/v8) for when you need to build complex **tables** or **data grids**
 - [fathom](https://usefathom.com/) for **analytics** which is easy to use
 
-<!-- features links -->
+<!-- features references start -->
 
 [vite]: https://vitejs.dev
 [react]: https://react.dev
@@ -147,3 +149,6 @@ If you need to do more, I recommend the following libraries:
 [prettier]: https://prettier.io
 [turborepo]: https://turbo.build/repo
 [pnpm]: https://pnpm.io
+[Github Actions]: https://github.com/features/actions
+
+<!-- features references end -->

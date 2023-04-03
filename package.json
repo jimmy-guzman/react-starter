@@ -15,7 +15,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "e2e": "playwright test",
-    "validate": "turbo format lint coverage e2e build"
+    "validate": "turbo format lint coverage build"
   },
   "dependencies": {
     "clsx": "1.2.1",

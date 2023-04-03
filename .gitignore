@@ -31,3 +31,9 @@ coverage
 /test-results/
 /playwright-report/
 /playwright/.cache/
+
+# vite
+vite.config.ts.*.mjs
+
+# turbo
+.turbo
