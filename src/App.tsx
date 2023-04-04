@@ -12,30 +12,17 @@ function App() {
   return (
     <div className='container prose mx-auto p-4 text-center'>
       <div className='mb-8 flex items-center justify-center gap-8'>
-        <Logo
-          name='Vite'
-          link='https://vitejs.dev'
-          imgSrc={viteLogo}
-          color='#646CFF'
-        />
-        <Logo
-          name='React'
-          link='https://react.dev'
-          imgSrc={reactLogo}
-          color='#61DAFB'
-          className='animate-[spin_20s_linear_infinite]'
-        />
+        <Logo name='Vite' link='https://vitejs.dev' imgSrc={viteLogo} />
+        <Logo name='React' link='https://react.dev' imgSrc={reactLogo} />
         <Logo
           name='TypeScript'
           link='https://www.typescriptlang.org'
           imgSrc={typeScriptLogo}
-          color='#3178C6'
         />
         <Logo
           name='tailwindcss'
           link='https://tailwindcss.com'
           imgSrc={tailwindcssLogo}
-          color='#06B6D4'
         />
       </div>
       <h1>Vite + React + TypeScript + tailwindcss</h1>
