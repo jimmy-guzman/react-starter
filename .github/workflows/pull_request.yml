@@ -17,6 +17,7 @@ jobs:
         uses: ./.github/actions/install
         with:
           node-version: ${{ matrix.node }}
+          pnpm-version: 8.1.1
 
       - name: 🦺 validate
         run: pnpm validate
