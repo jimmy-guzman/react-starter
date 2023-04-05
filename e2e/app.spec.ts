@@ -58,4 +58,18 @@ test.describe('external links', () => {
 
     await expect(newPage).toHaveURL('https://tailwindcss.com/')
   })
+
+  test('opened repo', async ({ page, context }) => {
+    const pagePromise = context.waitForEvent('page')
+
+    await page.getByRole('link', { name: /repo/i }).click()
+
+    const newPage = await pagePromise
+
+    await newPage.waitForLoadState()
+
+    await expect(newPage).toHaveURL(
+      'https://github.com/jimmy-guzman/react-starter#readme'
+    )
+  })
 })
