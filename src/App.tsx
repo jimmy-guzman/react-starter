@@ -36,6 +36,16 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
+        <p>
+          Click on logos to learn more or visit the{' '}
+          <a
+            href='https://github.com/jimmy-guzman/react-starter#readme'
+            target='_blank'
+            rel='noreferrer'
+          >
+            repo
+          </a>
+        </p>
       </div>
       <p>Click on logos to learn more</p>
     </div>
