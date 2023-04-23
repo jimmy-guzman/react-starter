@@ -37,6 +37,14 @@
 - ⚡️ [pnpm][pnpm] for fast and consistent installs
 - 👷 [Github Actions][Github Actions] for easy workflow automation
 
+## Usage
+
+You can either [use this template](https://github.com/jimmy-guzman/react-starter/generate) or use [degit](https://github.com/Rich-Harris/degit), by running the following command:
+
+```
+degit jimmy-guzman/react-starter
+```
+
 ## Getting Started
 
 Make sure you're using [node 18](https://nodejs.dev/en/about/releases), I recommend using [fnm](https://github.com/Schniz/fnm) which will allow to simply run:
