@@ -7,6 +7,7 @@ export default {
   daisyui: {
     // see https://daisyui.com/docs/themes/ for further customization
     themes: ['dark'],
+    logs: false,
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui')],
 }
