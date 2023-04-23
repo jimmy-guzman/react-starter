@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: { alias: { '@': path.resolve(__dirname, './src') } },
   test: {
-    coverage: { 100: true },
+    coverage: { 100: true, reporter: ['html', 'text-summary'] },
     environment: 'jsdom',
     exclude: [...configDefaults.exclude, 'e2e/*'],
     globals: true,
