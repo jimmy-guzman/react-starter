@@ -7,7 +7,6 @@
     "Parens",
     "pnpm",
     "tailwindcss",
-    "turborepo",
     "vite",
     "vitest",
     "zustand"

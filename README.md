@@ -13,7 +13,6 @@
 [![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=for-the-badge&logo=Playwright&logoColor=white)][Playwright]
 [![eslint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)][eslint]
 [![prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)][prettier]
-[![Turborepo](https://img.shields.io/badge/-Turborepo-EF4444?logo=turborepo&style=for-the-badge&logoColor=white)][turborepo]
 [![pnpm](https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220)][pnpm]
 [![Github Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)][Github Actions]
 
@@ -33,7 +32,6 @@
 - 🩺 [eslint][eslint] for static analysis, with:
   - [eslint-config-jimmy-guzman](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman) for opinionated guidelines
 - 🎨 [prettier][prettier] for formatting
-- ⚡️ [turborepo][turborepo] for high performant tasks
 - ⚡️ [pnpm][pnpm] for fast and consistent installs
 - 👷 [Github Actions][Github Actions] for easy workflow automation
 
@@ -59,29 +57,15 @@ First install dependencies with [pnpm](https://pnpm.io/installation), by running
 pnpm install
 ```
 
-Install [turborepo](https://turbo.build/repo/docs/installing#install-globally), by running the following command:
-
-```
-pnpm add turbo --global
-```
-
 Then to run the development server, run the following command:
 
 ```
 pnpm dev
 ```
 
-Or with turborepo:
-
-```
-turbo dev
-```
-
 Your application will be available at http://localhost:5173/ ❤️
 
 ## Available Tasks
-
-**_Each of the following tasks can be ran with `turbo` instead of `pnpm`, which will be [cached](https://turbo.build/repo/docs/core-concepts/caching)_**
 
 To build for production, run the following command:
 
@@ -155,7 +139,6 @@ If you need to do more, I recommend the following libraries:
 [Testing Library]: https://testing-library.com/docs/guiding-principles
 [Playwright]: https://playwright.dev
 [prettier]: https://prettier.io
-[turborepo]: https://turbo.build/repo
 [pnpm]: https://pnpm.io
 [Github Actions]: https://github.com/features/actions
 

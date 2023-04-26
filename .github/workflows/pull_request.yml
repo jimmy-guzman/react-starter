@@ -5,9 +5,6 @@ on: [pull_request]
 jobs:
   validate:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: ['18']
 
     steps:
       - name: 🏗 Setup Repository
@@ -16,8 +13,20 @@ jobs:
       - name: 📦 Install
         uses: ./.github/actions/install
         with:
-          node-version: ${{ matrix.node }}
+          node-version: 18
           pnpm-version: 8.3.1
 
-      - name: 🦺 validate
-        run: pnpm validate
+      - name: 🚨 Lint
+        run: pnpm lint
+
+      - name: 🎨 Format
+        run: pnpm format
+
+      - name: 🏷️ Check Types
+        run: pnpm check-types
+
+      - name: ✅ Test
+        run: pnpm coverage
+
+      - name: 🧱 Build
+        run: pnpm build
