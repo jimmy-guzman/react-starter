@@ -34,6 +34,3 @@ coverage
 
 # vite
 vite.config.ts.*.mjs
-
-# turbo
-.turbo

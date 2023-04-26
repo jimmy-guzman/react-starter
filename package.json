@@ -14,8 +14,7 @@
     "format:fix": "prettier --write .",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "e2e": "playwright test",
-    "validate": "turbo format lint coverage build"
+    "e2e": "playwright test"
   },
   "dependencies": {
     "clsx": "1.2.1",
@@ -43,7 +42,6 @@
     "prettier": "2.8.8",
     "prettier-plugin-tailwindcss": "0.2.7",
     "tailwindcss": "3.3.1",
-    "turbo": "1.9.3",
     "typescript": "5.0.4",
     "vite": "4.3.1",
     "vitest": "0.30.1"
