@@ -37,6 +37,7 @@
     "daisyui": "2.51.6",
     "eslint": "8.41.0",
     "eslint-config-jimmy-guzman": "9.1.0",
+    "gitzy": "4.0.0",
     "jsdom": "22.0.0",
     "postcss": "8.4.23",
     "prettier": "2.8.8",
