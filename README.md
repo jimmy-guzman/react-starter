@@ -36,7 +36,7 @@ degit jimmy-guzman/react-starter
 
 ## Getting Started
 
-Make sure you're using [node 18](https://nodejs.dev/en/about/releases), I recommend using [fnm](https://github.com/Schniz/fnm) which will allow to simply run:
+Make sure you're using [node 20](https://nodejs.dev/en/about/releases), I recommend using [fnm](https://github.com/Schniz/fnm) which will allow to simply run:
 
 ```
 fnm use
