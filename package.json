@@ -48,7 +48,7 @@
     "eslint-plugin-testing-library": "6.1.0",
     "gitzy": "4.0.0",
     "jsdom": "22.1.0",
-    "postcss": "8.4.28",
+    "postcss": "8.4.31",
     "prettier": "3.0.2",
     "prettier-plugin-tailwindcss": "0.5.3",
     "tailwindcss": "3.3.3",
