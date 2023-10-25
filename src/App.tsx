@@ -29,7 +29,9 @@ function App() {
       <div>
         <button
           className='btn'
-          onClick={() => setCount((prevCount) => prevCount + 1)}
+          onClick={() => {
+            setCount((prevCount) => prevCount + 1)
+          }}
         >
           count is {count}
         </button>

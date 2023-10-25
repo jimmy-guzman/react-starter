@@ -1,3 +1,6 @@
+import typography from '@tailwindcss/typography'
+import daisyui from 'daisyui'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
@@ -9,5 +12,5 @@ export default {
     themes: ['dark'],
     logs: false,
   },
-  plugins: [require('@tailwindcss/typography'), require('daisyui')],
+  plugins: [typography, daisyui],
 }

@@ -1,23 +1,45 @@
 module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+  },
   extends: [
-    'jimmy-guzman',
-    'jimmy-guzman/typescript',
-    'jimmy-guzman/react',
-    'jimmy-guzman/vitest',
-    'jimmy-guzman/testing-library',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/strict-type-checked',
+    'plugin:@typescript-eslint/stylistic-type-checked',
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
+    'plugin:jsx-a11y/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+    'prettier',
   ],
-  parserOptions: {
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-  },
-  rules: {
-    // https://vitejs.dev/guide/assets.html#the-public-directory
-    'import/no-absolute-path': 'off',
-    'import/no-unresolved': ['error', { ignore: ['\\.svg$'] }],
-    'import/no-anonymous-default-export': 'off',
-
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-  },
   overrides: [
+    {
+      env: {
+        node: true,
+      },
+      files: ['.eslintrc.{js,cjs}'],
+      parserOptions: {
+        sourceType: 'script',
+      },
+    },
+    {
+      extends: ['plugin:@typescript-eslint/disable-type-checked'],
+      files: ['./**/*.{js,cjs}'],
+    },
+    {
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      plugins: ['jest'],
+      extends: [
+        'plugin:testing-library/react',
+        'plugin:jest/recommended',
+        'plugin:jest/style',
+        'plugin:jest-dom/recommended',
+      ],
+      rules: { 'jest/no-deprecated-functions': 'off' },
+    },
     {
       files: ['**/e2e/**/*.[jt]s?(x)'],
       rules: {
@@ -27,4 +49,19 @@ module.exports = {
       },
     },
   ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+  },
+  plugins: ['@typescript-eslint', 'react'],
+  rules: {},
+  settings: {
+    'react': { version: 'detect' },
+    'import/resolver': {
+      typescript: true,
+      node: true,
+    },
+  },
 }
