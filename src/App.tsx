@@ -49,7 +49,6 @@ function App() {
           </a>
         </p>
       </div>
-      <p>Click on logos to learn more</p>
     </div>
   )
 }
