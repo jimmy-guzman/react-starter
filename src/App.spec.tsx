@@ -5,7 +5,7 @@ describe('app', () => {
   it('should increase count', async () => {
     const { user } = render(<App />)
 
-    user.click(screen.getByRole('button', { name: /count is 0/i }))
+    await user.click(screen.getByRole('button', { name: /count is 0/i }))
 
     await expect(
       screen.findByRole('button', { name: /count is 1/i })
