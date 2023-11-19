@@ -6,7 +6,7 @@ import typeScriptLogo from './assets/typescript.svg'
 import viteLogo from './assets/vite.svg'
 import { Logo } from './components/Logo'
 
-function App() {
+export default function App() {
   const [count, setCount] = useState(0)
 
   return (
@@ -52,5 +52,3 @@ function App() {
     </div>
   )
 }
-
-export default App
