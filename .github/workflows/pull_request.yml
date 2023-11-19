@@ -23,7 +23,7 @@ jobs:
         run: pnpm format
 
       - name: 🏷️ Check Types
-        run: pnpm check-types
+        run: pnpm typecheck
 
       - name: ✅ Test
         run: pnpm coverage

@@ -8,6 +8,7 @@
     "Parens",
     "pnpm",
     "tailwindcss",
+    "typecheck",
     "vite",
     "vitest",
     "zustand"
