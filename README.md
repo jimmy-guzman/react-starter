@@ -100,10 +100,10 @@ pnpm format
 
 _you can run `pnpm format:fix` to fix all format errors_
 
-To validate everything, run the following command:
+To interactively update dependencies, run the following command:
 
 ```
-pnpm validate
+pnpm deps:update
 ```
 
 ## Recommendations
