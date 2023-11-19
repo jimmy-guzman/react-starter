@@ -10,7 +10,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='container prose mx-auto p-4 text-center'>
+    <div className='container prose dsy-prose mx-auto p-4 text-center'>
       <div className='mb-8 flex items-center justify-center gap-8'>
         <Logo name='Vite' link='https://vitejs.dev' imgSrc={viteLogo} />
         <Logo name='React' link='https://react.dev' imgSrc={reactLogo} />
@@ -28,7 +28,7 @@ function App() {
       <h1>Vite + React + TypeScript + tailwindcss</h1>
       <div>
         <button
-          className='btn'
+          className='dsy-btn'
           onClick={() => {
             setCount((prevCount) => prevCount + 1)
           }}
