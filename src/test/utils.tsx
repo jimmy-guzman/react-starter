@@ -16,5 +16,5 @@ const customRender = (ui: React.ReactElement, options = {}) => {
   }
 }
 
-export { screen, renderHook, within } from '@testing-library/react'
+export { renderHook, screen, within } from '@testing-library/react'
 export { customRender as render }

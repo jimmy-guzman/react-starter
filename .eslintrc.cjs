@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  plugins: ['@typescript-eslint', 'react', 'react-refresh'],
+  plugins: ['simple-import-sort', 'react', 'react-refresh', 'node-import'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/strict-type-checked',
@@ -68,6 +68,16 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+
+    // stylistic
+    'object-shorthand': ['error', 'always'],
+    'func-style': ['error', 'expression'],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'node-import/prefer-node-protocol': 'error',
+    'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
+    '@typescript-eslint/consistent-type-exports': 'error',
+    '@typescript-eslint/consistent-type-imports': 'error',
   },
   ignorePatterns: [
     'node_modules/',
