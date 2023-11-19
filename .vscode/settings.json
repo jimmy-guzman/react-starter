@@ -4,6 +4,7 @@
     "daisyui",
     "degit",
     "gitzy",
+    "iconify",
     "noreferrer",
     "Parens",
     "pnpm",
@@ -13,9 +14,10 @@
     "vitest",
     "zustand"
   ],
-  "editor.formatOnSave": true,
   "css.lint.unknownAtRules": "ignore",
   "tailwindCSS.experimental.classRegex": [
     ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
-  ]
+  ],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

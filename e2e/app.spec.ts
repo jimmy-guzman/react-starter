@@ -14,7 +14,7 @@ test.describe('external links', () => {
   test('opened vite docs', async ({ page, context }) => {
     const pagePromise = context.waitForEvent('page')
 
-    await page.getByRole('link', { name: /vite logo/i }).click()
+    await page.getByRole('link', { name: /vite/i }).click()
 
     const newPage = await pagePromise
 
@@ -26,7 +26,7 @@ test.describe('external links', () => {
   test('opened React docs', async ({ page, context }) => {
     const pagePromise = context.waitForEvent('page')
 
-    await page.getByRole('link', { name: /react logo/i }).click()
+    await page.getByRole('link', { name: /react/i }).click()
 
     const newPage = await pagePromise
 
@@ -38,7 +38,7 @@ test.describe('external links', () => {
   test('opened TypeScript docs', async ({ page, context }) => {
     const pagePromise = context.waitForEvent('page')
 
-    await page.getByRole('link', { name: /TypeScript logo/i }).click()
+    await page.getByRole('link', { name: /TypeScript/i }).click()
 
     const newPage = await pagePromise
 
@@ -50,7 +50,7 @@ test.describe('external links', () => {
   test('opened tailwindcss docs', async ({ page, context }) => {
     const pagePromise = context.waitForEvent('page')
 
-    await page.getByRole('link', { name: /tailwindcss logo/i }).click()
+    await page.getByRole('link', { name: /tailwindcss/i }).click()
 
     const newPage = await pagePromise
 
@@ -62,7 +62,7 @@ test.describe('external links', () => {
   test('opened repo', async ({ page, context }) => {
     const pagePromise = context.waitForEvent('page')
 
-    await page.getByRole('link', { name: /repo/i }).click()
+    await page.getByRole('link', { name: /get started/i }).click()
 
     const newPage = await pagePromise
 
