@@ -48,6 +48,12 @@ First install dependencies with [pnpm](https://pnpm.io/installation), by running
 pnpm install
 ```
 
+And to download new browsers for Playwright, run the following command:
+
+```
+pnpm exec playwright install
+```
+
 Then to run the development server, run the following command:
 
 ```

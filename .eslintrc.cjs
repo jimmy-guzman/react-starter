@@ -69,4 +69,10 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  ignorePatterns: [
+    'node_modules/',
+    'dist/',
+    'coverage/',
+    'vite.config.ts.*.mjs',
+  ],
 }
