@@ -16,15 +16,15 @@
 [![pnpm](https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220)][pnpm]
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)][GitHub Actions]
 
-- ⚡️ [vite][vite] for fast server start and HMR
-- 🏷️ [TypeScript][TypeScript] for a less frustrating & consistent experience
-- 💄 [tailwindcss][tailwindcss] for utility-first CSS
-- 🧪 [vitest][vitest] for fast testing
-- 🧪 [Playwright][Playwright] for fast and reliable e2e testing
-- 🩺 [eslint][eslint] for static analysis
-- 🎨 [prettier][prettier] for formatting
-- ⚡️ [pnpm][pnpm] for fast and consistent installs
-- 👷 [GitHub Actions][GitHub Actions] for easy workflow automation
+- ⚡️ [vite][vite] for instant server start and lighting fast HMR.
+- 🏷️ [TypeScript][TypeScript] for a less frustrating & consistent experience.
+- 💄 [tailwindcss][tailwindcss] for utility-first CSS.
+- 🧪 [vitest][vitest] for fast testing.
+- 🧪 [Playwright][Playwright] for fast and reliable e2e testing.
+- 🩺 [eslint][eslint] for static analysis.
+- 🎨 [prettier][prettier] for formatting.
+- ⚡️ [pnpm][pnpm] for fast and consistent installs.
+- 👷 [GitHub Actions][GitHub Actions] for easy workflow automation.
 
 ## Usage
 

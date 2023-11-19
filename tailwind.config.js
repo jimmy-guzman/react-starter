@@ -1,3 +1,4 @@
+import { addDynamicIconSelectors } from '@iconify/tailwind'
 import typography from '@tailwindcss/typography'
 import daisyui from 'daisyui'
 
@@ -13,5 +14,5 @@ export default {
     prefix: 'dsy-',
     logs: false,
   },
-  plugins: [typography, daisyui],
+  plugins: [typography, daisyui, addDynamicIconSelectors()],
 }
