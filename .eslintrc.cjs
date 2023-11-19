@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
+  plugins: ['@typescript-eslint', 'react', 'react-refresh'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/strict-type-checked',
@@ -15,6 +16,19 @@ module.exports = {
     'plugin:import/typescript',
     'prettier',
   ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+  },
+  settings: {
+    'react': { version: 'detect' },
+    'import/resolver': {
+      typescript: true,
+      node: true,
+    },
+  },
   overrides: [
     {
       env: {
@@ -49,19 +63,10 @@ module.exports = {
       },
     },
   ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-  },
-  plugins: ['@typescript-eslint', 'react'],
-  rules: {},
-  settings: {
-    'react': { version: 'detect' },
-    'import/resolver': {
-      typescript: true,
-      node: true,
-    },
+  rules: {
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true },
+    ],
   },
 }
