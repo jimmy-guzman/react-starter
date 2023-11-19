@@ -1,34 +1,58 @@
 import { clsx } from 'clsx'
-import { type ReactNode } from 'react'
 
-const links = {
-  Vite: 'https://vitejs.dev',
-  React: 'https://react.dev',
-  TypeScript: 'https://www.typescriptlang.org',
-  tailwindcss: 'https://tailwindcss.com',
-  repo: 'https://github.com/jimmy-guzman/react-starter#readme',
-}
+import { links } from './XLink.config'
+
+type Variant = 'primary' | 'secondary' | 'accent'
 
 interface LogoProps {
-  children: ReactNode
   className?: string
   to: keyof typeof links
+  variant?: Variant
+  /**
+   * Wether or no to show link as a button
+   */
+  asButton?: boolean
 }
 
 /**
- * Pre-configured Type Safe External Link
+ * Pre-configured Abstraction of [daisyUI's Link](https://daisyui.com/components/link) for externals links
+ * * Update `src/components/XLink.config.ts` to add more links
  * @example
  * <XLink to='tailwindcss'>tailwindcss</XLink> // https://tailwindcss.com
  */
-export const XLink = ({ to, className = 'dsy-link', children }: LogoProps) => {
+export const XLink = ({
+  to,
+  className,
+  variant,
+  asButton = false,
+}: LogoProps) => {
   return (
     <a
       href={links[to]}
       target='_blank'
       rel='noreferrer'
-      className={clsx(className)}
+      className={clsx(
+        asButton
+          ? [
+              'dsy-btn',
+              {
+                'dsy-btn-primary': variant === 'primary',
+                'dsy-btn-secondary': variant === 'secondary',
+                'dsy-btn-accent': variant === 'accent',
+              },
+            ]
+          : [
+              'dsy-link',
+              {
+                'dsy-link-primary': variant === 'primary',
+                'dsy-link-secondary': variant === 'secondary',
+                'dsy-link-accent': variant === 'accent',
+              },
+            ],
+        className
+      )}
     >
-      {children}
+      {to} <span className='icon-[lucide--external-link]' />
     </a>
   )
 }

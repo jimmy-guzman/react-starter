@@ -10,7 +10,7 @@ export default {
   },
   daisyui: {
     // see https://daisyui.com/docs/themes/ for further customization
-    themes: ['dark'],
+    themes: ['dark', 'light'],
     prefix: 'dsy-',
     logs: false,
   },

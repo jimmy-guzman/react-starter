@@ -34,3 +34,6 @@ coverage
 
 # vite
 vite.config.ts.*.mjs
+
+# storybook
+storybook-static

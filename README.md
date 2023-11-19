@@ -2,12 +2,13 @@
 
 > 🍱 another opinionated [React][react] starter
 
-## Features
+## 🐣 Features
 
 [![vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)][vite]
 [![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)][react]
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)][TypeScript]
 [![tailwindcss](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)][tailwindcss]
+[![storybook](https://img.shields.io/badge/storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)][storybook]
 [![vitest](https://img.shields.io/badge/vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)][vitest]
 [![Testing Library](https://img.shields.io/badge/-testinglibrary-%23E33332?style=for-the-badge&logo=testinglibrary&logoColor=white)][Testing Library]
 [![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=for-the-badge&logo=Playwright&logoColor=white)][Playwright]
@@ -19,6 +20,7 @@
 - ⚡️ [vite][vite] for instant server start and lighting fast HMR.
 - 🏷️ [TypeScript][TypeScript] for a less frustrating & consistent experience.
 - 💄 [tailwindcss][tailwindcss] for utility-first CSS.
+- 🧱 [storybook][storybook] for building UIs in isolation.
 - 🧪 [vitest][vitest] for fast testing.
 - 🧪 [Playwright][Playwright] for fast and reliable e2e testing.
 - 🩺 [eslint][eslint] for static analysis.
@@ -26,7 +28,7 @@
 - ⚡️ [pnpm][pnpm] for fast and consistent installs.
 - 👷 [GitHub Actions][GitHub Actions] for easy workflow automation.
 
-## Usage
+## 🛠️ Usage
 
 You can either [use this template](https://github.com/jimmy-guzman/react-starter/generate) or use [degit](https://github.com/Rich-Harris/degit), by running the following command:
 
@@ -34,7 +36,7 @@ You can either [use this template](https://github.com/jimmy-guzman/react-starter
 degit jimmy-guzman/react-starter
 ```
 
-## Getting Started
+## 🏁 Getting Started
 
 Make sure you're using [node 20](https://nodejs.dev/en/about/releases), I recommend using [fnm](https://github.com/Schniz/fnm) which will allow you to simply run:
 
@@ -62,63 +64,26 @@ pnpm dev
 
 Your application will be available at http://localhost:5173/ ❤️
 
-## Available Tasks
+## 🧞 Available Tasks
 
-To build for production, run the following command:
+| Command              | Action                                                   |
+| :------------------- | :------------------------------------------------------- |
+| `pnpm install`       | Installs dependencies                                    |
+| `pnpm dev`           | Starts local dev server at http://localhost:5173/        |
+| `pnpm build`         | Build your production site to `./dist/`                  |
+| `pnpm preview`       | Preview your build locally, before deploying             |
+| `pnpm test`          | Unit tests your code with vitest                         |
+| `pnpm e2e`           | E2E tests your code with playwright                      |
+| `pnpm lint`          | Lints everything with eslint                             |
+| `pnpm lint:fix`      | Fixes lint errors with eslint                            |
+| `pnpm format`        | Checks formatting with prettier                          |
+| `pnpm format:fix`    | Fixes formatting errors with prettier                    |
+| `pnpm typecheck`     | Checks types with TypeScript                             |
+| `pnpm deps:update`   | Interactively updates dependencies                       |
+| `pnpm stories`       | Starts storybook at http://localhost:6006                |
+| `pnpm stories:build` | Build your production storybook to `./storybook-static/` |
 
-```
-pnpm build
-```
-
-To build preview production build, run the following command:
-
-```
-pnpm preview
-```
-
-_must have ran `pnpm build` previously_
-
-To run unit tests, run the following command:
-
-```
-pnpm test
-```
-
-To run e2e tests, run the following command:
-
-```
-pnpm e2e
-```
-
-To lint, run the following command:
-
-```
-pnpm lint
-```
-
-_you can run `pnpm lint:fix` to fix all lint errors_
-
-To format, run the following command:
-
-```
-pnpm format
-```
-
-_you can run `pnpm format:fix` to fix all format errors_
-
-To check types, run the following command:
-
-```
-pnpm typecheck
-```
-
-To interactively update dependencies, run the following command:
-
-```
-pnpm deps:update
-```
-
-## Recommendations
+## 💡 Recommendations
 
 If you need to do more, I recommend the following libraries:
 
@@ -137,6 +102,7 @@ If you need to do more, I recommend the following libraries:
 [react]: https://react.dev
 [TypeScript]: https://www.typescriptlang.org
 [tailwindcss]: https://tailwindcss.com
+[storybook]: https://storybook.js.org/
 [eslint]: https://eslint.org
 [vitest]: https://vitest.dev/guide/why.html
 [Testing Library]: https://testing-library.com/docs/guiding-principles
