@@ -9,7 +9,7 @@ export default defineConfig({
   resolve: { alias: { '@': path.resolve(__dirname, './src') } },
   test: {
     coverage: { 100: true, reporter: ['html', 'text-summary'] },
-    environment: 'jsdom',
+    environment: 'happy-dom',
     exclude: [...configDefaults.exclude, 'e2e/*'],
     globals: true,
     setupFiles: './src/test/setup.ts',
