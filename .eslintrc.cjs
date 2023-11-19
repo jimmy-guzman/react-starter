@@ -14,6 +14,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
+    'plugin:storybook/recommended',
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
@@ -84,5 +85,6 @@ module.exports = {
     'dist/',
     'coverage/',
     'vite.config.ts.*.mjs',
+    'storybook-static/',
   ],
 }

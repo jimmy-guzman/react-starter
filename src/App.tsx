@@ -28,10 +28,9 @@ export default function App() {
               React Starter
             </h1>
             <p className='py-6'>
-              🍱 Another opinionated <XLink to='React'>React</XLink> Starter
-              using <XLink to='Vite'>Vite</XLink>,{' '}
-              <XLink to='TypeScript'>TypeScript</XLink> and{' '}
-              <XLink to='tailwindcss'>tailwindcss</XLink>.
+              🍱 Another opinionated <XLink to='React' /> Starter using{' '}
+              <XLink to='Vite' />, <XLink to='TypeScript' /> and{' '}
+              <XLink to='tailwindcss' />.
             </p>
             <div className='flex justify-center gap-2 sm:justify-end'>
               <button
@@ -42,10 +41,7 @@ export default function App() {
               >
                 Count is {count}
               </button>
-              <XLink to='repo' className='dsy-btn dsy-btn-primary'>
-                Get Started{' '}
-                <span className='icon-[logos--github-icon] text-base' />
-              </XLink>
+              <XLink to='GitHub' variant='primary' asButton />
             </div>
           </div>
         </div>
