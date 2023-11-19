@@ -11,16 +11,16 @@ export default function App() {
         <div className='dsy-hero-content flex-col gap-8 lg:flex-row-reverse'>
           <div className='flex gap-4 lg:grid'>
             <div className='text-center'>
-              <span className='icon-[logos--vitejs] text-center text-8xl' />
+              <span className='icon-[logos--vitejs] text-center text-5xl sm:text-8xl' />
             </div>
             <div className='text-center'>
-              <span className='icon-[logos--react] animate-[spin_20s_linear_infinite] text-8xl transition duration-300' />
+              <span className='icon-[logos--react] animate-[spin_20s_linear_infinite] text-5xl transition duration-300 sm:text-8xl' />
             </div>
             <div className='text-center'>
-              <span className='icon-[logos--typescript-icon] text-center text-8xl' />
+              <span className='icon-[logos--typescript-icon] text-center text-5xl sm:text-8xl' />
             </div>
             <div>
-              <span className='icon-[logos--tailwindcss-icon] text-8xl' />
+              <span className='icon-[logos--tailwindcss-icon] text-5xl sm:text-8xl' />
             </div>
           </div>
           <div className='flex flex-col gap-4'>
@@ -33,7 +33,7 @@ export default function App() {
               <XLink to='TypeScript'>TypeScript</XLink> and{' '}
               <XLink to='tailwindcss'>tailwindcss</XLink>.
             </p>
-            <div className='flex justify-end gap-2'>
+            <div className='flex justify-center gap-2 sm:justify-end'>
               <button
                 className='dsy-btn dsy-btn-neutral'
                 onClick={() => {
