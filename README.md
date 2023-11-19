@@ -30,7 +30,7 @@
 
 ## 🛠️ Usage
 
-You can either [use this template](https://github.com/jimmy-guzman/react-starter/generate) or use [degit](https://github.com/Rich-Harris/degit), by running the following command:
+You can either [use this template](https://github.com/jimmy-guzman/react-starter/generate) or [deploy on Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjimmy-guzman%2Freact-starter&project-name=my-awesome-react-project&repository-name=my-awesome-react-project) or use [degit](https://github.com/Rich-Harris/degit), by running the following command:
 
 ```
 degit jimmy-guzman/react-starter

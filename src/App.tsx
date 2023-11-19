@@ -6,7 +6,7 @@ export default function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='container mx-auto p-4'>
+    <div className='md:container md:mx-auto'>
       <div className='dsy-hero min-h-screen'>
         <div className='dsy-hero-content flex-col gap-8 lg:flex-row-reverse'>
           <div className='flex gap-4 lg:grid'>
@@ -41,6 +41,7 @@ export default function App() {
               >
                 Count is {count}
               </button>
+              <XLink to='Deploy' variant='secondary' asButton />
               <XLink to='GitHub' variant='primary' asButton />
             </div>
           </div>
