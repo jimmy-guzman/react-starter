@@ -1,5 +1,0 @@
-dist
-pnmp-lock.yaml
-coverage
-playwright-report
-vite.config.ts.*.mjs
