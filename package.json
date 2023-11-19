@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check-types": "tsc",
+    "typecheck": "tsc",
     "lint": "eslint --color .",
     "lint:fix": "pnpm lint --fix",
     "format": "prettier --check .",

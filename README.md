@@ -106,6 +106,12 @@ pnpm format
 
 _you can run `pnpm format:fix` to fix all format errors_
 
+To check types, run the following command:
+
+```
+pnpm typecheck
+```
+
 To interactively update dependencies, run the following command:
 
 ```
