@@ -37,3 +37,6 @@ vite.config.ts.*.mjs
 
 # storybook
 storybook-static
+
+# eslint
+.eslintcache
