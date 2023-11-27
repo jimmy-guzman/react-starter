@@ -32,9 +32,11 @@
     ]
   },
   "dependencies": {
+    "@tanstack/react-router": "0.0.1-beta.225",
     "clsx": "2.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "zustand": "4.4.7"
   },
   "devDependencies": {
     "@iconify-json/logos": "1.1.41",

@@ -35,6 +35,6 @@
 
     "types": ["vitest/globals"]
   },
-  "include": ["src", "e2e"],
+  "include": ["src", "e2e", "__mocks__"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
