@@ -2,10 +2,17 @@ import { render, screen } from '@/test/utils'
 
 import { XLink } from './XLink'
 
-describe('logo', () => {
-  it('should render link and image', () => {
-    render(<XLink to='Vite' />)
+describe('XLink', () => {
+  it.each([
+    'Vite',
+    'React',
+    'TypeScript',
+    'tailwindcss',
+    'GitHub',
+    'Deploy',
+  ] as const)('should render %s link', (to) => {
+    render(<XLink to={to} />)
 
-    expect(screen.getByRole('link', { name: /vite/i })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: to })).toBeInTheDocument()
   })
 })
