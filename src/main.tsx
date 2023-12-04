@@ -4,11 +4,11 @@ import { Router, RouterProvider } from '@tanstack/react-router'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
-import FeaturesRoute from './routes/Features.route'
-import HomeRoute from './routes/Home.route'
-import RootRoute from './routes/Root.route'
+import featuresRoute from './routes/featuresRoute'
+import homeRoute from './routes/homeRoute'
+import rootRoute from './routes/rootRoute'
 
-const routeTree = RootRoute.addChildren([FeaturesRoute, HomeRoute])
+const routeTree = rootRoute.addChildren([featuresRoute, homeRoute])
 
 const router = new Router({ routeTree })
 

@@ -30,7 +30,7 @@ export const Navigation = ({ title }: { title: string }) => {
           </div>
           <Link
             to='/'
-            className='dsy-btn dsy-btn-ghost text-lg normal-case text-primary md:text-2xl'
+            className='dsy-btn dsy-btn-ghost bg-gradient-to-r from-primary to-secondary bg-clip-text text-lg normal-case text-transparent md:text-2xl'
           >
             {title}
           </Link>
