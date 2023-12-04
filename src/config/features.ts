@@ -31,6 +31,11 @@ export const features = [
     description: 'for a small, fast, and scalable state management solution.',
   },
   {
+    icon: '💄',
+    feature: 'framer-motion',
+    description: 'for a production-ready motion library.',
+  },
+  {
     icon: '⚡️',
     feature: 'Vite',
     description: 'for instant server start and lighting fast HMR.',

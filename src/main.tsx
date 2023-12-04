@@ -8,7 +8,7 @@ import FeaturesRoute from './routes/Features.route'
 import HomeRoute from './routes/Home.route'
 import RootRoute from './routes/Root.route'
 
-const routeTree = RootRoute.addChildren([HomeRoute, FeaturesRoute])
+const routeTree = RootRoute.addChildren([FeaturesRoute, HomeRoute])
 
 const router = new Router({ routeTree })
 

@@ -1,4 +1,5 @@
 import { Outlet } from '@tanstack/react-router'
+import { AnimatePresence } from 'framer-motion'
 
 import { Navigation } from '@/components/Navigation'
 
@@ -6,9 +7,9 @@ export const RootLayout = () => {
   return (
     <div>
       <Navigation title='React Starter +' />
-      <main className='md:container md:mx-auto'>
+      <AnimatePresence mode='wait'>
         <Outlet />
-      </main>
+      </AnimatePresence>
     </div>
   )
 }

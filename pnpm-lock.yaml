@@ -6,11 +6,14 @@ settings:
 
 dependencies:
   '@tanstack/react-router':
-    specifier: 0.0.1-beta.225
-    version: 0.0.1-beta.225(react-dom@18.2.0)(react@18.2.0)
+    specifier: 0.0.1-beta.229
+    version: 0.0.1-beta.229(react-dom@18.2.0)(react@18.2.0)
   clsx:
     specifier: 2.0.0
     version: 2.0.0
+  framer-motion:
+    specifier: 10.16.12
+    version: 10.16.12(react-dom@18.2.0)(react@18.2.0)
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -1514,6 +1517,20 @@ packages:
     resolution: {integrity: sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==}
     engines: {node: '>=10.0.0'}
     dev: true
+
+  /@emotion/is-prop-valid@0.8.8:
+    resolution: {integrity: sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==}
+    requiresBuild: true
+    dependencies:
+      '@emotion/memoize': 0.7.4
+    dev: false
+    optional: true
+
+  /@emotion/memoize@0.7.4:
+    resolution: {integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==}
+    requiresBuild: true
+    dev: false
+    optional: true
 
   /@emotion/use-insertion-effect-with-fallbacks@1.0.1(react@18.2.0):
     resolution: {integrity: sha512-jT/qyKZ9rzLErtrjGgdkMBn2OP8wl0G3sQlBb3YPryvKHsjvINUhVaPFfP+fpBcOkmrVOVEEHQFJ7nbj2TH2gw==}
@@ -3765,20 +3782,20 @@ packages:
       tailwindcss: 3.4.0
     dev: true
 
-  /@tanstack/history@0.0.1-beta.225:
-    resolution: {integrity: sha512-rf8S0imJJ25xxBCYiB7pvmV6+fSHVVDHAXgT3iZOB6KqGHUlxbf/WEz3tr22PeP4Q2ucEn1HS0epUv8KgqypHw==}
+  /@tanstack/history@0.0.1-beta.229:
+    resolution: {integrity: sha512-EFBYjc/zdeK2VKeAbADkollKVjmt7vntB3sTj9vIddnvx6EwZ0haU6mooVYEdo/D0hKfUA3kp7NCifv0oePlqA==}
     engines: {node: '>=12'}
     dev: false
 
-  /@tanstack/react-router@0.0.1-beta.225(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-cpjb1GtOetSaQji7XZpWM5W7nbhA5achMycS3lhx5YZcEuKvTTEj1TeEwGwKp+MsxLN3zCMzYIVY3rbSUr4aMg==}
+  /@tanstack/react-router@0.0.1-beta.229(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-H6f6WrmZ/gaiuCj+JKtVlPZDgxfXEf4bdmzP+eKX3iNhDm4pUbJLm/VW+QxGV3Rl8NePfav7FQDdBTc1fUrQGg==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=16'
       react-dom: '>=16'
     dependencies:
       '@babel/runtime': 7.23.6
-      '@tanstack/history': 0.0.1-beta.225
+      '@tanstack/history': 0.0.1-beta.229
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       tiny-invariant: 1.3.1
@@ -6486,6 +6503,24 @@ packages:
   /fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
     dev: true
+
+  /framer-motion@10.16.12(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-w7Yzx0OzQ5Uh6uNkxaX+4TuAPuOKz3haSbjmHpdrqDpGuCJCpq6YP9Dy7JJWdZ6mJjndrg3Ao3vUwDajKNikCA==}
+    peerDependencies:
+      react: ^18.0.0
+      react-dom: ^18.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      tslib: 2.6.2
+    optionalDependencies:
+      '@emotion/is-prop-valid': 0.8.8
+    dev: false
 
   /fresh@0.5.2:
     resolution: {integrity: sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==}
@@ -9792,7 +9827,6 @@ packages:
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
-    dev: true
 
   /tsutils@3.21.0(typescript@5.3.3):
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}

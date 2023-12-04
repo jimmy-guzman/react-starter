@@ -15,4 +15,5 @@ export const externalLinks = {
   'GitHub Actions': 'https://github.com/features/actions',
   '@tanstack/router': 'https://tanstack.com/router',
   'zustand': 'https://docs.pmnd.rs/zustand/getting-started/introduction',
+  'framer-motion': 'https://www.framer.com/motion',
 } satisfies Record<string, `https://${string}.${string}`>
