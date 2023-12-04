@@ -26,7 +26,7 @@ test.describe('external links', () => {
   test('opened React docs', async ({ page, context }) => {
     const pagePromise = context.waitForEvent('page')
 
-    await page.getByRole('link', { name: /react/i }).click()
+    await page.getByRole('link', { name: 'React', exact: true }).click()
 
     const newPage = await pagePromise
 
@@ -62,14 +62,14 @@ test.describe('external links', () => {
   test('opened repo', async ({ page, context }) => {
     const pagePromise = context.waitForEvent('page')
 
-    await page.getByRole('link', { name: /get started/i }).click()
+    await page.getByRole('link', { name: 'GitHub' }).click()
 
     const newPage = await pagePromise
 
     await newPage.waitForLoadState()
 
     await expect(newPage).toHaveURL(
-      'https://github.com/jimmy-guzman/react-starter#readme'
+      'https://github.com/jimmy-guzman/react-starter'
     )
   })
 })

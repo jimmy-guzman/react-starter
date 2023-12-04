@@ -15,9 +15,10 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "e2e": "playwright test",
-    "deps:update": "pnpm dlx npm-check-updates -ui",
+    "e2e:ui": "playwright test --ui",
     "stories:build": "storybook build",
     "stories": "storybook dev -p 6006",
+    "deps:update": "pnpm dlx npm-check-updates -ui",
     "prepare": "is-ci || husky install"
   },
   "lint-staged": {
