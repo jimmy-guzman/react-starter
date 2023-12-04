@@ -8,7 +8,19 @@ export default defineConfig({
   plugins: [react()],
   resolve: { alias: { '@': path.resolve(__dirname, './src') } },
   test: {
-    coverage: { 100: true, reporter: ['html', 'text-summary'] },
+    coverage: {
+      reporter: ['html', 'text-summary'],
+      exclude: [
+        '**/*.d.ts',
+        'storybook-static/**',
+        '.storybook/**',
+        '**/*.stories.*',
+        '**/main.tsx',
+        '{tailwind,postcss,playwright}.config.*',
+        '.{eslint,prettier}rc.{?(c|m)js,yml}',
+        'node_modules/.pnpm/**',
+      ],
+    },
     environment: 'happy-dom',
     exclude: [...configDefaults.exclude, 'e2e/*'],
     globals: true,
