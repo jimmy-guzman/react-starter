@@ -26,6 +26,7 @@ export default defineConfig(({ mode }) => {
           '.storybook/**',
           '**/*.stories.*',
           '**/main.tsx',
+          '__mocks__/**',
           '{tailwind,postcss,playwright}.config.*',
         ],
       },
