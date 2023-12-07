@@ -94,6 +94,9 @@ devDependencies:
   daisyui:
     specifier: 4.4.19
     version: 4.4.19(postcss@8.4.32)
+  dotenv:
+    specifier: 16.3.1
+    version: 16.3.1
   eslint:
     specifier: 8.55.0
     version: 8.55.0

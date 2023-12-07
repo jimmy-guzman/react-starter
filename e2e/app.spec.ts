@@ -1,14 +1,14 @@
 import { expect, test } from '@playwright/test'
 
 test('has title', async ({ page }) => {
-  await page.goto('http://localhost:5173/')
+  await page.goto('/')
 
   await expect(page).toHaveTitle(/React Starter/)
 })
 
 test.describe('external links', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('http://localhost:5173/')
+    await page.goto('/')
   })
 
   test('opened vite docs', async ({ page, context }) => {
