@@ -1,0 +1,26 @@
+name: preview
+
+on: [deployment_status]
+
+jobs:
+  e2e:
+    if: github.event.deployment_status.state == 'success'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🏗 Setup Repository
+        uses: actions/checkout@v3
+
+      - name: 📦 Install
+        uses: ./.github/actions/install
+        with:
+          node-version: 20
+          pnpm-version: 8.10.5
+
+      - name: 📦 Install Playwright Deps
+        run: pnpm exec playwright install --with-deps
+
+      - name: ✅ e2e
+        run: pnpm e2e
+        env:
+          BASE_URL: ${{ github.event.deployment_status.environment_url }}
