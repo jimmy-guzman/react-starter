@@ -1,12 +1,12 @@
 import { clsx } from 'clsx'
 
-import { links } from './XLink.config'
+import { externalLinks } from '@/config/externalLinks'
 
 type Variant = 'primary' | 'secondary' | 'accent'
 
 interface LogoProps {
   className?: string
-  to: keyof typeof links
+  to: keyof typeof externalLinks
   variant?: Variant
   /**
    * Wether or no to show link as a button
@@ -28,7 +28,7 @@ export const XLink = ({
 }: LogoProps) => {
   return (
     <a
-      href={links[to]}
+      href={externalLinks[to]}
       target='_blank'
       rel='noreferrer'
       className={clsx(

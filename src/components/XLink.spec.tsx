@@ -10,9 +10,9 @@ describe('XLink', () => {
     'tailwindcss',
     'GitHub',
     'Deploy',
-  ] as const)('should render %s link', (to) => {
+  ] as const)('should render %s link', async (to) => {
     render(<XLink to={to} />)
 
-    expect(screen.getByRole('link', { name: to })).toBeInTheDocument()
+    expect(await screen.findByRole('link', { name: to })).toBeInTheDocument()
   })
 })
