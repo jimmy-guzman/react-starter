@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@tanstack/react-router':
-    specifier: 0.0.1-beta.235
-    version: 0.0.1-beta.235(react-dom@18.2.0)(react@18.2.0)
+    specifier: 0.0.1-beta.242
+    version: 0.0.1-beta.242(react-dom@18.2.0)(react@18.2.0)
   clsx:
     specifier: 2.0.0
     version: 2.0.0
@@ -3782,24 +3782,42 @@ packages:
       tailwindcss: 3.4.0
     dev: true
 
-  /@tanstack/history@0.0.1-beta.235:
-    resolution: {integrity: sha512-CgLk2CCGXTOhnIv1UKy1q0IzoqDO3wR68vjW5tibpwD/Dgwsnr3WAkrZ/27sNkAWzlKJG3AHQLFPkr6mGIAh2w==}
+  /@tanstack/history@0.0.1-beta.242:
+    resolution: {integrity: sha512-WHFBTdYHI79l4GnjFnYgNq6wcUrHSIcN3aoApT+w3GYfaBuTJBH9+tzq9FfCW4qWiTrpJwMPXhX/L9jKYOQsBg==}
     engines: {node: '>=12'}
     dev: false
 
-  /@tanstack/react-router@0.0.1-beta.235(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-HTPfm+0QjwU6GLZBAsx8tX+xoQNH8dut7w2icWqh7fbY0gsJJNl86I2KZj8oXHn5EyuJK/sb3B2cnhg0PTUsZw==}
+  /@tanstack/react-router@0.0.1-beta.242(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-sZbb+q9QQfrend3EdFP2DZSjQnyh3L5T8zqf/bsXOj9c+rBvl0Jfo4bCFqA2ectd38PoUclS8I7gCjR7F1xR/g==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=16'
       react-dom: '>=16'
     dependencies:
       '@babel/runtime': 7.23.6
-      '@tanstack/history': 0.0.1-beta.235
+      '@tanstack/history': 0.0.1-beta.242
+      '@tanstack/react-store': 0.2.1(react-dom@18.2.0)(react@18.2.0)
+      '@tanstack/store': 0.1.3
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       tiny-invariant: 1.3.1
       tiny-warning: 1.0.3
+    dev: false
+
+  /@tanstack/react-store@0.2.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-tEbMCQjbeVw9KOP/202LfqZMSNAVi6zYkkp1kBom8nFuMx/965Hzes3+6G6b/comCwVxoJU8Gg9IrcF8yRPthw==}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    dependencies:
+      '@tanstack/store': 0.1.3
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      use-sync-external-store: 1.2.0(react@18.2.0)
+    dev: false
+
+  /@tanstack/store@0.1.3:
+    resolution: {integrity: sha512-GnolmC8Fr4mvsHE1fGQmR3Nm0eBO3KnZjDU0a+P3TeQNM/dDscFGxtA7p31NplQNW3KwBw4t1RVFmz0VeKLxcw==}
     dev: false
 
   /@testing-library/dom@9.3.3:
