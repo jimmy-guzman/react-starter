@@ -1,4 +1,4 @@
-export const links = {
+export const externalLinks = {
   Vite: 'https://vitejs.dev',
   React: 'https://react.dev',
   TypeScript: 'https://www.typescriptlang.org',
@@ -6,4 +6,4 @@ export const links = {
   GitHub: 'https://github.com/jimmy-guzman/react-starter',
   Deploy:
     'https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjimmy-guzman%2Freact-starter&project-name=my-awesome-react-project&repository-name=my-awesome-react-project',
-}
+} satisfies Record<string, `https://${string}.${string}`>

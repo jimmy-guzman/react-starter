@@ -25,7 +25,7 @@
 - 🧪 [Playwright][Playwright] for fast and reliable e2e testing.
 - 🩺 [eslint][eslint] for static analysis.
 - 🎨 [prettier][prettier] for formatting.
-- ⚡️ [pnpm][pnpm] for fast and consistent installs.
+- 📦 [pnpm][pnpm] for fast and consistent installs.
 - 👷 [GitHub Actions][GitHub Actions] for easy workflow automation.
 
 ## 🛠️ Usage
