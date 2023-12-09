@@ -32,7 +32,7 @@
     ]
   },
   "dependencies": {
-    "@tanstack/react-router": "0.0.1-beta.245",
+    "@tanstack/react-router": "0.0.1-beta.248",
     "clsx": "2.0.0",
     "framer-motion": "10.16.16",
     "react": "18.2.0",
