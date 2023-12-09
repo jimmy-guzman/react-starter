@@ -14,23 +14,21 @@ export default defineConfig(({ mode }) => {
       port: parseInt(env.PORT),
     },
     test: {
+      environment: 'happy-dom',
+      globals: true,
+      exclude: [...configDefaults.exclude, 'e2e/*'],
+      setupFiles: './src/test/setup.ts',
       coverage: {
         reporter: ['html', 'text-summary'],
         exclude: [
-          '**/*.d.ts',
+          ...(configDefaults.coverage.exclude ?? []),
           'storybook-static/**',
           '.storybook/**',
           '**/*.stories.*',
           '**/main.tsx',
           '{tailwind,postcss,playwright}.config.*',
-          '.{eslint,prettier}rc.{?(c|m)js,yml}',
-          'node_modules/.pnpm/**',
         ],
       },
-      environment: 'happy-dom',
-      exclude: [...configDefaults.exclude, 'e2e/*'],
-      globals: true,
-      setupFiles: './src/test/setup.ts',
     },
   }
 })
