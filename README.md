@@ -79,7 +79,8 @@ Your application will be available at http://localhost:5173/ ❤️
 | `pnpm format`        | Checks formatting with prettier                          |
 | `pnpm format:fix`    | Fixes formatting errors with prettier                    |
 | `pnpm typecheck`     | Checks types with TypeScript                             |
-| `pnpm deps:update`   | Interactively updates dependencies                       |
+| `pnpm deps:bump`     | Interactively updates dependencies                       |
+| `pnpm deps:check`    | Checks dependencies                                      |
 | `pnpm stories`       | Starts storybook at http://localhost:6006                |
 | `pnpm stories:build` | Build your production storybook to `./storybook-static/` |
 

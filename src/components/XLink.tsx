@@ -4,7 +4,7 @@ import { externalLinks } from '@/config/externalLinks'
 
 type Variant = 'primary' | 'secondary' | 'accent'
 
-interface LogoProps {
+interface XLinkProps {
   className?: string
   to: keyof typeof externalLinks
   variant?: Variant
@@ -25,7 +25,7 @@ export const XLink = ({
   className,
   variant,
   asButton = false,
-}: LogoProps) => {
+}: XLinkProps) => {
   return (
     <a
       href={externalLinks[to]}
