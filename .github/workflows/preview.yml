@@ -15,7 +15,7 @@ jobs:
         uses: ./.github/actions/install
         with:
           node-version: 20
-          pnpm-version: 8.10.5
+          pnpm-version: 8.12.0
 
       - name: 📦 Install Playwright Deps
         run: pnpm exec playwright install --with-deps

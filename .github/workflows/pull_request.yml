@@ -14,7 +14,7 @@ jobs:
         uses: ./.github/actions/install
         with:
           node-version: 20
-          pnpm-version: 8.10.5
+          pnpm-version: 8.12.0
 
       - name: 🚨 Lint
         run: pnpm lint
@@ -30,3 +30,6 @@ jobs:
 
       - name: 🧱 Build
         run: pnpm build
+
+      - name: 🧱 Stories Build
+        run: pnpm stories:build
