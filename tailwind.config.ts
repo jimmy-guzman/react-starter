@@ -1,9 +1,9 @@
 import { addDynamicIconSelectors } from '@iconify/tailwind'
 import typography from '@tailwindcss/typography'
 import daisyui from 'daisyui'
+import { type Config } from 'tailwindcss'
 
-/** @type {import('tailwindcss').Config} */
-export default {
+const config: Config = {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
   theme: {
     extend: {},
@@ -16,3 +16,5 @@ export default {
   },
   plugins: [typography, daisyui, addDynamicIconSelectors()],
 }
+
+export default config
