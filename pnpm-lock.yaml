@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@tanstack/react-router':
-    specifier: 0.0.1-beta.251
-    version: 0.0.1-beta.251(react-dom@18.2.0)(react@18.2.0)
+    specifier: 0.0.1-beta.262
+    version: 0.0.1-beta.262(react-dom@18.2.0)(react@18.2.0)
   clsx:
     specifier: 2.0.0
     version: 2.0.0
@@ -3782,20 +3782,20 @@ packages:
       tailwindcss: 3.4.0
     dev: true
 
-  /@tanstack/history@0.0.1-beta.251:
-    resolution: {integrity: sha512-HexplO26gRupWp+K32V7qx+JzLOBsNxWRxVv1u5HpHg//gKJ0QSNrjfXKneiiScTiSoqTf5pTfl7dvjyurdhRA==}
+  /@tanstack/history@0.0.1-beta.262:
+    resolution: {integrity: sha512-kl70BmnYbM/6qgfA35DgfUnVz3+2RHo/+ml0NHUBi8L+nyNBU7wreMP3a+w7P4OXGjdvoV6Jv9Zl9ejW8/a4dQ==}
     engines: {node: '>=12'}
     dev: false
 
-  /@tanstack/react-router@0.0.1-beta.251(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-1663jQMOOYJpUFo3BxJM8wmh0RuhQiYIPWKSJ/FREBJA0RjFG/uDUlRyZaV0wPZkO3yS2d/ooh/5NJdhL4HjMw==}
+  /@tanstack/react-router@0.0.1-beta.262(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-eICBIDBjG1uZtQOZiTknJilSiJ5tKzGMVmiPI/e3AK65BE/nf3Y+viNWoEX8SVIPD5tH0sK7dSPj2/G8zTiyww==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=16'
       react-dom: '>=16'
     dependencies:
       '@babel/runtime': 7.23.6
-      '@tanstack/history': 0.0.1-beta.251
+      '@tanstack/history': 0.0.1-beta.262
       '@tanstack/react-store': 0.2.1(react-dom@18.2.0)(react@18.2.0)
       '@tanstack/store': 0.1.3
       react: 18.2.0
