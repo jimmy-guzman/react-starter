@@ -1,5 +1,7 @@
 import './index.css'
 
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { Router, RouterProvider } from '@tanstack/react-router'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
@@ -10,7 +12,16 @@ import rootRoute from './routes/rootRoute'
 
 const routeTree = rootRoute.addChildren([featuresRoute, homeRoute])
 
-const router = new Router({ routeTree })
+const queryClient = new QueryClient()
+
+const router = new Router({
+  routeTree,
+  defaultPreloadStaleTime: 0,
+  defaultPreload: 'intent',
+  context: {
+    queryClient,
+  },
+})
 
 declare module '@tanstack/react-router' {
   interface Register {
@@ -23,7 +34,10 @@ const root = document.getElementById('root')
 if (root) {
   createRoot(root).render(
     <StrictMode>
-      <RouterProvider router={router} />
+      <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router} />
+        <ReactQueryDevtools initialIsOpen={false} />
+      </QueryClientProvider>
     </StrictMode>
   )
 }

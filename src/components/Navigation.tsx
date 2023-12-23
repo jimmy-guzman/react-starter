@@ -1,6 +1,7 @@
 import { Link } from '@tanstack/react-router'
 
 import { ThemeToggle } from './ThemeToggle'
+import { Transitioning } from './Transitioning'
 
 const routes = [['/features', 'Features'] as const]
 
@@ -46,7 +47,8 @@ export const Navigation = ({ title }: { title: string }) => {
             ))}
           </ul>
         </div>
-        <div className='dsy-navbar-end'>
+        <div className='dsy-navbar-end gap-2'>
+          <Transitioning />
           <ThemeToggle />
         </div>
       </nav>

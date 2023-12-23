@@ -8,7 +8,7 @@ export const PageLoading = () => {
         role='progressbar'
         aria-label='Loading'
         className='dsy-loading dsy-loading-dots dsy-loading-lg self-center'
-      ></div>
+      />
     </div>
   )
 }

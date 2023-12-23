@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@tanstack/react-query':
+    specifier: 5.14.2
+    version: 5.14.2(react@18.2.0)
   '@tanstack/react-router':
     specifier: 0.0.1-beta.285
     version: 0.0.1-beta.285(react-dom@18.2.0)(react@18.2.0)
@@ -64,6 +67,9 @@ devDependencies:
   '@tailwindcss/typography':
     specifier: 0.5.10
     version: 0.5.10(tailwindcss@3.4.0)
+  '@tanstack/react-query-devtools':
+    specifier: 5.14.5
+    version: 5.14.5(@tanstack/react-query@5.14.2)(react@18.2.0)
   '@testing-library/dom':
     specifier: 9.3.3
     version: 9.3.3
@@ -3786,6 +3792,32 @@ packages:
     resolution: {integrity: sha512-j59EVBN52z3ct2qsOfy/yctuzRU/7ZcnS3mhwpekyKV6p1BQlcJzvnpAaNXuMurm8sKWFT2lvwnUAdM5mxPGkA==}
     engines: {node: '>=12'}
     dev: false
+
+  /@tanstack/query-core@5.14.2:
+    resolution: {integrity: sha512-QmoJvC72sSWs3hgGis8JdmlDvqLfYGWUK4UG6OR9Q6t28JMN9m2FDwKPqoSJ9YVocELCSjMt/FGjEiLfk8000Q==}
+
+  /@tanstack/query-devtools@5.14.5:
+    resolution: {integrity: sha512-xM8BQbE4FBAVEPr8t6MFbOJP+canDFz0hcY9Ho+5Z4LQciC60wE+7ZALx5n3InP4R7IELx8AodS5G3KYzBAwCg==}
+    dev: true
+
+  /@tanstack/react-query-devtools@5.14.5(@tanstack/react-query@5.14.2)(react@18.2.0):
+    resolution: {integrity: sha512-aDntW1dWc/feVUYwVqfM/r5OXa3RN06VhtYrTYW9fhj0Ks2dJw6Diknh9VpYqhI+gJrhVID95Rv/ZzS6W2lANA==}
+    peerDependencies:
+      '@tanstack/react-query': ^5.14.2
+      react: ^18.0.0
+    dependencies:
+      '@tanstack/query-devtools': 5.14.5
+      '@tanstack/react-query': 5.14.2(react@18.2.0)
+      react: 18.2.0
+    dev: true
+
+  /@tanstack/react-query@5.14.2(react@18.2.0):
+    resolution: {integrity: sha512-SbOzV7UBW8ED3tOnyn6kqNGscnOAfoxShYlbvaQo/5528mDZKpvrwoL/1du1/ukSC6RMAiKmx95SrYqlwPzWDw==}
+    peerDependencies:
+      react: ^18.0.0
+    dependencies:
+      '@tanstack/query-core': 5.14.2
+      react: 18.2.0
 
   /@tanstack/react-router@0.0.1-beta.285(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-f5l5QfAN2B48V4R6wUwhBTzgI9jot976Wn1HS/Ekie9dtQV5ssdMCoaNGQMyZttEITADHbXmZco8l8aIdxXChw==}

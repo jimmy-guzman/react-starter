@@ -12,6 +12,7 @@ type Icons =
   | '👷'
   | '🚚'
   | '🐻'
+  | '🗃️'
 
 interface Feature {
   icon: Icons
@@ -22,13 +23,23 @@ interface Feature {
 export const features = [
   {
     icon: '🚚',
-    feature: '@tanstack/router',
+    feature: '@tanstack/react-router',
     description: 'for type-safe routing.',
+  },
+  {
+    icon: '🗃️',
+    feature: '@tanstack/react-query',
+    description: 'for asynchronous state management.',
   },
   {
     icon: '🐻',
     feature: 'zustand',
     description: 'for a small, fast, and scalable state management solution.',
+  },
+  {
+    icon: '💄',
+    feature: 'daisyUI',
+    description: 'for a tailwindCSS component library.',
   },
   {
     icon: '💄',

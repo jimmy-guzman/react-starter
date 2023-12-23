@@ -13,7 +13,9 @@ export const externalLinks = {
   'prettier': 'https://prettier.io',
   'pnpm': 'https://pnpm.io',
   'GitHub Actions': 'https://github.com/features/actions',
-  '@tanstack/router': 'https://tanstack.com/router',
+  '@tanstack/react-router': 'https://tanstack.com/router',
+  '@tanstack/react-query': 'https://tanstack.com/query',
   'zustand': 'https://docs.pmnd.rs/zustand/getting-started/introduction',
   'framer-motion': 'https://www.framer.com/motion',
+  'daisyUI': 'https://daisyui.com/',
 } satisfies Record<string, `https://${string}.${string}`>

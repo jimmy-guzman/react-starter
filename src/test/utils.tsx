@@ -1,3 +1,4 @@
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import {
   createMemoryHistory,
   RootRoute,
@@ -7,11 +8,14 @@ import {
 } from '@tanstack/react-router'
 import { cleanup, render } from '@testing-library/react'
 import { userEvent } from '@testing-library/user-event'
+import { Suspense } from 'react'
 import { afterEach } from 'vitest'
 
 afterEach(() => {
   cleanup()
 })
+
+const queryClient = new QueryClient()
 
 const rootRoute = new RootRoute()
 
@@ -31,7 +35,13 @@ const customRender = (ui: React.ReactElement, options = {}) => {
   return {
     user: userEvent.setup(),
     ...render(ui, {
-      wrapper: ({ children }) => withRouter(children),
+      wrapper: ({ children }) => (
+        <Suspense>
+          <QueryClientProvider client={queryClient}>
+            {withRouter(children)}
+          </QueryClientProvider>
+        </Suspense>
+      ),
       ...options,
     }),
   }

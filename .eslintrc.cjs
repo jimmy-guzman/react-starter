@@ -79,6 +79,7 @@ module.exports = {
     'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
     '@typescript-eslint/consistent-type-exports': 'error',
     '@typescript-eslint/consistent-type-imports': 'error',
+    'react/self-closing-comp': 'error',
   },
   ignorePatterns: [
     'node_modules/',
