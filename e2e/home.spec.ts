@@ -3,7 +3,31 @@ import { expect, test } from '@playwright/test'
 test('has title', async ({ page }) => {
   await page.goto('/')
 
-  await expect(page).toHaveTitle(/React Starter/)
+  await expect(page).toHaveTitle(/React Starter Plus/)
+})
+
+test.describe('features', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto('/')
+  })
+
+  test('navigate to features from nav', async ({ page }) => {
+    await page
+      .getByRole('navigation')
+      .getByRole('link', { name: /features/i })
+      .click()
+
+    await page.getByRole('heading', { name: 'Features' }).isVisible()
+  })
+
+  test('navigate to features from link', async ({ page }) => {
+    await page
+      .getByRole('main')
+      .getByRole('link', { name: /features/i })
+      .click()
+
+    await page.getByRole('heading', { name: 'Features' }).isVisible()
+  })
 })
 
 test.describe('external links', () => {
