@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     resolve: { alias: { '@': path.resolve(__dirname, './src') } },
     server: {
-      port: parseInt(env.PORT),
+      port: parseInt(env.PORT, 10),
     },
     test: {
       environment: 'happy-dom',

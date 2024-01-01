@@ -13,6 +13,8 @@ describe('XLink', () => {
   ] as const)('should render %s link', async (to) => {
     render(<XLink to={to} />)
 
-    expect(await screen.findByRole('link', { name: to })).toBeInTheDocument()
+    await expect(
+      screen.findByRole('link', { name: to })
+    ).resolves.toBeInTheDocument()
   })
 })
