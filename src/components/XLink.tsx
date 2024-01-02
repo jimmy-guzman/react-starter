@@ -2,7 +2,7 @@ import { clsx } from 'clsx'
 
 import { externalLinks } from '@/config/externalLinks'
 
-type Variant = 'primary' | 'secondary' | 'accent'
+type Variant = 'accent' | 'primary' | 'secondary'
 
 interface XLinkProps {
   className?: string

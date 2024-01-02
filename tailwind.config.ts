@@ -1,7 +1,7 @@
 import { addDynamicIconSelectors } from '@iconify/tailwind'
 import typography from '@tailwindcss/typography'
 import daisyui from 'daisyui'
-import { type Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
