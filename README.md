@@ -17,6 +17,7 @@
 [![prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)][prettier]
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)][GitHub Actions]
 
+- 🍞 [bun][bun] for a fast runtime and package manager.
 - ⚡️ [vite][vite] for instant server start and lighting fast HMR.
 - 🏷️ [TypeScript][TypeScript] for a less frustrating & consistent experience.
 - 💄 [tailwindcss][tailwindcss] for utility-first CSS.
@@ -26,7 +27,6 @@
 - 🩺 [eslint][eslint] for static analysis.
 - 🎨 [prettier][prettier] for formatting.
 - 🩺 [lefthook][lefthook] for fast Git hooks management.
-- 🍞 [bun][bun] for fast runtime and package manager.
 - 👷 [GitHub Actions][GitHub Actions] for easy workflow automation.
 
 ## 🛠️ Usage
