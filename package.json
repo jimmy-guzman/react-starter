@@ -21,15 +21,7 @@
     "stories": "storybook dev -p 6006",
     "deps:bump": "pnpm dlx npm-check-updates -ui",
     "deps:check": "pnpm dlx depcheck ",
-    "prepare": "is-ci || husky install"
-  },
-  "lint-staged": {
-    "*.{md,json,yml,html,js,cjs,ts,tsx}": [
-      "prettier -w"
-    ],
-    "*.{js,cjs,ts,tsx}": [
-      "eslint --cache"
-    ]
+    "prepare": "lefthook install"
   },
   "dependencies": {
     "clsx": "2.1.0",
@@ -68,9 +60,7 @@
     "eslint-plugin-storybook": "0.6.15",
     "gitzy": "4.0.0",
     "happy-dom": "13.3.8",
-    "husky": "9.0.10",
-    "is-ci": "3.0.1",
-    "lint-staged": "15.2.2",
+    "lefthook": "1.6.1",
     "postcss": "8.4.35",
     "prettier": "3.2.5",
     "prettier-plugin-tailwindcss": "0.5.11",

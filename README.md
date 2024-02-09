@@ -25,6 +25,7 @@
 - 🧪 [Playwright][Playwright] for fast and reliable e2e testing.
 - 🩺 [eslint][eslint] for static analysis.
 - 🎨 [prettier][prettier] for formatting.
+- 🩺 [lefthook][lefthook] for fast Git hooks management.
 - 📦 [pnpm][pnpm] for fast and consistent installs.
 - 👷 [GitHub Actions][GitHub Actions] for easy workflow automation.
 
@@ -111,5 +112,6 @@ If you need to do more, I recommend the following libraries:
 [prettier]: https://prettier.io
 [pnpm]: https://pnpm.io
 [GitHub Actions]: https://github.com/features/actions
+[lefthook]: https://github.com/evilmartians/lefthook
 
 <!-- features references end -->
