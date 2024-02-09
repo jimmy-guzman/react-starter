@@ -2,41 +2,26 @@ name: Install
 description: Install everything for the repo
 
 inputs:
-  node-version:
-    description: Version of Node to use
-    default: 20.x
-
-  pnpm-version:
-    description: Version of pnpm to use
-    default: 8.x
+  bun-version:
+    description: Version of bun to use
+    default: latest
 
 runs:
   using: composite
   steps:
-    - name: 🏗 Install Node.js
-      uses: actions/setup-node@v3
+    - name: 🏗 Setup bun
+      uses: oven-sh/setup-bun@v1
       with:
-        node-version: ${{ inputs.node-version }}
+        bun-version: ${{ inputs.bun-version }}
 
-    - name: 🏗 Setup pnpm
-      uses: pnpm/action-setup@v2
+    - name: 🏗 Setup bun cache
+      uses: actions/cache@v4
       with:
-        version: ${{ inputs.pnpm-version }}
-
-    - name: 🏗 Get pnpm store directory
-      id: pnpm-cache
-      shell: bash
-      run: |
-        echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
-
-    - name: 🏗 Setup pnpm cache
-      uses: actions/cache@v3
-      with:
-        path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        path: ~/.bun/install/cache
+        key: ${{ runner.os }}-${{ matrix.bun }}-bun-${{ hashFiles('**/bun.lockb') }}
         restore-keys: |
-          ${{ runner.os }}-pnpm-store-
+          ${{ runner.os }}-${{ matrix.bun }}-bun-
 
     - name: 📦 Install deps
-      run: pnpm install
+      run: bun install
       shell: bash

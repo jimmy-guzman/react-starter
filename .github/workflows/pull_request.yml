@@ -13,23 +13,22 @@ jobs:
       - name: 📦 Install
         uses: ./.github/actions/install
         with:
-          node-version: 20
-          pnpm-version: 8.12.0
+          bun-version: 1.0.26
 
       - name: 🚨 Lint
-        run: pnpm lint
+        run: bun lint
 
       - name: 🎨 Format
-        run: pnpm format
+        run: bun format
 
       - name: 🏷️ Check Types
-        run: pnpm typecheck
+        run: bun typecheck
 
       - name: ✅ Test
-        run: pnpm coverage
+        run: bun coverage
 
       - name: 🧱 Build
-        run: pnpm build
+        run: bun build
 
       - name: 🧱 Stories Build
-        run: pnpm stories:build
+        run: bun stories:build
