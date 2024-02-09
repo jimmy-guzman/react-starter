@@ -13,6 +13,7 @@ export default defineConfig(({ mode }) => {
     server: {
       port: parseInt(env.PORT, 10),
     },
+    entries: ['index.html'],
     test: {
       environment: 'happy-dom',
       globals: true,

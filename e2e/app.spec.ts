@@ -72,4 +72,16 @@ test.describe('external links', () => {
       'https://github.com/jimmy-guzman/react-starter'
     )
   })
+
+  test('opened Bun', async ({ page, context }) => {
+    const pagePromise = context.waitForEvent('page')
+
+    await page.getByRole('link', { name: 'Bun' }).click()
+
+    const newPage = await pagePromise
+
+    await newPage.waitForLoadState()
+
+    await expect(newPage).toHaveURL('https://bun.sh')
+  })
 })

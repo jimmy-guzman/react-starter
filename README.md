@@ -4,6 +4,7 @@
 
 ## 🐣 Features
 
+[![Bun](https://img.shields.io/badge/Bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white)][bun]
 [![vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)][vite]
 [![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)][react]
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)][TypeScript]
@@ -14,9 +15,9 @@
 [![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=for-the-badge&logo=Playwright&logoColor=white)][Playwright]
 [![eslint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)][eslint]
 [![prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)][prettier]
-[![pnpm](https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220)][pnpm]
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)][GitHub Actions]
 
+- 🍞 [bun][bun] for a fast runtime and package manager.
 - ⚡️ [vite][vite] for instant server start and lighting fast HMR.
 - 🏷️ [TypeScript][TypeScript] for a less frustrating & consistent experience.
 - 💄 [tailwindcss][tailwindcss] for utility-first CSS.
@@ -26,7 +27,6 @@
 - 🩺 [eslint][eslint] for static analysis.
 - 🎨 [prettier][prettier] for formatting.
 - 🩺 [lefthook][lefthook] for fast Git hooks management.
-- 📦 [pnpm][pnpm] for fast and consistent installs.
 - 👷 [GitHub Actions][GitHub Actions] for easy workflow automation.
 
 ## 🛠️ Usage
@@ -39,51 +39,45 @@ degit jimmy-guzman/react-starter
 
 ## 🏁 Getting Started
 
-Make sure you're using [node 20](https://nodejs.dev/en/about/releases), I recommend using [fnm](https://github.com/Schniz/fnm) which will allow you to simply run:
+First install [bun](https://bun.sh/docs/installation), by running the following command:
 
 ```
-fnm use
-```
-
-First install dependencies with [pnpm](https://pnpm.io/installation), by running the following command:
-
-```
-pnpm install
+curl -fsSL https://bun.sh/install | bash
 ```
 
 And to download new browsers for Playwright, run the following command:
 
 ```
-pnpm exec playwright install
+bunx playwright install
 ```
 
 Then to run the development server, run the following command:
 
 ```
-pnpm dev
+bun dev
 ```
 
 Your application will be available at http://localhost:5173/ ❤️
 
 ## 🧞 Available Tasks
 
-| Command              | Action                                                   |
-| :------------------- | :------------------------------------------------------- |
-| `pnpm install`       | Installs dependencies                                    |
-| `pnpm dev`           | Starts local dev server at http://localhost:5173/        |
-| `pnpm build`         | Build your production site to `./dist/`                  |
-| `pnpm preview`       | Preview your build locally, before deploying             |
-| `pnpm test`          | Unit tests your code with vitest                         |
-| `pnpm e2e`           | E2E tests your code with playwright                      |
-| `pnpm lint`          | Lints everything with eslint                             |
-| `pnpm lint:fix`      | Fixes lint errors with eslint                            |
-| `pnpm format`        | Checks formatting with prettier                          |
-| `pnpm format:fix`    | Fixes formatting errors with prettier                    |
-| `pnpm typecheck`     | Checks types with TypeScript                             |
-| `pnpm deps:bump`     | Interactively updates dependencies                       |
-| `pnpm deps:check`    | Checks dependencies                                      |
-| `pnpm stories`       | Starts storybook at http://localhost:6006                |
-| `pnpm stories:build` | Build your production storybook to `./storybook-static/` |
+| Command             | Action                                                   |
+| :------------------ | :------------------------------------------------------- |
+| `bun install`       | Installs dependencies                                    |
+| `bun dev`           | Starts local dev server at http://localhost:5173/        |
+| `bun run build`     | Build your production site to `./dist/`                  |
+| `bun preview`       | Preview your build locally, before deploying             |
+| `bun run test`      | Unit tests your code with vitest                         |
+| `bun e2e`           | E2E tests your code with playwright                      |
+| `bun lint`          | Lints everything with eslint                             |
+| `bun lint:fix`      | Fixes lint errors with eslint                            |
+| `bun format`        | Checks formatting with prettier                          |
+| `bun format:fix`    | Fixes formatting errors with prettier                    |
+| `bun typecheck`     | Checks types with TypeScript                             |
+| `bun deps:bump`     | Interactively updates dependencies                       |
+| `bun deps:check`    | Checks dependencies                                      |
+| `bun stories`       | Starts storybook at http://localhost:6006                |
+| `bun stories:build` | Build your production storybook to `./storybook-static/` |
 
 ## 💡 Recommendations
 
@@ -110,7 +104,7 @@ If you need to do more, I recommend the following libraries:
 [Testing Library]: https://testing-library.com/docs/guiding-principles
 [Playwright]: https://playwright.dev
 [prettier]: https://prettier.io
-[pnpm]: https://pnpm.io
+[bun]: https://bun.sh/
 [GitHub Actions]: https://github.com/features/actions
 [lefthook]: https://github.com/evilmartians/lefthook
 
