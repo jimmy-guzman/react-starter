@@ -10,6 +10,7 @@ describe('XLink', () => {
     'tailwindcss',
     'GitHub',
     'Deploy',
+    'Bun',
   ] as const)('should render %s link', async (to) => {
     render(<XLink to={to} />)
 
