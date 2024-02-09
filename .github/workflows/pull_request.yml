@@ -28,7 +28,7 @@ jobs:
         run: bun coverage
 
       - name: 🧱 Build
-        run: bun build
+        run: bun run build
 
       - name: 🧱 Stories Build
         run: bun stories:build
