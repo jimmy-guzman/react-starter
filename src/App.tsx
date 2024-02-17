@@ -10,21 +10,11 @@ export default function App() {
       <div className='dsy-hero min-h-screen'>
         <div className='dsy-hero-content flex-col gap-8'>
           <div className='flex gap-4'>
-            <div className='text-center'>
-              <span className='icon-[logos--bun] text-center text-5xl md:text-7xl' />
-            </div>
-            <div className='text-center'>
-              <span className='icon-[logos--vitejs] text-center text-5xl md:text-7xl' />
-            </div>
-            <div className='text-center'>
-              <span className='duration-307 icon-[logos--react] animate-[spin_20s_linear_infinite] text-5xl transition md:text-7xl' />
-            </div>
-            <div className='text-center'>
-              <span className='icon-[logos--typescript-icon] text-center text-5xl md:text-7xl' />
-            </div>
-            <div>
-              <span className='icon-[logos--tailwindcss-icon] text-5xl md:text-7xl' />
-            </div>
+            <span className='icon-[logos--bun] text-5xl md:text-7xl' />
+            <span className='icon-[logos--vitejs] text-5xl md:text-7xl' />
+            <span className='icon-[logos--react] text-5xl md:text-7xl' />
+            <span className='icon-[logos--typescript-icon] text-5xl md:text-7xl' />
+            <span className='icon-[logos--tailwindcss-icon] text-5xl md:text-7xl' />
           </div>
           <div className='flex flex-col gap-4 text-center'>
             <h1 className='inline bg-gradient-to-r from-primary to-secondary bg-clip-text text-8xl font-bold text-transparent'>
