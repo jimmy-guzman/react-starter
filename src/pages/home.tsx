@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-import { XLink } from './components/XLink'
+import { XLink } from '@/components/x-link'
 
-export default function App() {
+export const Home = () => {
   const [count, setCount] = useState(0)
 
   return (

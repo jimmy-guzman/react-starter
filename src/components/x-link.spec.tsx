@@ -1,6 +1,6 @@
-import { render, screen } from '@/test/utils'
+import { render, screen } from '@/testing/utils'
 
-import { XLink } from './XLink'
+import { XLink } from './x-link'
 
 describe('XLink', () => {
   it.each([

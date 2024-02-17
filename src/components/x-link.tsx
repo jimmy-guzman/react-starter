@@ -1,6 +1,6 @@
 import { clsx } from 'clsx'
 
-import { externalLinks } from '@/config/externalLinks'
+import { externalLinks } from '@/config/external-links'
 
 type Variant = 'accent' | 'primary' | 'secondary'
 
