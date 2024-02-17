@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { XLink } from './XLink'
+import { XLink } from './x-link'
 
 const meta = {
   title: 'Components/XLink',

@@ -27,4 +27,5 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  ignorePatterns: ['**/*.gen.*'],
 }

@@ -20,6 +20,7 @@
 - 🍞 [bun][bun] for a fast runtime and package manager.
 - ⚡️ [vite][vite] for instant server start and lighting fast HMR.
 - 🏷️ [TypeScript][TypeScript] for a less frustrating & consistent experience.
+- 🏝️ [TanStack Router][TanStack Router] for a fully type-safe React router.
 - 💄 [tailwindcss][tailwindcss] for utility-first CSS.
 - 🧱 [storybook][storybook] for building UIs in isolation.
 - 🧪 [vitest][vitest] for fast testing.
@@ -107,5 +108,6 @@ If you need to do more, I recommend the following libraries:
 [bun]: https://bun.sh/
 [GitHub Actions]: https://github.com/features/actions
 [lefthook]: https://github.com/evilmartians/lefthook
+[TanStack Router]: https://tanstack.com/router/v1
 
 <!-- features references end -->

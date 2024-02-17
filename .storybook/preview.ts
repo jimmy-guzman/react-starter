@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/react'
 
-import '../src/index.css'
+import '../src/main.css'
 
 import { withThemeByDataAttribute } from '@storybook/addon-themes'
 
