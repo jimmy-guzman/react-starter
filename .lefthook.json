@@ -12,6 +12,11 @@
         "glob": "*.{md,json,yml,html,js,cjs,ts,tsx}",
         "run": "bunx prettier --write {staged_files}",
         "stage_fixed": true
+      },
+      "sort-package-json": {
+        "glob": "{,**/}package.json",
+        "run": "bunx sort-package-json {staged_files}",
+        "stage_fixed": true
       }
     }
   }

@@ -22,6 +22,7 @@
 - 🏷️ [TypeScript][TypeScript] for a less frustrating & consistent experience.
 - 🏝️ [TanStack Router][TanStack Router] for a fully type-safe React router.
 - 💄 [tailwindcss][tailwindcss] for utility-first CSS.
+- 💄 [daisyUI](https://daisyui.com) for tailwindcss components.
 - 🧱 [storybook][storybook] for building UIs in isolation.
 - 🧪 [vitest][vitest] for fast testing.
 - 🧪 [Playwright][Playwright] for fast and reliable e2e testing.

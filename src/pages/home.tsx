@@ -1,10 +1,6 @@
-import { useState } from 'react'
-
 import { XLink } from '@/components/x-link'
 
 export const Home = () => {
-  const [count, setCount] = useState(0)
-
   return (
     <div className='md:container md:mx-auto'>
       <div className='dsy-hero min-h-screen'>
@@ -26,14 +22,6 @@ export const Home = () => {
               and <XLink to='tailwindcss' />.
             </p>
             <div className='flex justify-center gap-2 sm:justify-end'>
-              <button
-                className='dsy-btn dsy-btn-neutral'
-                onClick={() => {
-                  setCount((prevCount) => prevCount + 1)
-                }}
-              >
-                Count is {count}
-              </button>
               <XLink to='Deploy' variant='secondary' asButton />
               <XLink to='GitHub' variant='primary' asButton />
             </div>
