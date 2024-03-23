@@ -28,5 +28,5 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
-  ignorePatterns: ['**/*.gen.*', '!.storybook'],
+  ignorePatterns: ['**/*.gen.*', '!.storybook', '!.prettierrc.*'],
 }

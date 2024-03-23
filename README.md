@@ -87,7 +87,6 @@ If you need to do more, I recommend the following libraries:
 
 - [TanStack Query (React Query)](https://tanstack.com/query/v5/docs/react/overview) for **data management** which will take care of fetching, caching, synchronizing and updating server state for you
   - [msw](https://mswjs.io) for when you start testing your data integrations
-- [React Router](https://reactrouter.com/en/main) for when you need **client side routing**
 - [jotai](https://jotai.org) for when you don't want to use context for **state management** or need more state management outside of React Query
 - [zustand](https://github.com/pmndrs/zustand) for when you need more **state management** outside of React Query or jotai if you wen that route
 - [React Hook Form](https://react-hook-form.com) for when you need to build **forms**

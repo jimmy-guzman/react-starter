@@ -1,6 +1,5 @@
 /** @type {import("prettier").Options} */
-export default {
-  $schema: 'http://json.schemastore.org/prettierrc',
+const config = {
   semi: false,
   singleQuote: true,
   printWidth: 80,
@@ -10,3 +9,5 @@ export default {
   quoteProps: 'consistent',
   plugins: ['prettier-plugin-tailwindcss'],
 }
+
+export default config

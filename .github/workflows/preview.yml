@@ -14,7 +14,7 @@ jobs:
       - name: 📦 Install
         uses: ./.github/actions/install
         with:
-          bun-version: 1.0.32
+          bun-version: 1.0.35
 
       - name: 📦 Install Playwright Deps
         run: bunx playwright install --with-deps
