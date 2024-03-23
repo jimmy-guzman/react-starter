@@ -1,3 +1,4 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   plugins: ['react-refresh'],
   extends: [
@@ -9,7 +10,7 @@ module.exports = {
     'plugin:storybook/recommended',
   ],
   parserOptions: {
-    project: ['./tsconfig.json', './tsconfig.node.json'],
+    project: ['./tsconfig.json'],
   },
   overrides: [
     {
@@ -27,5 +28,5 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
-  ignorePatterns: ['**/*.gen.*'],
+  ignorePatterns: ['**/*.gen.*', '!.storybook'],
 }
