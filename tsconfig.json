@@ -35,6 +35,10 @@
 
     "types": ["vitest/globals"]
   },
-  "include": ["src", "e2e"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/.storybook/**/*.ts",
+    "**/.storybook/**/*.tsx"
+  ]
 }

@@ -5,7 +5,7 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 import { configDefaults } from 'vitest/config'
 
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), '')
+  const { PORT = 5173 } = loadEnv(mode, process.cwd(), '')
 
   return {
     plugins: [
@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => {
       tsconfigPaths(),
     ],
     server: {
-      port: parseInt(env.PORT, 10),
+      port: Number(PORT),
     },
     entries: ['index.html'],
     test: {
