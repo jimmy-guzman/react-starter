@@ -11,7 +11,7 @@ interface XLinkProps {
   /**
    * Wether or no to show link as a button
    */
-  asButton?: boolean
+  isButton?: boolean
 }
 
 /**
@@ -24,7 +24,7 @@ export const XLink = ({
   to,
   className,
   variant,
-  asButton = false,
+  isButton = false,
 }: XLinkProps) => {
   return (
     <a
@@ -32,7 +32,7 @@ export const XLink = ({
       target='_blank'
       rel='noreferrer'
       className={clsx(
-        asButton
+        isButton
           ? [
               'dsy-btn',
               {
