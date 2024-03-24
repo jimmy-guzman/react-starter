@@ -22,8 +22,8 @@ export const Home = () => {
               and <XLink to='tailwindcss' />.
             </p>
             <div className='flex justify-center gap-2 sm:justify-end'>
-              <XLink to='Deploy' variant='secondary' asButton />
-              <XLink to='GitHub' variant='primary' asButton />
+              <XLink to='Deploy' variant='secondary' isButton />
+              <XLink to='GitHub' variant='primary' isButton />
             </div>
           </div>
         </div>

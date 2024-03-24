@@ -36,9 +36,9 @@ export const Accent: Story = {
   },
 }
 
-export const AsButton: Story = {
+export const IsButton: Story = {
   args: {
     to: 'TypeScript',
-    asButton: true,
+    isButton: true,
   },
 }
