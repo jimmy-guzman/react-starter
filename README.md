@@ -76,8 +76,6 @@ Your application will be available at http://localhost:5173/ ❤️
 | `bun format`        | Checks formatting with prettier                          |
 | `bun format:fix`    | Fixes formatting errors with prettier                    |
 | `bun typecheck`     | Checks types with TypeScript                             |
-| `bun deps:bump`     | Interactively updates dependencies                       |
-| `bun deps:check`    | Checks dependencies                                      |
 | `bun stories`       | Starts storybook at http://localhost:6006                |
 | `bun stories:build` | Build your production storybook to `./storybook-static/` |
 
