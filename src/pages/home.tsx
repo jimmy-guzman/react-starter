@@ -16,14 +16,19 @@ export const Home = () => {
             <h1 className='inline bg-gradient-to-r from-primary to-secondary bg-clip-text text-8xl font-bold text-transparent'>
               React Starter
             </h1>
-            <p className='py-6'>
-              🍱 Another opinionated <XLink to='React' /> Starter using{' '}
-              <XLink to='Bun' />, <XLink to='Vite' />, <XLink to='TypeScript' />{' '}
-              and <XLink to='tailwindcss' />.
+            <p className='prose dsy-prose py-6'>
+              🍱 Another opinionated <XLink to='React'>React</XLink> Starter
+              using <XLink to='Bun'>Bun</XLink>, <XLink to='Vite'>Vite</XLink>,{' '}
+              <XLink to='TypeScript'>TypeScript</XLink> and{' '}
+              <XLink to='tailwindcss'>tailwindcss</XLink>.
             </p>
             <div className='flex justify-center gap-2 sm:justify-end'>
-              <XLink to='Deploy' variant='secondary' isButton />
-              <XLink to='GitHub' variant='primary' isButton />
+              <XLink to='Deploy' variant='secondary' isButton>
+                Deploy <span className='icon-[logos--vercel-icon]' />
+              </XLink>
+              <XLink to='GitHub' variant='primary' isButton>
+                GitHub <span className='icon-[logos--github-icon]' />
+              </XLink>
             </div>
           </div>
         </div>

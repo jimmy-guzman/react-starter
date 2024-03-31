@@ -1,4 +1,5 @@
 import { clsx } from 'clsx'
+import type { ReactNode } from 'react'
 
 import { externalLinks } from '@/config/external-links'
 
@@ -12,6 +13,7 @@ interface XLinkProps {
    * Wether or no to show link as a button
    */
   isButton?: boolean
+  children: ReactNode
 }
 
 /**
@@ -25,6 +27,7 @@ export const XLink = ({
   className,
   variant,
   isButton = false,
+  children,
 }: XLinkProps) => {
   return (
     <a
@@ -42,7 +45,7 @@ export const XLink = ({
               },
             ]
           : [
-              'dsy-link',
+              'dsy-link-hover dsy-link',
               {
                 'dsy-link-primary': variant === 'primary',
                 'dsy-link-secondary': variant === 'secondary',
@@ -52,7 +55,7 @@ export const XLink = ({
         className
       )}
     >
-      {to} <span className='icon-[lucide--external-link]' />
+      {children}
     </a>
   )
 }
