@@ -12,7 +12,7 @@ describe('XLink', () => {
     'Deploy',
     'Bun',
   ] as const)('should render %s link', async (to) => {
-    render(<XLink to={to} />)
+    render(<XLink to={to}>{to}</XLink>)
 
     await expect(
       screen.findByRole('link', { name: to })
