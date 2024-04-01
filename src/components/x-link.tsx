@@ -1,7 +1,7 @@
-import { clsx } from 'clsx'
 import type { ReactNode } from 'react'
 
 import { externalLinks } from '@/config/external-links'
+import { cn } from '@/lib/cn'
 
 type Variant = 'accent' | 'primary' | 'secondary'
 
@@ -34,7 +34,7 @@ export const XLink = ({
       href={externalLinks[to]}
       target='_blank'
       rel='noreferrer'
-      className={clsx(
+      className={cn(
         isButton
           ? [
               'dsy-btn',
