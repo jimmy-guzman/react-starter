@@ -4,19 +4,6 @@
 
 ## 🐣 Features
 
-[![Bun](https://img.shields.io/badge/Bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white)][bun]
-[![vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)][vite]
-[![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)][react]
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)][TypeScript]
-[![tailwindcss](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)][tailwindcss]
-[![storybook](https://img.shields.io/badge/storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)][storybook]
-[![vitest](https://img.shields.io/badge/vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)][vitest]
-[![Testing Library](https://img.shields.io/badge/-testinglibrary-%23E33332?style=for-the-badge&logo=testinglibrary&logoColor=white)][Testing Library]
-[![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=for-the-badge&logo=Playwright&logoColor=white)][Playwright]
-[![eslint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)][eslint]
-[![prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)][prettier]
-[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)][GitHub Actions]
-
 - 🍞 [bun][bun] for a fast runtime and package manager.
 - ⚡️ [vite][vite] for instant server start and lighting fast HMR.
 - 🏷️ [TypeScript][TypeScript] for a less frustrating & consistent experience.
@@ -27,6 +14,7 @@
 - 🧱 [storybook][storybook] for building UIs in isolation.
 - 🧪 [vitest][vitest] for fast testing.
 - 🧪 [Playwright][Playwright] for fast and reliable e2e testing.
+- 🧪 [msw](https://mswjs.io) for client-agnostic API mocks.
 - 🩺 [eslint][eslint] for static analysis.
 - 🎨 [prettier][prettier] for formatting.
 - 🩺 [lefthook][lefthook] for fast Git hooks management.
@@ -84,7 +72,6 @@ Your application will be available at http://localhost:5173/ ❤️
 
 If you need to do more, I recommend the following libraries:
 
-- [msw](https://mswjs.io) for when you start testing your data integrations
 - [jotai](https://jotai.org) for when you don't want to use context for **state management** or need more state management outside of React Query
 - [zustand](https://github.com/pmndrs/zustand) for when you need more **state management** outside of React Query or jotai if you wen that route
 - [React Hook Form](https://react-hook-form.com) for when you need to build **forms**
@@ -97,7 +84,7 @@ If you need to do more, I recommend the following libraries:
 [react]: https://react.dev
 [TypeScript]: https://www.typescriptlang.org
 [tailwindcss]: https://tailwindcss.com
-[storybook]: https://storybook.js.org/
+[storybook]: https://storybook.js.org
 [eslint]: https://eslint.org
 [vitest]: https://vitest.dev/guide/why.html
 [Testing Library]: https://testing-library.com/docs/guiding-principles

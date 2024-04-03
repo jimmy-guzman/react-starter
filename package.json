@@ -70,6 +70,7 @@
     "gitzy": "5.2.0",
     "happy-dom": "14.4.0",
     "lefthook": "1.6.8",
+    "msw": "2.2.13",
     "postcss": "8.4.38",
     "prettier": "3.2.5",
     "storybook": "8.0.5",
