@@ -1,19 +1,19 @@
-import type { ReactNode } from 'react'
+import type { ReactNode } from "react";
 
-import { externalLinks } from '@/config/external-links'
-import { cn } from '@/lib/cn'
+import { externalLinks } from "@/config/external-links";
+import { cn } from "@/lib/cn";
 
-type Variant = 'accent' | 'primary' | 'secondary'
+type Variant = "accent" | "primary" | "secondary";
 
 interface XLinkProps {
-  className?: string
-  to: keyof typeof externalLinks
-  variant?: Variant
+  className?: string;
+  to: keyof typeof externalLinks;
+  variant?: Variant;
   /**
    * Wether or no to show link as a button
    */
-  isButton?: boolean
-  children: ReactNode
+  isButton?: boolean;
+  children: ReactNode;
 }
 
 /**
@@ -32,30 +32,30 @@ export const XLink = ({
   return (
     <a
       href={externalLinks[to]}
-      target='_blank'
-      rel='noreferrer'
+      target="_blank"
+      rel="noreferrer"
       className={cn(
         isButton
           ? [
-              'dsy-btn',
+              "dsy-btn",
               {
-                'dsy-btn-primary': variant === 'primary',
-                'dsy-btn-secondary': variant === 'secondary',
-                'dsy-btn-accent': variant === 'accent',
+                "dsy-btn-primary": variant === "primary",
+                "dsy-btn-secondary": variant === "secondary",
+                "dsy-btn-accent": variant === "accent",
               },
             ]
           : [
-              'dsy-link-hover dsy-link',
+              "dsy-link-hover dsy-link",
               {
-                'dsy-link-primary': variant === 'primary',
-                'dsy-link-secondary': variant === 'secondary',
-                'dsy-link-accent': variant === 'accent',
+                "dsy-link-primary": variant === "primary",
+                "dsy-link-secondary": variant === "secondary",
+                "dsy-link-accent": variant === "accent",
               },
             ],
-        className
+        className,
       )}
     >
       {children}
     </a>
-  )
-}
+  );
+};

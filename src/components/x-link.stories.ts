@@ -1,48 +1,48 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from "@storybook/react";
 
-import { XLink } from './x-link'
+import { XLink } from "./x-link";
 
 const meta = {
-  title: 'Components/XLink',
+  title: "Components/XLink",
   component: XLink,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
-  tags: ['autodocs'],
-} satisfies Meta<typeof XLink>
+  tags: ["autodocs"],
+} satisfies Meta<typeof XLink>;
 
-export default meta
+export default meta;
 
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    to: 'React',
-    variant: 'primary',
-    children: 'React',
+    to: "React",
+    variant: "primary",
+    children: "React",
   },
-}
+};
 
 export const Secondary: Story = {
   args: {
-    to: 'Vite',
-    variant: 'secondary',
-    children: 'Vite',
+    to: "Vite",
+    variant: "secondary",
+    children: "Vite",
   },
-}
+};
 
 export const Accent: Story = {
   args: {
-    to: 'tailwindcss',
-    variant: 'accent',
-    children: 'tailwindcss',
+    to: "tailwindcss",
+    variant: "accent",
+    children: "tailwindcss",
   },
-}
+};
 
 export const IsButton: Story = {
   args: {
-    to: 'TypeScript',
+    to: "TypeScript",
     isButton: true,
-    children: 'TypeScript',
+    children: "TypeScript",
   },
-}
+};
