@@ -1,3 +1,4 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   createMemoryHistory,
   createRootRoute,
@@ -14,6 +15,14 @@ import { afterEach } from "vitest";
 
 afterEach(() => {
   cleanup();
+});
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: false,
+    },
+  },
 });
 
 // eslint-disable-next-line react-refresh/only-export-components
@@ -33,7 +42,11 @@ const Wrapper = ({ children }: { children: ReactNode }) => {
     });
   }, [children]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
+  );
 };
 
 const customRender = (

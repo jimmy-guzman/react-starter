@@ -21,6 +21,7 @@
 - ⚡️ [vite][vite] for instant server start and lighting fast HMR.
 - 🏷️ [TypeScript][TypeScript] for a less frustrating & consistent experience.
 - 🏝️ [TanStack Router][TanStack Router] for a fully type-safe React router.
+- 🏝️ [TanStack Query][TanStack Query] for asynchronous state management.
 - 💄 [tailwindcss][tailwindcss] for utility-first CSS.
 - 💄 [daisyUI](https://daisyui.com) for tailwindcss components.
 - 🧱 [storybook][storybook] for building UIs in isolation.
@@ -83,8 +84,7 @@ Your application will be available at http://localhost:5173/ ❤️
 
 If you need to do more, I recommend the following libraries:
 
-- [TanStack Query (React Query)](https://tanstack.com/query/v5/docs/react/overview) for **data management** which will take care of fetching, caching, synchronizing and updating server state for you
-  - [msw](https://mswjs.io) for when you start testing your data integrations
+- [msw](https://mswjs.io) for when you start testing your data integrations
 - [jotai](https://jotai.org) for when you don't want to use context for **state management** or need more state management outside of React Query
 - [zustand](https://github.com/pmndrs/zustand) for when you need more **state management** outside of React Query or jotai if you wen that route
 - [React Hook Form](https://react-hook-form.com) for when you need to build **forms**
@@ -107,5 +107,6 @@ If you need to do more, I recommend the following libraries:
 [GitHub Actions]: https://github.com/features/actions
 [lefthook]: https://github.com/evilmartians/lefthook
 [TanStack Router]: https://tanstack.com/router/v1
+[TanStack Query]: https://tanstack.com/query/v5
 
 <!-- features references end -->
