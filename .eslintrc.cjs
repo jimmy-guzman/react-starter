@@ -8,6 +8,7 @@ module.exports = {
     "jimmy-guzman/vitest",
     "jimmy-guzman/testing-library",
     "plugin:storybook/recommended",
+    "plugin:@tanstack/eslint-plugin-query/recommended",
   ],
   parserOptions: {
     project: ["./tsconfig.json"],
