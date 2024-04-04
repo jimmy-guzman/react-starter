@@ -1,18 +1,13 @@
 name: Install
 description: Install everything for the repo
 
-inputs:
-  bun-version:
-    description: Version of bun to use
-    default: latest
-
 runs:
   using: composite
   steps:
     - name: 🏗 Setup bun
       uses: oven-sh/setup-bun@v1
       with:
-        bun-version: ${{ inputs.bun-version }}
+        bun-version: 1.1.1
 
     - name: 🏗 Setup bun cache
       uses: actions/cache@v4

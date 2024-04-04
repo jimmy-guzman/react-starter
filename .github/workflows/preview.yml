@@ -13,8 +13,6 @@ jobs:
 
       - name: 📦 Install
         uses: ./.github/actions/install
-        with:
-          bun-version: 1.1.0
 
       - name: 📦 Install Playwright Deps
         run: nlx playwright install --with-deps
