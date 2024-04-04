@@ -12,8 +12,6 @@ jobs:
 
       - name: 📦 Install
         uses: ./.github/actions/install
-        with:
-          bun-version: 1.1.0
 
       - name: 🚨 Lint
         run: nr lint
@@ -31,4 +29,4 @@ jobs:
         run: nr build
 
       - name: 🧱 Stories Build
-        run: nr stories:build
+        run: nr sb:build

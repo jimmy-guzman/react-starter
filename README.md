@@ -60,21 +60,21 @@ Your application will be available at http://localhost:5173/ ❤️
 
 ## 🧞 Available Tasks
 
-| Command            | Action                                                   |
-| :----------------- | :------------------------------------------------------- |
-| `nr install`       | Installs dependencies                                    |
-| `nr dev`           | Starts local dev server at http://localhost:5173/        |
-| `nr build`         | Build your production site to `./dist/`                  |
-| `nr preview`       | Preview your build locally, before deploying             |
-| `nr test`          | Unit tests your code with vitest                         |
-| `nr e2e`           | E2E tests your code with playwright                      |
-| `nr lint`          | Lints everything with eslint                             |
-| `nr lint:fix`      | Fixes lint errors with eslint                            |
-| `nr format`        | Checks formatting with prettier                          |
-| `nr format:fix`    | Fixes formatting errors with prettier                    |
-| `nr typecheck`     | Checks types with TypeScript                             |
-| `nr stories`       | Starts storybook at http://localhost:6006                |
-| `nr stories:build` | Build your production storybook to `./storybook-static/` |
+| Command         | Action                                                   |
+| :-------------- | :------------------------------------------------------- |
+| `ni`            | Installs dependencies                                    |
+| `nr dev`        | Starts local dev server at http://localhost:5173/        |
+| `nr build`      | Build your production site to `./dist/`                  |
+| `nr preview`    | Preview your build locally, before deploying             |
+| `nr test`       | Unit tests your code with vitest                         |
+| `nr e2e`        | E2E tests your code with playwright                      |
+| `nr lint`       | Lints everything with eslint                             |
+| `nr lint:fix`   | Fixes lint errors with eslint                            |
+| `nr format`     | Checks formatting with prettier                          |
+| `nr format:fix` | Fixes formatting errors with prettier                    |
+| `nr typecheck`  | Checks types with TypeScript                             |
+| `nr sb`         | Starts storybook at http://localhost:6006                |
+| `nr sb:build`   | Build your production storybook to `./storybook-static/` |
 
 ## 💡 Recommendations
 
