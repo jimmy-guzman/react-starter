@@ -1,5 +1,3 @@
-import "dotenv/config";
-
 import { defineConfig, devices } from "@playwright/test";
 
 const port = process.env["PORT"] ?? 5173;
