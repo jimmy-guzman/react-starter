@@ -17,9 +17,9 @@ jobs:
           bun-version: 1.1.0
 
       - name: 📦 Install Playwright Deps
-        run: bunx playwright install --with-deps
+        run: nlx playwright install --with-deps
 
       - name: ✅ e2e
-        run: bun e2e
+        run: nr e2e
         env:
           BASE_URL: ${{ github.event.deployment_status.environment_url }}

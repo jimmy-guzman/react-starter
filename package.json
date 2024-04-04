@@ -13,7 +13,7 @@
     "format:fix": "prettier --write --cache .",
     "lint": "eslint --color --cache --cache-location ./node_modules/.cache/eslint .",
     "lint:fix": "pnpm lint --fix",
-    "prepare": "lefthook install",
+    "prepare": "is-ci || lefthook install",
     "preview": "vite preview",
     "stories": "storybook dev -p 6006",
     "stories:build": "storybook build",
@@ -31,6 +31,7 @@
     "tailwind-merge": "2.2.2"
   },
   "devDependencies": {
+    "@antfu/ni": "0.21.12",
     "@iconify-json/logos": "1.1.42",
     "@iconify-json/lucide": "1.1.178",
     "@iconify/tailwind": "0.1.4",
@@ -69,6 +70,7 @@
     "eslint-plugin-storybook": "0.8.0",
     "gitzy": "5.2.0",
     "happy-dom": "14.4.0",
+    "is-ci": "3.0.1",
     "lefthook": "1.6.8",
     "msw": "2.2.13",
     "postcss": "8.4.38",

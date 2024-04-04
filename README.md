@@ -36,37 +36,45 @@ First install [bun](https://bun.sh/docs/installation), by running the following 
 curl -fsSL https://bun.sh/install | bash
 ```
 
+Now you can install dependencies, by running the following command:
+
+```
+bun install
+```
+
+_Going forward, you can just use `ni` to install dependencies and `nun` to uninstall dependencies_
+
 And to download new browsers for Playwright, run the following command:
 
 ```
-bunx playwright install
+nlx playwright install
 ```
 
 Then to run the development server, run the following command:
 
 ```
-bun dev
+nr dev
 ```
 
 Your application will be available at http://localhost:5173/ ❤️
 
 ## 🧞 Available Tasks
 
-| Command             | Action                                                   |
-| :------------------ | :------------------------------------------------------- |
-| `bun install`       | Installs dependencies                                    |
-| `bun dev`           | Starts local dev server at http://localhost:5173/        |
-| `bun run build`     | Build your production site to `./dist/`                  |
-| `bun preview`       | Preview your build locally, before deploying             |
-| `bun run test`      | Unit tests your code with vitest                         |
-| `bun e2e`           | E2E tests your code with playwright                      |
-| `bun lint`          | Lints everything with eslint                             |
-| `bun lint:fix`      | Fixes lint errors with eslint                            |
-| `bun format`        | Checks formatting with prettier                          |
-| `bun format:fix`    | Fixes formatting errors with prettier                    |
-| `bun typecheck`     | Checks types with TypeScript                             |
-| `bun stories`       | Starts storybook at http://localhost:6006                |
-| `bun stories:build` | Build your production storybook to `./storybook-static/` |
+| Command            | Action                                                   |
+| :----------------- | :------------------------------------------------------- |
+| `nr install`       | Installs dependencies                                    |
+| `nr dev`           | Starts local dev server at http://localhost:5173/        |
+| `nr build`         | Build your production site to `./dist/`                  |
+| `nr preview`       | Preview your build locally, before deploying             |
+| `nr test`          | Unit tests your code with vitest                         |
+| `nr e2e`           | E2E tests your code with playwright                      |
+| `nr lint`          | Lints everything with eslint                             |
+| `nr lint:fix`      | Fixes lint errors with eslint                            |
+| `nr format`        | Checks formatting with prettier                          |
+| `nr format:fix`    | Fixes formatting errors with prettier                    |
+| `nr typecheck`     | Checks types with TypeScript                             |
+| `nr stories`       | Starts storybook at http://localhost:6006                |
+| `nr stories:build` | Build your production storybook to `./storybook-static/` |
 
 ## 💡 Recommendations
 
