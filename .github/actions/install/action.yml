@@ -22,6 +22,10 @@ runs:
         restore-keys: |
           ${{ runner.os }}-${{ matrix.bun }}-bun-
 
+    - name: 📦 Install ni
+      run: bun install --global @antfu/ni
+      shell: bash
+
     - name: 📦 Install deps
-      run: bun install
+      run: ni
       shell: bash
