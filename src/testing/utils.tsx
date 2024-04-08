@@ -30,9 +30,13 @@ const Wrapper = ({ children }: { children: ReactNode }) => {
   const router = useMemo(() => {
     const rootRoute = createRootRoute({ component: Outlet });
     const testingRoute = createRoute({
-      getParentRoute: () => rootRoute,
+      getParentRoute: () => {
+        return rootRoute;
+      },
       path: "/",
-      component: () => children,
+      component: () => {
+        return children;
+      },
     });
     const routeTree = rootRoute.addChildren([testingRoute]);
 
