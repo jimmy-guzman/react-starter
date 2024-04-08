@@ -2,12 +2,16 @@ import { createRootRouteWithContext, Outlet } from "@tanstack/react-router";
 import { lazy, Suspense } from "react";
 
 const RouterDevTools = import.meta.env.DEV
-  ? lazy(() =>
-      import("@tanstack/router-devtools").then((res) => ({
-        default: res.TanStackRouterDevtools,
-      })),
-    )
-  : () => null;
+  ? lazy(async () => {
+      return import("@tanstack/router-devtools").then((res) => {
+        return {
+          default: res.TanStackRouterDevtools,
+        };
+      });
+    })
+  : () => {
+      return null;
+    };
 
 const Root = () => {
   return (
