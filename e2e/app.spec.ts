@@ -84,4 +84,16 @@ test.describe("external links", () => {
 
     await expect(newPage).toHaveURL("https://bun.sh");
   });
+
+  test("opened daisyUI docs", async ({ page, context }) => {
+    const pagePromise = context.waitForEvent("page");
+
+    await page.getByRole("link", { name: /daisyUI/i }).click();
+
+    const newPage = await pagePromise;
+
+    await newPage.waitForLoadState();
+
+    await expect(newPage).toHaveURL("https://daisyui.com");
+  });
 });

@@ -1,4 +1,4 @@
-import { XLink } from "@/components/x-link";
+import { ExtLink } from "@/components/ext-link";
 
 export const Home = () => {
   return (
@@ -17,18 +17,19 @@ export const Home = () => {
               React Starter
             </h1>
             <p className="prose dsy-prose py-6">
-              🍱 Another opinionated <XLink to="React">React</XLink> Starter
-              using <XLink to="Bun">Bun</XLink>, <XLink to="Vite">Vite</XLink>,{" "}
-              <XLink to="TypeScript">TypeScript</XLink> and{" "}
-              <XLink to="tailwindcss">tailwindcss</XLink>.
+              🍱 Another <ExtLink to="React">React</ExtLink> Starter using{" "}
+              <ExtLink to="Bun">Bun</ExtLink>, <ExtLink to="Vite">Vite</ExtLink>
+              , <ExtLink to="TypeScript">TypeScript</ExtLink>,{" "}
+              <ExtLink to="tailwindcss">tailwindcss</ExtLink> and{" "}
+              <ExtLink to="daisyUI">daisyUI</ExtLink>.
             </p>
             <div className="flex justify-center gap-2 sm:justify-end">
-              <XLink to="Deploy" variant="secondary" isButton>
+              <ExtLink to="Deploy" color="secondary" variant="button">
                 Deploy <span className="icon-[logos--vercel-icon]" />
-              </XLink>
-              <XLink to="GitHub" variant="primary" isButton>
+              </ExtLink>
+              <ExtLink to="GitHub" color="primary" variant="button">
                 GitHub <span className="icon-[logos--github-icon]" />
-              </XLink>
+              </ExtLink>
             </div>
           </div>
         </div>

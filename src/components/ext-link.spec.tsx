@@ -1,8 +1,8 @@
 import { render, screen } from "@/testing/utils";
 
-import { XLink } from "./x-link";
+import { ExtLink } from "./ext-link";
 
-describe("XLink", () => {
+describe("ExtLink", () => {
   it.each([
     "Vite",
     "React",
@@ -12,7 +12,7 @@ describe("XLink", () => {
     "Deploy",
     "Bun",
   ] as const)("should render %s link", async (to) => {
-    render(<XLink to={to}>{to}</XLink>);
+    render(<ExtLink to={to}>{to}</ExtLink>);
 
     await expect(
       screen.findByRole("link", { name: to }),
