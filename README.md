@@ -1,6 +1,6 @@
 # React Starter
 
-> 🍱 another opinionated [React][react] starter
+> 🍱 Another React Starter using Bun, Vite, TypeScript, tailwindcss and daisyUI.
 
 ## 🐣 Features
 

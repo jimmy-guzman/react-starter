@@ -1,24 +1,31 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { XLink } from "./x-link";
+import { ExtLink } from "./ext-link";
 
 const meta = {
-  title: "Components/XLink",
-  component: XLink,
+  title: "Components/ExtLink",
+  component: ExtLink,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof XLink>;
+} satisfies Meta<typeof ExtLink>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
+export const Default: Story = {
+  args: {
+    to: "daisyUI",
+    children: "daisyUI",
+  },
+};
+
 export const Primary: Story = {
   args: {
     to: "React",
-    variant: "primary",
+    color: "primary",
     children: "React",
   },
 };
@@ -26,7 +33,7 @@ export const Primary: Story = {
 export const Secondary: Story = {
   args: {
     to: "Vite",
-    variant: "secondary",
+    color: "secondary",
     children: "Vite",
   },
 };
@@ -34,15 +41,15 @@ export const Secondary: Story = {
 export const Accent: Story = {
   args: {
     to: "tailwindcss",
-    variant: "accent",
+    color: "accent",
     children: "tailwindcss",
   },
 };
 
-export const IsButton: Story = {
+export const Button: Story = {
   args: {
     to: "TypeScript",
-    isButton: true,
+    variant: "button",
     children: "TypeScript",
   },
 };
