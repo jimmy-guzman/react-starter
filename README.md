@@ -30,6 +30,8 @@ bunx tiged jimmy-guzman/react-starter
 
 ## 🏁 Getting Started
 
+_💡 To avoid having to remember which package manager to use, I recommended using [ni](https://github.com/antfu/ni)_
+
 First install [bun](https://bun.sh/docs/installation), by running the following command:
 
 ```
@@ -42,39 +44,37 @@ Now you can install dependencies, by running the following command:
 bun install
 ```
 
-_Going forward, you can just use `ni` to install dependencies and `nun` to uninstall dependencies_
-
 And to download new browsers for Playwright, run the following command:
 
 ```
-nlx playwright install
+bunx playwright install
 ```
 
 Then to run the development server, run the following command:
 
 ```
-nr dev
+bun dev
 ```
 
 Your application will be available at http://localhost:5173/ ❤️
 
 ## 🧞 Available Tasks
 
-| Command         | Action                                                   |
-| :-------------- | :------------------------------------------------------- |
-| `ni`            | Installs dependencies                                    |
-| `nr dev`        | Starts local dev server at http://localhost:5173/        |
-| `nr build`      | Build your production site to `./dist/`                  |
-| `nr preview`    | Preview your build locally, before deploying             |
-| `nr test`       | Unit tests your code with vitest                         |
-| `nr e2e`        | E2E tests your code with playwright                      |
-| `nr lint`       | Lints everything with eslint                             |
-| `nr lint:fix`   | Fixes lint errors with eslint                            |
-| `nr format`     | Checks formatting with prettier                          |
-| `nr format:fix` | Fixes formatting errors with prettier                    |
-| `nr typecheck`  | Checks types with TypeScript                             |
-| `nr sb`         | Starts storybook at http://localhost:6006                |
-| `nr sb:build`   | Build your production storybook to `./storybook-static/` |
+| Command              | Action                                                   |
+| :------------------- | :------------------------------------------------------- |
+| `bun install`        | Installs dependencies                                    |
+| `bun run dev`        | Starts local dev server at http://localhost:5173/        |
+| `bun run build`      | Build your production site to `./dist/`                  |
+| `bun run preview`    | Preview your build locally, before deploying             |
+| `bun run test`       | Unit tests your code with vitest                         |
+| `bun run e2e`        | E2E tests your code with playwright                      |
+| `bun run lint`       | Lints everything with eslint                             |
+| `bun run lint:fix`   | Fixes lint errors with eslint                            |
+| `bun run format`     | Checks formatting with prettier                          |
+| `bun run format:fix` | Fixes formatting errors with prettier                    |
+| `bun run typecheck`  | Checks types with TypeScript                             |
+| `bun run sb`         | Starts storybook at http://localhost:6006                |
+| `bun run sb:build`   | Build your production storybook to `./storybook-static/` |
 
 ## 💡 Recommendations
 
@@ -98,7 +98,7 @@ If you need to do more, I recommend the following libraries:
 [Testing Library]: https://testing-library.com/docs/guiding-principles
 [Playwright]: https://playwright.dev
 [prettier]: https://prettier.io
-[bun]: https://bun.sh/
+[bun]: https://bun.sh
 [GitHub Actions]: https://github.com/features/actions
 [lefthook]: https://github.com/evilmartians/lefthook
 [TanStack Router]: https://tanstack.com/router/v1

@@ -3,7 +3,7 @@ import typography from "@tailwindcss/typography";
 import daisyui from "daisyui";
 import type { Config } from "tailwindcss";
 
-const config: Config = {
+const config = {
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
   theme: {
     extend: {},
@@ -15,6 +15,6 @@ const config: Config = {
     logs: false,
   },
   plugins: [typography, daisyui, addDynamicIconSelectors()],
-};
+} satisfies Config;
 
 export default config;

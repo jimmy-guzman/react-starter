@@ -12,7 +12,7 @@
     "format": "prettier --check --cache .",
     "format:fix": "prettier --write --cache .",
     "lint": "eslint --color --cache --cache-location ./node_modules/.cache/eslint .",
-    "lint:fix": "pnpm lint --fix",
+    "lint:fix": "bun lint --fix",
     "prepare": "is-ci || lefthook install",
     "preview": "vite preview",
     "sb": "storybook dev -p 6006",
@@ -31,7 +31,6 @@
     "tailwind-merge": "2.2.2"
   },
   "devDependencies": {
-    "@antfu/ni": "0.21.12",
     "@iconify-json/logos": "1.1.42",
     "@iconify-json/lucide": "1.1.181",
     "@iconify/tailwind": "0.1.4",
