@@ -6,7 +6,7 @@ import { cn } from "@/lib/cn";
 type Color = "accent" | "primary" | "secondary";
 type Variant = "default" | "button";
 
-interface LinkProps {
+interface ExtLinkProps {
   className?: string;
   to: keyof typeof externalLinks;
   color?: Color;
@@ -26,7 +26,7 @@ export const ExtLink = ({
   color,
   variant = "default",
   children,
-}: LinkProps) => {
+}: ExtLinkProps) => {
   return (
     <a
       href={externalLinks[to]}
