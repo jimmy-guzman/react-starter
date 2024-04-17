@@ -27,14 +27,14 @@ export default defineConfig(({ mode }) => {
       exclude: [...configDefaults.exclude, "e2e/*"],
       setupFiles: "./src/testing/setup.ts",
       coverage: {
-        reporter: ["html", "text-summary"],
         exclude: [
           ...(configDefaults.coverage.exclude ?? []),
+          "playwright-report/**",
           "storybook-static/**",
           ".storybook/**",
           "**/*.stories.*",
           "**/main.tsx",
-          "{tailwind,postcss,playwright}.config.*",
+          "{tailwind,postcss,playwright,eslint}.config.*",
           "**/*.gen.*",
         ],
       },
