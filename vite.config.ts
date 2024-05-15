@@ -14,6 +14,9 @@ export default defineConfig(({ mode }) => {
         generatedRouteTree: "./src/route-tree.gen.ts",
         semicolons: true,
         quoteStyle: "double",
+        experimental: {
+          enableCodeSplitting: true,
+        },
       }),
       tsconfigPaths(),
     ],
