@@ -20,15 +20,14 @@ jobs:
           echo "Playwright's Version: $PLAYWRIGHT_VERSION"
           echo "PLAYWRIGHT_VERSION=$PLAYWRIGHT_VERSION" >> $GITHUB_ENV
 
-      - name: 📦 Cache Playwright Browsers for Playwright's Version
-        id: cache-playwright-browsers
+      - name: 📦 Cache Playwright Browsers binaries
         uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
           key: playwright-browsers-${{ env.PLAYWRIGHT_VERSION }}
+          restore-keys: playwright-browsers-
 
       - name: 📦 Install Playwright Deps
-        if: steps.cache-playwright-browsers.outputs.cache-hit != 'true'
         run: bunx playwright install --with-deps
 
       - name: ✅ e2e
