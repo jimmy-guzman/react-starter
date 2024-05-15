@@ -14,8 +14,22 @@ jobs:
       - name: 📦 Install
         uses: ./.github/actions/install
 
+      - name: 📦 Store Playwright's Version
+        run: |
+          PLAYWRIGHT_VERSION=$(bun pm ls @playwright/test | grep @playwright | sed 's/.*@//')
+          echo "Playwright's Version: $PLAYWRIGHT_VERSION"
+          echo "PLAYWRIGHT_VERSION=$PLAYWRIGHT_VERSION" >> $GITHUB_ENV
+
+      - name: 📦 Cache Playwright Browsers for Playwright's Version
+        id: cache-playwright-browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-browsers-${{ env.PLAYWRIGHT_VERSION }}
+
       - name: 📦 Install Playwright Deps
-        run: nlx playwright install --with-deps
+        if: steps.cache-playwright-browsers.outputs.cache-hit != 'true'
+        run: bunx playwright install --with-deps
 
       - name: ✅ e2e
         run: nr e2e
