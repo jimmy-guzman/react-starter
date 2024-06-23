@@ -6,6 +6,7 @@
 
 - 🍞 [bun][bun] for a fast runtime and package manager.
 - ⚡️ [vite][vite] for instant server start, lighting fast HMR and optimized build.
+- ✨ [Vite PWA](https://vite-pwa-org.netlify.app) for PWAs with very little configuration.
 - 🏷️ [TypeScript][TypeScript] for a less frustrating & consistent experience.
 - 🏝️ [TanStack Router][TanStack Router] for a fully type-safe React router.
 - 🏝️ [TanStack Query][TanStack Query] for asynchronous state management.

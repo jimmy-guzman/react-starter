@@ -17,7 +17,7 @@ export const Hero = () => {
             React Starter
           </h1>
           <p className="dsy-prose prose py-6 dark:prose-invert">
-            🍱 Another{" "}
+            Another{" "}
             <a href={links.React} rel="noreferrer" target="_blank">
               React
             </a>{" "}
