@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/knip@5/schema.json",
-  "ignore": ["src/route-tree.gen.ts"],
+  "ignore": ["src/route-tree.gen.ts", "pwa-assets.config.ts"],
   "ignoreDependencies": ["gitzy", "@iconify-json/*"],
   "eslint": {
     "entry": ["eslint.config.ts"]
