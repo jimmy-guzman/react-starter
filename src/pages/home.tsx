@@ -1,3 +1,5 @@
+// eslint-disable-next-line import-x/no-unresolved, import-x/no-absolute-path
+import logo from "/logo.svg";
 import { ExtLink } from "@/components/ext-link";
 
 export const Home = () => {
@@ -17,7 +19,8 @@ export const Home = () => {
               React Starter
             </h1>
             <p className="prose dsy-prose py-6">
-              🍱 Another <ExtLink to="React">React</ExtLink> Starter using{" "}
+              <img src={logo} alt="logo" className="not-prose inline max-h-6" />{" "}
+              Another <ExtLink to="React">React</ExtLink> Starter using{" "}
               <ExtLink to="Bun">Bun</ExtLink>, <ExtLink to="Vite">Vite</ExtLink>
               , <ExtLink to="TypeScript">TypeScript</ExtLink>,{" "}
               <ExtLink to="tailwindcss">tailwindcss</ExtLink> and{" "}
