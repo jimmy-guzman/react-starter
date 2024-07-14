@@ -37,7 +37,7 @@ export default defineConfig(({ mode }) => {
           ".storybook/**",
           "**/*.stories.*",
           "**/main.tsx",
-          "{tailwind,postcss,playwright,eslint}.config.*",
+          "{tailwind,postcss,playwright}.config.*",
           "**/*.gen.*",
         ],
       },
