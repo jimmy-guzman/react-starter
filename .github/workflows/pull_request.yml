@@ -14,19 +14,19 @@ jobs:
         uses: ./.github/actions/install
 
       - name: 🚨 Lint
-        run: nr lint
+        run: bun run lint
 
       - name: 🎨 Format
-        run: nr format
+        run: bun run format
 
       - name: 🏷️ Check Types
-        run: nr typecheck
+        run: bun run typecheck
 
       - name: ✅ Test
-        run: nr coverage
+        run: bun run coverage
 
       - name: 🧱 Build
-        run: nr build
+        run: bun run build
 
       - name: 🧱 Stories Build
-        run: nr sb:build
+        run: bun run sb:build
