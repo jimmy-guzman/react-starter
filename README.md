@@ -30,8 +30,6 @@ bunx tiged jimmy-guzman/react-starter
 
 ## 🏁 Getting Started
 
-_💡 To avoid having to remember which package manager to use, I recommended using [ni](https://github.com/antfu/ni)_
-
 First install [bun](https://bun.sh/docs/installation), by running the following command:
 
 ```

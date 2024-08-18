@@ -24,7 +24,7 @@
   "prettier": "@jimmy.codes/prettier-config",
   "dependencies": {
     "@tanstack/react-query": "5.51.23",
-    "@tanstack/react-router": "1.47.5",
+    "@tanstack/react-router": "1.48.1",
     "clsx": "2.1.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
@@ -32,11 +32,11 @@
   },
   "devDependencies": {
     "@iconify-json/logos": "1.1.44",
-    "@iconify-json/lucide": "1.1.206",
+    "@iconify-json/lucide": "1.1.207",
     "@iconify/tailwind": "1.1.2",
     "@jimmy.codes/eslint-config": "1.9.0",
     "@jimmy.codes/prettier-config": "1.1.0",
-    "@playwright/test": "1.46.0",
+    "@playwright/test": "1.46.1",
     "@storybook/addon-a11y": "8.2.9",
     "@storybook/addon-essentials": "8.2.9",
     "@storybook/addon-interactions": "8.2.9",
@@ -48,7 +48,7 @@
     "@storybook/test": "8.2.9",
     "@tailwindcss/typography": "0.5.14",
     "@tanstack/react-query-devtools": "5.51.23",
-    "@tanstack/router-devtools": "1.47.5",
+    "@tanstack/router-devtools": "1.48.1",
     "@tanstack/router-vite-plugin": "1.47.0",
     "@testing-library/dom": "10.4.0",
     "@testing-library/jest-dom": "6.4.8",
@@ -68,15 +68,16 @@
     "gitzy": "5.4.0",
     "happy-dom": "14.12.3",
     "is-ci": "3.0.1",
-    "lefthook": "1.7.12",
+    "lefthook": "1.7.14",
     "msw": "2.3.5",
     "postcss": "8.4.41",
     "prettier": "3.3.3",
     "storybook": "8.2.9",
     "tailwindcss": "3.4.10",
     "typescript": "5.4.5",
-    "vite": "5.4.0",
+    "vite": "5.4.1",
     "vite-tsconfig-paths": "5.0.1",
     "vitest": "2.0.5"
-  }
+  },
+  "packageManager": "bun@1.1.24"
 }

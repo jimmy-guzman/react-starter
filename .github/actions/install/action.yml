@@ -5,9 +5,9 @@ runs:
   using: composite
   steps:
     - name: 🏗 Setup bun
-      uses: oven-sh/setup-bun@v1
+      uses: oven-sh/setup-bun@v2
       with:
-        bun-version: 1.1.23
+        bun-version-file: package.json
 
     - name: 🏗 Setup bun cache
       uses: actions/cache@v4
@@ -17,10 +17,6 @@ runs:
         restore-keys: |
           ${{ runner.os }}-${{ matrix.bun }}-bun-
 
-    - name: 📦 Install ni
-      run: bun install --global @antfu/ni
-      shell: bash
-
     - name: 📦 Install deps
-      run: ni
+      run: bun install
       shell: bash

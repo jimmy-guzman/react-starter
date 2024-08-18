@@ -15,9 +15,9 @@ jobs:
         uses: ./.github/actions/install
 
       - name: 📦 Install Playwright Deps
-        run: nlx playwright install --with-deps
+        run: bunx playwright install --with-deps
 
       - name: ✅ e2e
-        run: nr e2e
+        run: bun run e2e
         env:
           BASE_URL: ${{ github.event.deployment_status.environment_url }}
