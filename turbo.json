@@ -43,6 +43,8 @@
       "outputs": ["storybook-static/**"]
     },
     "e2e": {
+      "env": ["BASE_URL"],
+      "passThroughEnv": ["BASE_URL"],
       "outputs": ["playwright-report/**", "test-results/**"]
     }
   }
