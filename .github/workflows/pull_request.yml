@@ -3,7 +3,7 @@ name: pull_request
 on: [pull_request]
 
 jobs:
-  validate:
+  check:
     runs-on: ubuntu-latest
 
     steps:
@@ -13,20 +13,5 @@ jobs:
       - name: 📦 Install
         uses: ./.github/actions/install
 
-      - name: 🚨 Lint
-        run: bun run lint
-
-      - name: 🎨 Format
-        run: bun run format
-
-      - name: 🏷️ Check Types
-        run: bun run typecheck
-
-      - name: ✅ Test
-        run: bun run coverage
-
-      - name: 🧱 Build
-        run: bun run build
-
-      - name: 🧱 Stories Build
-        run: bun run sb:build
+      - name: 🚨 Check
+        run: bun check

@@ -18,6 +18,7 @@
 - 🩺 [eslint][eslint] for static analysis.
 - 🎨 [prettier][prettier] for formatting.
 - 🩺 [lefthook][lefthook] for fast Git hooks management.
+- 👷 [Turborepo](https://turbo.build/repo/docs) for caching and task parallelization.
 - 👷 [GitHub Actions][GitHub Actions] for easy workflow automation.
 
 ## 🛠️ Usage
@@ -45,7 +46,7 @@ bun install
 Or if you already have `bun` installed you upgrade, by running the following command:
 
 ```
- bun upgrade --stable
+bun upgrade --stable
 ```
 
 And to download new browsers for Playwright, run the following command:
@@ -54,31 +55,40 @@ And to download new browsers for Playwright, run the following command:
 bunx playwright install
 ```
 
+And install Turborepo, run the following command:
+
+```
+bun install --global turbo
+```
+
 Then to run the development server, run the following command:
 
 ```
-bun dev
+turbo dev
 ```
 
 Your application will be available at http://localhost:5173/ ❤️
 
 ## 🧞 Available Tasks
 
-| Command              | Action                                                   |
-| :------------------- | :------------------------------------------------------- |
-| `bun install`        | Installs dependencies                                    |
-| `bun run dev`        | Starts local dev server at http://localhost:5173/        |
-| `bun run build`      | Build your production site to `./dist/`                  |
-| `bun run preview`    | Preview your build locally, before deploying             |
-| `bun run test`       | Unit tests your code with vitest                         |
-| `bun run e2e`        | E2E tests your code with playwright                      |
-| `bun run lint`       | Lints everything with eslint                             |
-| `bun run lint:fix`   | Fixes lint errors with eslint                            |
-| `bun run format`     | Checks formatting with prettier                          |
-| `bun run format:fix` | Fixes formatting errors with prettier                    |
-| `bun run typecheck`  | Checks types with TypeScript                             |
-| `bun run sb`         | Starts storybook at http://localhost:6006                |
-| `bun run sb:build`   | Build your production storybook to `./storybook-static/` |
+| Command            | Action                                                   |
+| :----------------- | :------------------------------------------------------- |
+| `bun install`      | Installs dependencies                                    |
+| `turbo dev`        | Starts local dev server at http://localhost:5173/        |
+| `turbo build`      | Build your production site to `./dist/`                  |
+| `turbo preview`    | Preview your build locally, before deploying             |
+| `turbo test`       | Unit tests your code with vitest                         |
+| `turbo e2e`        | E2E tests your code with playwright                      |
+| `turbo lint`       | Lints everything with eslint                             |
+| `turbo lint:fix`   | Fixes lint errors with eslint                            |
+| `turbo format`     | Checks formatting with prettier                          |
+| `turbo format:fix` | Fixes formatting errors with prettier                    |
+| `turbo typecheck`  | Checks types with TypeScript                             |
+| `turbo sb`         | Starts storybook at http://localhost:6006                |
+| `turbo sb:build`   | Build your production storybook to `./storybook-static/` |
+| `turbo check`      | Checks everything                                        |
+
+_You can also run all tasks with `bun run`, i.e `bun run dev`_
 
 ## 💡 Recommendations
 
