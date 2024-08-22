@@ -43,3 +43,6 @@ storybook-static
 
 # env
 .env*
+
+# turbo
+.turbo

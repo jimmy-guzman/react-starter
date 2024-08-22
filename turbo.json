@@ -1,0 +1,51 @@
+{
+  "$schema": "https://turbo.build/schema.v2.json",
+  "tasks": {
+    "build": {
+      "outputs": ["dist/**"]
+    },
+    "typecheck": {
+      "dependsOn": ["^typecheck"]
+    },
+    "format": {
+      "dependsOn": ["^format"]
+    },
+    "format:fix": {
+      "dependsOn": ["^format:fix"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "lint:fix": {
+      "dependsOn": ["^lint:fix"]
+    },
+    "test": {
+      "persistent": true,
+      "cache": false
+    },
+    "coverage": {
+      "outputs": ["coverage/**"],
+      "dependsOn": ["^coverage"]
+    },
+    "preview": {
+      "persistent": true,
+      "cache": false
+    },
+    "dev": {
+      "persistent": true,
+      "cache": false
+    },
+    "sb": {
+      "persistent": true,
+      "cache": false
+    },
+    "sb:build": {
+      "outputs": ["storybook-static/**"]
+    },
+    "e2e": {
+      "env": ["BASE_URL"],
+      "passThroughEnv": ["BASE_URL"],
+      "outputs": ["playwright-report/**", "test-results/**"]
+    }
+  }
+}
