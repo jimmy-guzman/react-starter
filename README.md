@@ -16,6 +16,7 @@
 - 🧪 [Playwright][Playwright] for fast and reliable e2e testing.
 - 🧪 [Mock Service Worker][Mock Service Worker] for client-agnostic API mocks.
 - 🩺 [eslint][eslint] for static analysis.
+- 🩺 [Knip][Knip] for finding dead code.
 - 🎨 [prettier][prettier] for formatting.
 - 🩺 [lefthook][lefthook] for fast Git hooks management.
 - 👷 [Turborepo][Turborepo] for caching and task parallelization.
@@ -109,5 +110,6 @@ _You can also run all tasks with `bun run`, i.e `bun run dev`_
 [TanStack Query]: https://tanstack.com/query/v5
 [Turborepo]: https://turbo.build/repo/docs
 [Mock Service Worker]: https://mswjs.io
+[Knip]: https://knip.dev
 
 <!-- features references end -->

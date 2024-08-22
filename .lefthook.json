@@ -17,6 +17,9 @@
         "glob": "{,**/}package.json",
         "run": "bunx sort-package-json {staged_files}",
         "stage_fixed": true
+      },
+      "knip": {
+        "run": "bunx --bun knip"
       }
     }
   }

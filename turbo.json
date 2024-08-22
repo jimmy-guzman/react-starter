@@ -19,6 +19,9 @@
     "lint:fix": {
       "dependsOn": ["^lint:fix"]
     },
+    "knip": {
+      "dependsOn": ["^knip"]
+    },
     "test": {
       "persistent": true,
       "cache": false
