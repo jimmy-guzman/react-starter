@@ -42,6 +42,12 @@ Now you can install dependencies, by running the following command:
 bun install
 ```
 
+Or if you already have `bun` installed you upgrade, by running the following command:
+
+```
+ bun upgrade --stable
+```
+
 And to download new browsers for Playwright, run the following command:
 
 ```
