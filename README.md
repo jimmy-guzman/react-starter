@@ -14,11 +14,11 @@
 - 🧱 [storybook][storybook] for building UIs in isolation.
 - 🧪 [vitest][vitest] for fast testing.
 - 🧪 [Playwright][Playwright] for fast and reliable e2e testing.
-- 🧪 [msw](https://mswjs.io) for client-agnostic API mocks.
+- 🧪 [Mock Service Worker][Mock Service Worker] for client-agnostic API mocks.
 - 🩺 [eslint][eslint] for static analysis.
 - 🎨 [prettier][prettier] for formatting.
 - 🩺 [lefthook][lefthook] for fast Git hooks management.
-- 👷 [Turborepo](https://turbo.build/repo/docs) for caching and task parallelization.
+- 👷 [Turborepo][Turborepo] for caching and task parallelization.
 - 👷 [GitHub Actions][GitHub Actions] for easy workflow automation.
 
 ## 🛠️ Usage
@@ -90,16 +90,6 @@ Your application will be available at http://localhost:5173/ ❤️
 
 _You can also run all tasks with `bun run`, i.e `bun run dev`_
 
-## 💡 Recommendations
-
-If you need to do more, I recommend the following libraries:
-
-- [jotai](https://jotai.org) for when you don't want to use context for **state management** or need more state management outside of React Query
-- [zustand](https://github.com/pmndrs/zustand) for when you need more **state management** outside of React Query or jotai if you wen that route
-- [React Hook Form](https://react-hook-form.com) for when you need to build **forms**
-- [TanStack Table (React Table)](https://tanstack.com/table/v8) for when you need to build complex **tables** or **data grids**
-- [fathom](https://usefathom.com) for **analytics** which is easy to use
-
 <!-- features references start -->
 
 [vite]: https://vitejs.dev
@@ -117,5 +107,7 @@ If you need to do more, I recommend the following libraries:
 [lefthook]: https://github.com/evilmartians/lefthook
 [TanStack Router]: https://tanstack.com/router/v1
 [TanStack Query]: https://tanstack.com/query/v5
+[Turborepo]: https://turbo.build/repo/docs
+[Mock Service Worker]: https://mswjs.io
 
 <!-- features references end -->
