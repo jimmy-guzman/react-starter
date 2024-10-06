@@ -93,7 +93,7 @@ _You can also run all tasks with `bun run`, i.e `bun run dev`_
 
 <!-- features references start -->
 
-[vite]: https://vitejs.dev
+[vite]: https://vite.dev
 [react]: https://react.dev
 [TypeScript]: https://www.typescriptlang.org
 [tailwindcss]: https://tailwindcss.com

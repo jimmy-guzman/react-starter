@@ -1,5 +1,5 @@
 export const externalLinks = {
-  "Vite": "https://vitejs.dev",
+  "Vite": "https://vite.dev",
   "React": "https://react.dev",
   "TypeScript": "https://www.typescriptlang.org",
   "tailwindcss": "https://tailwindcss.com",

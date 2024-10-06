@@ -20,7 +20,7 @@ test.describe("external links", () => {
 
     await newPage.waitForLoadState();
 
-    await expect(newPage).toHaveURL("https://vitejs.dev/");
+    await expect(newPage).toHaveURL("https://vite.dev/");
   });
 
   test("opened React docs", async ({ page, context }) => {
