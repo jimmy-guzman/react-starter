@@ -12,7 +12,7 @@ describe("ExtLink", () => {
     "Deploy",
     "Bun",
   ] as const)("should render %s link", async (to) => {
-    render(<ExtLink to={to}>{to}</ExtLink>);
+    await render(<ExtLink to={to}>{to}</ExtLink>);
 
     await expect(
       screen.findByRole("link", { name: to }),

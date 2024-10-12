@@ -4,14 +4,15 @@ import {
   createRootRoute,
   createRoute,
   createRouter,
-  Outlet,
   RouterProvider,
 } from "@tanstack/react-router";
 import type { RenderOptions } from "@testing-library/react";
-import { cleanup, render } from "@testing-library/react";
+import { act, cleanup, render } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
-import { type ReactElement, type ReactNode, useMemo } from "react";
+import type { ReactElement, ReactNode } from "react";
 import { afterEach } from "vitest";
+
+import type { FileRoutesById } from "@/route-tree.gen";
 
 afterEach(() => {
   cleanup();
@@ -26,25 +27,31 @@ const queryClient = new QueryClient({
 });
 
 // eslint-disable-next-line react-refresh/only-export-components
-const Wrapper = ({ children }: { children: ReactNode }) => {
-  const router = useMemo(() => {
-    const rootRoute = createRootRoute({ component: Outlet });
-    const testingRoute = createRoute({
-      getParentRoute: () => {
-        return rootRoute;
-      },
-      path: "/",
-      component: () => {
-        return children;
-      },
-    });
-    const routeTree = rootRoute.addChildren([testingRoute]);
-
-    return createRouter({
-      routeTree,
-      history: createMemoryHistory({ initialEntries: ["/"] }),
-    });
-  }, [children]);
+const Wrapper = ({
+  children,
+  path,
+}: {
+  children: ReactNode;
+  path: keyof FileRoutesById;
+}) => {
+  const rootRoute = createRootRoute();
+  const testingRoute = createRoute({
+    getParentRoute: () => {
+      return rootRoute;
+    },
+    path,
+    component: () => {
+      return children;
+    },
+  });
+  const routeTree = rootRoute.addChildren([testingRoute]);
+  const router = createRouter({
+    routeTree,
+    history: createMemoryHistory({
+      initialEntries: [path],
+    }),
+    context: { queryClient },
+  });
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -54,16 +61,26 @@ const Wrapper = ({ children }: { children: ReactNode }) => {
   );
 };
 
-const customRender = (
+const customRender = async (
   ui: ReactElement,
-  options: Omit<RenderOptions, "wrapper"> = {},
+  {
+    path = "/",
+    ...options
+  }: Omit<RenderOptions, "wrapper"> & { path?: keyof FileRoutesById } = {},
 ) => {
+  // eslint-disable-next-line @typescript-eslint/require-await
+  const result = await act(async () => {
+    return render(ui, {
+      wrapper: ({ children }) => {
+        return <Wrapper path={path}>{children}</Wrapper>;
+      },
+      ...options,
+    });
+  });
+
   return {
     user: userEvent.setup(),
-    ...render(ui, {
-      wrapper: Wrapper,
-      ...options,
-    }),
+    ...result,
   };
 };
 
