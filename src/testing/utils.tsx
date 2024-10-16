@@ -9,7 +9,7 @@ import {
 import type { RenderOptions } from "@testing-library/react";
 import { act, cleanup, render } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
-import type { ReactElement, ReactNode } from "react";
+import { type ReactElement, type ReactNode, useMemo } from "react";
 import { afterEach } from "vitest";
 
 import type { FileRoutesById } from "@/route-tree.gen";
@@ -18,40 +18,43 @@ afterEach(() => {
   cleanup();
 });
 
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      retry: false,
-    },
-  },
-});
-
-// eslint-disable-next-line react-refresh/only-export-components
-const Wrapper = ({
-  children,
-  path,
-}: {
+interface WrapperProps {
   children: ReactNode;
   path: keyof FileRoutesById;
-}) => {
-  const rootRoute = createRootRoute();
-  const testingRoute = createRoute({
-    getParentRoute: () => {
-      return rootRoute;
-    },
-    path,
-    component: () => {
-      return children;
-    },
-  });
-  const routeTree = rootRoute.addChildren([testingRoute]);
-  const router = createRouter({
-    routeTree,
-    history: createMemoryHistory({
-      initialEntries: [path],
-    }),
-    context: { queryClient },
-  });
+  initialEntries: string[];
+}
+
+// eslint-disable-next-line react-refresh/only-export-components
+const Wrapper = ({ children, path, initialEntries }: WrapperProps) => {
+  const { queryClient, router } = useMemo(() => {
+    const queryClient = new QueryClient({
+      defaultOptions: {
+        queries: {
+          retry: false,
+        },
+      },
+    });
+
+    const rootRoute = createRootRoute();
+    const testingRoute = createRoute({
+      getParentRoute: () => {
+        return rootRoute;
+      },
+      path,
+      component: () => {
+        return children;
+      },
+    });
+
+    return {
+      queryClient,
+      router: createRouter({
+        routeTree: rootRoute.addChildren([testingRoute]),
+        history: createMemoryHistory({ initialEntries }),
+        context: { queryClient },
+      }),
+    };
+  }, [children, initialEntries, path]);
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -65,14 +68,19 @@ const customRender = async (
   ui: ReactElement,
   {
     path = "/",
+    initialEntries = [path],
     ...options
-  }: Omit<RenderOptions, "wrapper"> & { path?: keyof FileRoutesById } = {},
+  }: Omit<RenderOptions, "wrapper"> & Partial<WrapperProps> = {},
 ) => {
   // eslint-disable-next-line @typescript-eslint/require-await
   const result = await act(async () => {
     return render(ui, {
       wrapper: ({ children }) => {
-        return <Wrapper path={path}>{children}</Wrapper>;
+        return (
+          <Wrapper path={path} initialEntries={initialEntries}>
+            {children}
+          </Wrapper>
+        );
       },
       ...options,
     });
