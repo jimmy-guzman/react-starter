@@ -8,10 +8,10 @@
       "dependsOn": ["^typecheck"]
     },
     "format": {
-      "dependsOn": ["^format"]
+      "dependsOn": ["^format", "^build"]
     },
     "format:fix": {
-      "dependsOn": ["^format:fix"]
+      "dependsOn": ["^format:fix", "^build"]
     },
     "lint": {
       "dependsOn": ["^lint"]
