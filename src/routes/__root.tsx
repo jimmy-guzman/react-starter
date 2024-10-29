@@ -24,4 +24,6 @@ const Root = () => {
   );
 };
 
-export const Route = createRootRouteWithContext()({ component: Root });
+export const Route = createRootRouteWithContext()({
+  component: Root,
+});
