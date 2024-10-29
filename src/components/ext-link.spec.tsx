@@ -14,8 +14,6 @@ describe("ExtLink", () => {
   ] as const)("should render %s link", async (to) => {
     await render(<ExtLink to={to}>{to}</ExtLink>);
 
-    await expect(
-      screen.findByRole("link", { name: to }),
-    ).resolves.toBeInTheDocument();
+    expect(screen.getByRole("link", { name: to })).toBeInTheDocument();
   });
 });
