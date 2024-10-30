@@ -6,6 +6,16 @@ test("has title", async ({ page }) => {
   await expect(page).toHaveTitle(/React Starter/);
 });
 
+test("not found", async ({ page }) => {
+  await page.goto("/lost");
+
+  await expect(page).toHaveTitle(/React Starter/);
+
+  await expect(
+    page.getByRole("heading", { name: "Error", level: 1 }),
+  ).toBeInViewport();
+});
+
 test.describe("external links", () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("/");
