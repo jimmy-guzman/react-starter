@@ -5,9 +5,9 @@ import { NotFound } from "./pages/not-found";
 import { routeTree } from "./route-tree.gen";
 
 export const router = createRouter({
-  routeTree,
-  defaultNotFoundComponent: NotFound,
   defaultErrorComponent: Error,
+  defaultNotFoundComponent: NotFound,
+  routeTree,
 });
 
 declare module "@tanstack/react-router" {

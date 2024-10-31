@@ -4,14 +4,14 @@ import { externalLinks } from "@/config/external-links";
 import { cn } from "@/lib/cn";
 
 type Color = "accent" | "primary" | "secondary";
-type Variant = "default" | "button";
+type Variant = "button" | "default";
 
 interface ExtLinkProps {
-  className?: string;
-  to: keyof typeof externalLinks;
-  color?: Color;
-  variant?: Variant;
   children: ReactNode;
+  className?: string;
+  color?: Color;
+  to: keyof typeof externalLinks;
+  variant?: Variant;
 }
 
 /**
@@ -21,27 +21,27 @@ interface ExtLinkProps {
  * <ExtLink to='tailwindcss'>tailwindcss</ExtLink> // https://tailwindcss.com
  */
 export const ExtLink = ({
-  to,
+  children,
   className,
   color,
+  to,
   variant = "default",
-  children,
 }: ExtLinkProps) => {
   return (
     <a
-      href={externalLinks[to]}
-      target="_blank"
-      rel="noreferrer"
       className={cn(
         {
-          "dsy-link-hover dsy-link": variant === "default",
           "dsy-btn": variant === "button",
+          "dsy-btn-accent": color === "accent",
           "dsy-btn-primary": color === "primary",
           "dsy-btn-secondary": color === "secondary",
-          "dsy-btn-accent": color === "accent",
+          "dsy-link-hover dsy-link": variant === "default",
         },
         className,
       )}
+      href={externalLinks[to]}
+      rel="noreferrer"
+      target="_blank"
     >
       {children}
     </a>

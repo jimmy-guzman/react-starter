@@ -1,4 +1,6 @@
-import { type ErrorComponentProps, Link } from "@tanstack/react-router";
+import type { ErrorComponentProps } from "@tanstack/react-router";
+
+import { Link } from "@tanstack/react-router";
 
 export const Error = ({ error }: ErrorComponentProps) => {
   return (

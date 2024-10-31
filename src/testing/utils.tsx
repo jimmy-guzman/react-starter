@@ -1,3 +1,6 @@
+import type { RenderOptions } from "@testing-library/react";
+import type { ReactElement, ReactNode } from "react";
+
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   createMemoryHistory,
@@ -6,10 +9,9 @@ import {
   createRouter,
   RouterProvider,
 } from "@tanstack/react-router";
-import type { RenderOptions } from "@testing-library/react";
 import { act, cleanup, render } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
-import { type ReactElement, type ReactNode, useMemo } from "react";
+import { useMemo } from "react";
 import { afterEach } from "vitest";
 
 import type { FileRoutesById } from "@/route-tree.gen";
@@ -20,12 +22,12 @@ afterEach(() => {
 
 interface WrapperProps {
   children: ReactNode;
-  path: keyof FileRoutesById;
   initialEntries: string[];
+  path: keyof FileRoutesById;
 }
 
 // eslint-disable-next-line react-refresh/only-export-components
-const Wrapper = ({ children, path, initialEntries }: WrapperProps) => {
+const Wrapper = ({ children, initialEntries, path }: WrapperProps) => {
   const { queryClient, router } = useMemo(() => {
     const queryClient = new QueryClient({
       defaultOptions: {
@@ -37,21 +39,21 @@ const Wrapper = ({ children, path, initialEntries }: WrapperProps) => {
 
     const rootRoute = createRootRoute();
     const testingRoute = createRoute({
+      component: () => {
+        return children;
+      },
       getParentRoute: () => {
         return rootRoute;
       },
       path,
-      component: () => {
-        return children;
-      },
     });
 
     return {
       queryClient,
       router: createRouter({
-        routeTree: rootRoute.addChildren([testingRoute]),
-        history: createMemoryHistory({ initialEntries }),
         context: { queryClient },
+        history: createMemoryHistory({ initialEntries }),
+        routeTree: rootRoute.addChildren([testingRoute]),
       }),
     };
   }, [children, initialEntries, path]);
@@ -77,7 +79,7 @@ const customRender = async (
     return render(ui, {
       wrapper: ({ children }) => {
         return (
-          <Wrapper path={path} initialEntries={initialEntries}>
+          <Wrapper initialEntries={initialEntries} path={path}>
             {children}
           </Wrapper>
         );
