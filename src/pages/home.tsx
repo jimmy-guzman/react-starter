@@ -2,8 +2,8 @@ import { ExtLink } from "@/components/ext-link";
 
 export const Home = () => {
   return (
-    <div className="md:container md:mx-auto">
-      <div className="dsy-hero min-h-screen">
+    <div className="grid min-h-screen place-content-center">
+      <div className="dsy-hero">
         <div className="dsy-hero-content flex-col gap-8">
           <div className="flex gap-4">
             <span className="icon-[logos--bun] text-5xl md:text-7xl" />
