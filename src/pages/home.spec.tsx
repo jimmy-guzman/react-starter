@@ -7,7 +7,7 @@ describe("<Home />", () => {
     await render(<Home />);
 
     expect(
-      screen.getByRole("heading", { name: "React Starter", level: 1 }),
+      screen.getByRole("heading", { level: 1, name: "React Starter" }),
     ).toBeInTheDocument();
   });
 });

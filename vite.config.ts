@@ -8,25 +8,21 @@ export default defineConfig(({ mode }) => {
   const { PORT = 5173 } = loadEnv(mode, process.cwd(), "");
 
   return {
+    entries: ["index.html"],
     plugins: [
       react(),
       tanStackRouterVite({
-        generatedRouteTree: "./src/route-tree.gen.ts",
-        semicolons: true,
-        quoteStyle: "double",
         autoCodeSplitting: true,
+        generatedRouteTree: "./src/route-tree.gen.ts",
+        quoteStyle: "double",
+        semicolons: true,
       }),
       tsconfigPaths(),
     ],
     server: {
       port: Number(PORT),
     },
-    entries: ["index.html"],
     test: {
-      environment: "happy-dom",
-      globals: true,
-      exclude: [...configDefaults.exclude, "e2e/*"],
-      setupFiles: "./src/testing/setup.ts",
       coverage: {
         exclude: [
           ...(configDefaults.coverage.exclude ?? []),
@@ -39,6 +35,10 @@ export default defineConfig(({ mode }) => {
           "**/*.gen.*",
         ],
       },
+      environment: "happy-dom",
+      exclude: [...configDefaults.exclude, "e2e/*"],
+      globals: true,
+      setupFiles: "./src/testing/setup.ts",
     },
   };
 });

@@ -24,10 +24,10 @@ export const Home = () => {
               <ExtLink to="daisyUI">daisyUI</ExtLink>.
             </p>
             <div className="flex justify-center gap-2 sm:justify-end">
-              <ExtLink to="Deploy" color="secondary" variant="button">
+              <ExtLink color="secondary" to="Deploy" variant="button">
                 Deploy <span className="icon-[logos--vercel-icon]" />
               </ExtLink>
-              <ExtLink to="GitHub" color="primary" variant="button">
+              <ExtLink color="primary" to="GitHub" variant="button">
                 GitHub <span className="icon-[logos--github-icon]" />
               </ExtLink>
             </div>

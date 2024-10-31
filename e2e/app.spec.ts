@@ -12,7 +12,7 @@ test("not found", async ({ page }) => {
   await expect(page).toHaveTitle(/React Starter/);
 
   await expect(
-    page.getByRole("heading", { name: "Error", level: 1 }),
+    page.getByRole("heading", { level: 1, name: "Error" }),
   ).toBeInViewport();
 });
 
@@ -21,7 +21,7 @@ test.describe("external links", () => {
     await page.goto("/");
   });
 
-  test("opened vite docs", async ({ page, context }) => {
+  test("opened vite docs", async ({ context, page }) => {
     const pagePromise = context.waitForEvent("page");
 
     await page.getByRole("link", { name: /vite/i }).click();
@@ -33,10 +33,10 @@ test.describe("external links", () => {
     await expect(newPage).toHaveURL("https://vite.dev/");
   });
 
-  test("opened React docs", async ({ page, context }) => {
+  test("opened React docs", async ({ context, page }) => {
     const pagePromise = context.waitForEvent("page");
 
-    await page.getByRole("link", { name: "React", exact: true }).click();
+    await page.getByRole("link", { exact: true, name: "React" }).click();
 
     const newPage = await pagePromise;
 
@@ -45,7 +45,7 @@ test.describe("external links", () => {
     await expect(newPage).toHaveURL("https://react.dev/");
   });
 
-  test("opened TypeScript docs", async ({ page, context }) => {
+  test("opened TypeScript docs", async ({ context, page }) => {
     const pagePromise = context.waitForEvent("page");
 
     await page.getByRole("link", { name: /TypeScript/i }).click();
@@ -57,7 +57,7 @@ test.describe("external links", () => {
     await expect(newPage).toHaveURL("https://www.typescriptlang.org/");
   });
 
-  test("opened tailwindcss docs", async ({ page, context }) => {
+  test("opened tailwindcss docs", async ({ context, page }) => {
     const pagePromise = context.waitForEvent("page");
 
     await page.getByRole("link", { name: /tailwindcss/i }).click();
@@ -69,7 +69,7 @@ test.describe("external links", () => {
     await expect(newPage).toHaveURL("https://tailwindcss.com/");
   });
 
-  test("opened repo", async ({ page, context }) => {
+  test("opened repo", async ({ context, page }) => {
     const pagePromise = context.waitForEvent("page");
 
     await page.getByRole("link", { name: "GitHub" }).click();
@@ -83,7 +83,7 @@ test.describe("external links", () => {
     );
   });
 
-  test("opened Bun", async ({ page, context }) => {
+  test("opened Bun", async ({ context, page }) => {
     const pagePromise = context.waitForEvent("page");
 
     await page.getByRole("link", { name: "Bun" }).click();
@@ -95,7 +95,7 @@ test.describe("external links", () => {
     await expect(newPage).toHaveURL("https://bun.sh");
   });
 
-  test("opened daisyUI docs", async ({ page, context }) => {
+  test("opened daisyUI docs", async ({ context, page }) => {
     const pagePromise = context.waitForEvent("page");
 
     await page.getByRole("link", { name: /daisyUI/i }).click();

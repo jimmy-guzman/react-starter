@@ -3,12 +3,12 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { ExtLink } from "./ext-link";
 
 const meta = {
-  title: "Components/ExtLink",
   component: ExtLink,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
+  title: "Components/ExtLink",
 } satisfies Meta<typeof ExtLink>;
 
 export default meta;
@@ -17,39 +17,39 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    to: "daisyUI",
     children: "daisyUI",
+    to: "daisyUI",
   },
 };
 
 export const Primary: Story = {
   args: {
-    to: "React",
-    color: "primary",
     children: "React",
+    color: "primary",
+    to: "React",
   },
 };
 
 export const Secondary: Story = {
   args: {
-    to: "Vite",
-    color: "secondary",
     children: "Vite",
+    color: "secondary",
+    to: "Vite",
   },
 };
 
 export const Accent: Story = {
   args: {
-    to: "tailwindcss",
-    color: "accent",
     children: "tailwindcss",
+    color: "accent",
+    to: "tailwindcss",
   },
 };
 
 export const Button: Story = {
   args: {
+    children: "TypeScript",
     to: "TypeScript",
     variant: "button",
-    children: "TypeScript",
   },
 };
