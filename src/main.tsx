@@ -9,7 +9,7 @@ import { createRoot } from "react-dom/client";
 import queryClient from "./query.client";
 import { router } from "./router";
 
-const root = document.getElementById("root");
+const root = document.querySelector("#root");
 
 if (root) {
   createRoot(root).render(
