@@ -26,7 +26,7 @@ interface WrapperProps {
   path: keyof FileRoutesById;
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
+// eslint-disable-next-line react-refresh/only-export-components -- this is only used in tests.
 const Wrapper = ({ children, initialEntries, path }: WrapperProps) => {
   const { queryClient, router } = useMemo(() => {
     const queryClient = new QueryClient({
@@ -74,7 +74,7 @@ const customRender = async (
     ...options
   }: Omit<RenderOptions, "wrapper"> & Partial<WrapperProps> = {},
 ) => {
-  // eslint-disable-next-line @typescript-eslint/require-await
+  // eslint-disable-next-line @typescript-eslint/require-await -- prevents was not wrapped in act(...).
   const result = await act(async () => {
     return render(ui, {
       wrapper: ({ children }) => {
