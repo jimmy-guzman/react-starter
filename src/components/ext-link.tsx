@@ -31,10 +31,10 @@ export const ExtLink = ({
     <a
       className={cn(
         {
-          "dsy-btn": variant === "button",
           "dsy-btn-accent": color === "accent",
           "dsy-btn-primary": color === "primary",
           "dsy-btn-secondary": color === "secondary",
+          "dsy-btn dsy-btn-sm": variant === "button",
           "dsy-link-hover dsy-link": variant === "default",
         },
         className,
