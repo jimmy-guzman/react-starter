@@ -5,12 +5,12 @@ export const Home = () => {
     <div className="grid min-h-screen place-content-center">
       <div className="dsy-hero">
         <div className="dsy-hero-content flex-col gap-8">
-          <div className="flex gap-4">
-            <span className="icon-[logos--bun] text-5xl md:text-7xl" />
-            <span className="icon-[logos--vitejs] text-5xl md:text-7xl" />
-            <span className="icon-[logos--react] text-5xl md:text-7xl" />
-            <span className="icon-[logos--typescript-icon] text-5xl md:text-7xl" />
-            <span className="icon-[logos--tailwindcss-icon] text-5xl md:text-7xl" />
+          <div className="flex gap-4 text-4xl md:text-6xl">
+            <span className="icon-[logos--bun]" />
+            <span className="icon-[logos--vitejs]" />
+            <span className="icon-[logos--react]" />
+            <span className="icon-[logos--typescript-icon]" />
+            <span className="icon-[logos--tailwindcss-icon]" />
           </div>
           <div className="flex flex-col gap-4 text-center">
             <h1 className="inline bg-gradient-to-r from-primary to-secondary bg-clip-text text-8xl font-bold text-transparent">
