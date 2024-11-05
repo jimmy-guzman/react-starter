@@ -1,8 +1,17 @@
 import jimmyDotCodes from "@jimmy.codes/eslint-config";
-// @ts-expect-error missing types
 import eslintPluginStorybook from "eslint-plugin-storybook";
 
+const storybookConfigs = eslintPluginStorybook.configs["flat/recommended"].map(
+  ({ files, name, plugins, rules }) => {
+    return {
+      ...(files && { files }),
+      name,
+      plugins: { ...plugins },
+      rules: { ...rules },
+    };
+  },
+);
+
 export default jimmyDotCodes({
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access -- missing types
-  configs: eslintPluginStorybook.configs["flat/recommended"],
+  configs: [...storybookConfigs],
 });
