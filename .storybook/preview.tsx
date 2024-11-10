@@ -3,6 +3,11 @@ import "../src/main.css";
 import type { Preview } from "@storybook/react";
 
 import { withThemeByDataAttribute } from "@storybook/addon-themes";
+import { createRouter, RouterContextProvider } from "@tanstack/react-router";
+
+import { routeTree } from "@/route-tree.gen";
+
+const router = createRouter({ routeTree });
 
 const preview = {
   decorators: [
@@ -14,6 +19,11 @@ const preview = {
         light: "light",
       },
     }),
+    (story) => {
+      return (
+        <RouterContextProvider router={router}>{story()}</RouterContextProvider>
+      );
+    },
   ],
 
   parameters: {
