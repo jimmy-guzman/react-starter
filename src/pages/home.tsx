@@ -1,5 +1,8 @@
 import { ExtLink } from "@/components/ext-link";
 
+// eslint-disable-next-line import-x/no-absolute-path -- https://vite.dev/guide/assets#the-public-directory
+import logo from "/logo.svg";
+
 export const Home = () => {
   return (
     <div className="grid min-h-screen place-content-center">
@@ -17,7 +20,8 @@ export const Home = () => {
               React Starter
             </h1>
             <p className="prose dsy-prose py-6">
-              🍱 Another <ExtLink to="React">React</ExtLink> Starter using{" "}
+              <img alt="logo" className="not-prose inline max-h-6" src={logo} />{" "}
+              Another <ExtLink to="React">React</ExtLink> Starter using{" "}
               <ExtLink to="Bun">Bun</ExtLink>, <ExtLink to="Vite">Vite</ExtLink>
               , <ExtLink to="TypeScript">TypeScript</ExtLink>,{" "}
               <ExtLink to="tailwindcss">tailwindcss</ExtLink> and{" "}
