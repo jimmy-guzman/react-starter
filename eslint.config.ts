@@ -13,13 +13,5 @@ const storybookConfigs = eslintPluginStorybook.configs["flat/recommended"].map(
 );
 
 export default jimmyDotCodes({
-  configs: [
-    ...storybookConfigs,
-    {
-      rules: {
-        "@typescript-eslint/no-use-before-define": "error",
-        "no-use-before-define": "off",
-      },
-    },
-  ],
+  configs: storybookConfigs,
 });
