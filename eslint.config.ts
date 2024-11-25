@@ -1,4 +1,4 @@
-import jimmyDotCodes from "@jimmy.codes/eslint-config";
+import eslintConfig from "@jimmy.codes/eslint-config";
 import eslintPluginStorybook from "eslint-plugin-storybook";
 
 const storybookConfigs = eslintPluginStorybook.configs["flat/recommended"].map(
@@ -12,6 +12,6 @@ const storybookConfigs = eslintPluginStorybook.configs["flat/recommended"].map(
   },
 );
 
-export default jimmyDotCodes({
+export default eslintConfig({
   configs: storybookConfigs,
 });
