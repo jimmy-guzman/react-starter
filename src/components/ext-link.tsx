@@ -16,7 +16,8 @@ interface ExtLinkProps {
 
 /**
  * Pre-configured Abstraction of [daisyUI's Link](https://daisyui.com/components/link) for externals links
- * * Update `src/config/external-links.ts` to add more links
+ *
+ * Update `src/config/external-links.ts` to add more links
  * @example
  * <ExtLink to='tailwindcss'>tailwindcss</ExtLink> // https://tailwindcss.com
  */
