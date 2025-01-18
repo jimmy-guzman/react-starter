@@ -5,7 +5,7 @@
     "commands": {
       "lint": {
         "glob": "*.{js,cjs,ts,tsx}",
-        "run": "bunx eslint --flag unstable_ts_config --fix {staged_files}",
+        "run": "bunx eslint --fix {staged_files}",
         "stage_fixed": true
       },
       "format": {
