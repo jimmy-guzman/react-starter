@@ -3,6 +3,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "bradlc.vscode-tailwindcss",
-    "oven.bun-vscode"
+    "oven.bun-vscode",
+    "vitest.explorer"
   ]
 }

@@ -1,4 +1,5 @@
-import { ExtLink } from "@/components/ext-link";
+import { Button } from "@/components/ui/button";
+import { links } from "@/config/links";
 
 export const Home = () => {
   return (
@@ -17,19 +18,43 @@ export const Home = () => {
               React Starter
             </h1>
             <p className="prose dsy-prose py-6">
-              🍱 Another <ExtLink to="React">React</ExtLink> Starter using{" "}
-              <ExtLink to="Bun">Bun</ExtLink>, <ExtLink to="Vite">Vite</ExtLink>
-              , <ExtLink to="TypeScript">TypeScript</ExtLink>,{" "}
-              <ExtLink to="tailwindcss">tailwindcss</ExtLink> and{" "}
-              <ExtLink to="daisyUI">daisyUI</ExtLink>.
+              🍱 Another{" "}
+              <a href={links.React} rel="noreferrer" target="_blank">
+                React
+              </a>{" "}
+              Starter using{" "}
+              <a href={links.Bun} rel="noreferrer" target="_blank">
+                Bun
+              </a>
+              ,{" "}
+              <a href={links.Vite} rel="noreferrer" target="_blank">
+                Vite
+              </a>
+              ,{" "}
+              <a href={links.TypeScript} rel="noreferrer" target="_blank">
+                TypeScript
+              </a>
+              ,{" "}
+              <a href={links.tailwindcss} rel="noreferrer" target="_blank">
+                tailwindcss
+              </a>{" "}
+              and{" "}
+              <a href={links.daisyUI} rel="noreferrer" target="_blank">
+                daisyUI
+              </a>
+              .
             </p>
             <div className="flex justify-center gap-2 sm:justify-end">
-              <ExtLink color="secondary" to="Deploy" variant="button">
-                Deploy <span className="icon-[logos--vercel-icon]" />
-              </ExtLink>
-              <ExtLink color="primary" to="GitHub" variant="button">
-                GitHub <span className="icon-[logos--github-icon]" />
-              </ExtLink>
+              <Button asChild color="secondary" size="sm">
+                <a href={links.Deploy} rel="noreferrer" target="_blank">
+                  Deploy <span className="icon-[logos--vercel-icon]" />
+                </a>
+              </Button>
+              <Button asChild color="primary" size="sm">
+                <a href={links.GitHub} rel="noreferrer" target="_blank">
+                  GitHub <span className="icon-[logos--github-icon]" />
+                </a>
+              </Button>
             </div>
           </div>
         </div>

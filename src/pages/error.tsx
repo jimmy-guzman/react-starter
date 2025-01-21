@@ -2,6 +2,8 @@ import type { ErrorComponentProps } from "@tanstack/react-router";
 
 import { Link } from "@tanstack/react-router";
 
+import { Button } from "@/components/ui/button";
+
 export const Error = ({ error }: ErrorComponentProps) => {
   return (
     <main className="grid min-h-screen place-content-center">
@@ -12,9 +14,9 @@ export const Error = ({ error }: ErrorComponentProps) => {
               Error
             </h1>
             <p className="mb-5 text-error">{error.message}</p>
-            <Link className="dsy-btn dsy-btn-outline" to="/">
-              Go back
-            </Link>
+            <Button asChild variant="outline">
+              <Link to="/">Go back</Link>
+            </Button>
           </div>
         </div>
       </div>
