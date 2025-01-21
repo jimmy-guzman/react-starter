@@ -14,6 +14,9 @@ const config = {
     options: {},
   },
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+  typescript: {
+    reactDocgen: "react-docgen-typescript",
+  },
 } satisfies StorybookConfig;
 
 export default config;

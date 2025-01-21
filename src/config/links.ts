@@ -1,4 +1,4 @@
-export const externalLinks = {
+export const links = {
   "Bun": "https://bun.sh",
   "daisyUI": "https://daisyui.com",
   "Deploy":
