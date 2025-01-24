@@ -1,3 +1,4 @@
+import tailwindcss from "@tailwindcss/vite";
 import { TanStackRouterVite as tanStackRouterVite } from "@tanstack/router-vite-plugin";
 import react from "@vitejs/plugin-react-swc";
 import { defineConfig, loadEnv } from "vite";
@@ -10,6 +11,7 @@ export default defineConfig(({ mode }) => {
   return {
     entries: ["index.html"],
     plugins: [
+      tailwindcss(),
       react(),
       tanStackRouterVite({
         autoCodeSplitting: true,

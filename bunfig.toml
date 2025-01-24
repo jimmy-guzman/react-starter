@@ -1,5 +1,4 @@
 [install]
 exact = true
 saveTextLockfile = true
-frozenLockfile = true
 peer = false

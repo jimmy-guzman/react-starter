@@ -14,10 +14,10 @@ export const Home = () => {
             <span className="icon-[logos--tailwindcss-icon]" />
           </div>
           <div className="flex flex-col gap-4 text-center">
-            <h1 className="inline bg-gradient-to-r from-primary to-secondary bg-clip-text text-8xl font-bold text-transparent">
+            <h1 className="from-primary to-secondary inline bg-linear-to-r bg-clip-text text-8xl font-bold text-transparent">
               React Starter
             </h1>
-            <p className="prose dsy-prose py-6">
+            <p className="prose dsy-prose dark:prose-invert py-6">
               🍱 Another{" "}
               <a href={links.React} rel="noreferrer" target="_blank">
                 React

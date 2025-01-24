@@ -18,5 +18,5 @@ runs:
           ${{ runner.os }}-${{ matrix.bun }}-bun-
 
     - name: 📦 Install deps
-      run: bun install
+      run: bun install --frozen-lockfile
       shell: bash
