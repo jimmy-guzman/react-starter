@@ -5,8 +5,10 @@ import { defineConfig, loadEnv } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { configDefaults } from "vitest/config";
 
+const DEFAULT_PORT = 5173;
+
 export default defineConfig(({ mode }) => {
-  const { PORT = 5173 } = loadEnv(mode, process.cwd(), "");
+  const { PORT = DEFAULT_PORT } = loadEnv(mode, process.cwd(), "");
 
   return {
     entries: ["index.html"],

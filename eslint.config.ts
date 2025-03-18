@@ -1,3 +1,3 @@
-import eslintConfig from "@jimmy.codes/eslint-config";
+import { defineConfig } from "@jimmy.codes/eslint-config";
 
-export default eslintConfig();
+export default defineConfig();
