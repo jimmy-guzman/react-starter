@@ -19,7 +19,7 @@
         "stage_fixed": true
       },
       "knip": {
-        "run": "bunx --bun knip"
+        "run": "bunx knip"
       }
     }
   }

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "bunx --bun vite build",
+    "build": "vite build",
     "check": "turbo format lint typecheck coverage build sb:build knip",
     "coverage": "vitest run --coverage",
     "dev": "vite",
@@ -38,7 +38,7 @@
     "@iconify-json/logos": "1.2.4",
     "@iconify-json/lucide": "1.2.29",
     "@iconify/tailwind4": "1.0.6",
-    "@jimmy.codes/eslint-config": "4.0.0",
+    "@jimmy.codes/eslint-config": "5.3.0",
     "@jimmy.codes/prettier-config": "1.5.0",
     "@playwright/test": "1.51.0",
     "@storybook/addon-a11y": "8.6.4",
@@ -82,5 +82,5 @@
     "vite-tsconfig-paths": "5.1.4",
     "vitest": "3.0.8"
   },
-  "packageManager": "bun@1.2.0"
+  "packageManager": "bun@1.2.5"
 }
