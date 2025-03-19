@@ -13,11 +13,6 @@
         "run": "bunx prettier --write {staged_files}",
         "stage_fixed": true
       },
-      "sort-package-json": {
-        "glob": "{,**/}package.json",
-        "run": "bunx sort-package-json {staged_files}",
-        "stage_fixed": true
-      },
       "knip": {
         "run": "bunx knip"
       }
