@@ -17,7 +17,7 @@
         "@iconify-json/logos": "1.2.4",
         "@iconify-json/lucide": "1.2.31",
         "@iconify/tailwind4": "1.0.6",
-        "@jimmy.codes/eslint-config": "5.3.0",
+        "@jimmy.codes/eslint-config": "5.4.0",
         "@jimmy.codes/prettier-config": "1.5.0",
         "@playwright/test": "1.51.1",
         "@storybook/addon-a11y": "8.6.7",
@@ -38,9 +38,9 @@
         "@testing-library/user-event": "14.6.1",
         "@total-typescript/ts-reset": "0.6.1",
         "@types/bun": "1.2.5",
-        "@types/react": "19.0.11",
+        "@types/react": "19.0.12",
         "@types/react-dom": "19.0.4",
-        "@vitejs/plugin-react-swc": "3.8.0",
+        "@vitejs/plugin-react-swc": "3.8.1",
         "@vitest/coverage-v8": "3.0.9",
         "@vitest/ui": "3.0.9",
         "daisyui": "5.0.6",
@@ -242,7 +242,7 @@
 
     "@istanbuljs/schema": ["@istanbuljs/schema@0.1.3", "", {}, "sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA=="],
 
-    "@jimmy.codes/eslint-config": ["@jimmy.codes/eslint-config@5.3.0", "", { "dependencies": { "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1", "@eslint/js": "^9.21.0", "@next/eslint-plugin-next": "^15.1.7", "@tanstack/eslint-plugin-query": "^5.66.1", "@types/eslint": "9.6.1", "@typescript-eslint/parser": "^8.26.1", "@typescript-eslint/utils": "^8.26.1", "@vitest/eslint-plugin": "^1.1.38", "astro-eslint-parser": "^1.2.1", "eslint-config-prettier": "^10.1.1", "eslint-import-resolver-typescript": "^4.2.1", "eslint-plugin-astro": "^1.3.1", "eslint-plugin-import-x": "^4.8.1", "eslint-plugin-jest": "^28.11.0", "eslint-plugin-jest-dom": "^5.5.0", "eslint-plugin-jsdoc": "^50.6.8", "eslint-plugin-jsx-a11y": "^6.10.2", "eslint-plugin-n": "^17.16.2", "eslint-plugin-perfectionist": "^4.9.0", "eslint-plugin-playwright": "^2.2.0", "eslint-plugin-react": "^7.37.4", "eslint-plugin-react-compiler": "19.0.0-beta-3229e95-20250315", "eslint-plugin-react-hooks": "^5.2.0", "eslint-plugin-react-refresh": "0.4.19", "eslint-plugin-regexp": "^2.7.0", "eslint-plugin-storybook": "0.11.6", "eslint-plugin-testing-library": "^7.1.1", "eslint-plugin-unicorn": "^57.0.0", "globals": "^16.0.0", "local-pkg": "^1.0.0", "typescript-eslint": "^8.26.1" }, "peerDependencies": { "eslint": "^9.10.0" } }, "sha512-pzJ8X0R26DSdZevBGhNZX86VkjMOYI9JHOw4hrEbEmaV9xv7IYkMEMDNiCcwQ8KiHgkeDIahHtrxEu+k8ZPivA=="],
+    "@jimmy.codes/eslint-config": ["@jimmy.codes/eslint-config@5.4.0", "", { "dependencies": { "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1", "@eslint/js": "^9.21.0", "@next/eslint-plugin-next": "^15.1.7", "@tanstack/eslint-plugin-query": "^5.68.0", "@types/eslint": "9.6.1", "@typescript-eslint/parser": "^8.26.1", "@typescript-eslint/utils": "^8.26.1", "@vitest/eslint-plugin": "^1.1.38", "astro-eslint-parser": "^1.2.1", "eslint-config-prettier": "^10.1.1", "eslint-import-resolver-typescript": "^4.2.1", "eslint-plugin-astro": "^1.3.1", "eslint-plugin-import-x": "^4.8.1", "eslint-plugin-jest": "^28.11.0", "eslint-plugin-jest-dom": "^5.5.0", "eslint-plugin-jsdoc": "^50.6.8", "eslint-plugin-jsx-a11y": "^6.10.2", "eslint-plugin-n": "^17.16.2", "eslint-plugin-perfectionist": "^4.9.0", "eslint-plugin-playwright": "^2.2.0", "eslint-plugin-react": "^7.37.4", "eslint-plugin-react-compiler": "19.0.0-beta-3229e95-20250315", "eslint-plugin-react-hooks": "^5.2.0", "eslint-plugin-react-refresh": "0.4.19", "eslint-plugin-regexp": "^2.7.0", "eslint-plugin-storybook": "0.11.6", "eslint-plugin-testing-library": "^7.1.1", "eslint-plugin-unicorn": "^57.0.0", "globals": "^16.0.0", "local-pkg": "^1.0.0", "typescript-eslint": "^8.26.1" }, "peerDependencies": { "eslint": "^9.10.0" } }, "sha512-qyhh1d1LGfMfVaPR5DPSDXZUGLh5r8IceYne68l1dCkxXWks9Rjn4HVkbhxLbwlfbNVygVC9NzplesseldkhlA=="],
 
     "@jimmy.codes/prettier-config": ["@jimmy.codes/prettier-config@1.5.0", "", { "dependencies": { "prettier-plugin-astro": "0.14.1", "prettier-plugin-packagejson": "^2.5.10", "prettier-plugin-tailwindcss": "0.6.11" }, "peerDependencies": { "prettier": "^3.0" } }, "sha512-BsCnm0yyyPGqKmlQath9PjKQkchXVc4mRl9yACp3G1TVJyK/Mqs2D9gnjIRPS1X379qQq2ZSnVM1wPUkpnutgA=="],
 
@@ -526,7 +526,7 @@
 
     "@types/normalize-package-data": ["@types/normalize-package-data@2.4.4", "", {}, "sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA=="],
 
-    "@types/react": ["@types/react@19.0.11", "", { "dependencies": { "csstype": "^3.0.2" } }, "sha512-vrdxRZfo9ALXth6yPfV16PYTLZwsUWhVjjC+DkfE5t1suNSbBrWC9YqSuuxJZ8Ps6z1o2ycRpIqzZJIgklq4Tw=="],
+    "@types/react": ["@types/react@19.0.12", "", { "dependencies": { "csstype": "^3.0.2" } }, "sha512-V6Ar115dBDrjbtXSrS+/Oruobc+qVbbUxDFC1RSbRqLt5SYvxxyIDrSC85RWml54g+jfNeEMZhEj7wW07ONQhA=="],
 
     "@types/react-dom": ["@types/react-dom@19.0.4", "", { "peerDependencies": { "@types/react": "^19.0.0" } }, "sha512-4fSQ8vWFkg+TGhePfUzVmat3eC14TXYSsiiDSLI0dVLsrm9gZFABjPy/Qu6TKgl1tq1Bu1yDsuQgY3A3DOjCcg=="],
 
@@ -578,7 +578,7 @@
 
     "@unrs/rspack-resolver-binding-win32-x64-msvc": ["@unrs/rspack-resolver-binding-win32-x64-msvc@1.2.1", "", { "os": "win32", "cpu": "x64" }, "sha512-s5WvCljhFqiE3McvaD3lDIsQpmk7gEJRUHy1PRwLPzEB7snq9P2xQeqgzdjGhJQq62jBFz7NDy7NbMkocWr2pw=="],
 
-    "@vitejs/plugin-react-swc": ["@vitejs/plugin-react-swc@3.8.0", "", { "dependencies": { "@swc/core": "^1.10.15" }, "peerDependencies": { "vite": "^4 || ^5 || ^6" } }, "sha512-T4sHPvS+DIqDP51ifPqa9XIRAz/kIvIi8oXcnOZZgHmMotgmmdxe/DD5tMFlt5nuIRzT0/QuiwmKlH0503Aapw=="],
+    "@vitejs/plugin-react-swc": ["@vitejs/plugin-react-swc@3.8.1", "", { "dependencies": { "@swc/core": "^1.11.11" }, "peerDependencies": { "vite": "^4 || ^5 || ^6" } }, "sha512-aEUPCckHDcFyxpwFm0AIkbtv6PpUp3xTb9wYGFjtABynXjCYKkWoxX0AOK9NT9XCrdk6mBBUOeHQS+RKdcNO1A=="],
 
     "@vitest/coverage-v8": ["@vitest/coverage-v8@3.0.9", "", { "dependencies": { "@ampproject/remapping": "^2.3.0", "@bcoe/v8-coverage": "^1.0.2", "debug": "^4.4.0", "istanbul-lib-coverage": "^3.2.2", "istanbul-lib-report": "^3.0.1", "istanbul-lib-source-maps": "^5.0.6", "istanbul-reports": "^3.1.7", "magic-string": "^0.30.17", "magicast": "^0.3.5", "std-env": "^3.8.0", "test-exclude": "^7.0.1", "tinyrainbow": "^2.0.0" }, "peerDependencies": { "@vitest/browser": "3.0.9", "vitest": "3.0.9" }, "optionalPeers": ["@vitest/browser"] }, "sha512-15OACZcBtQ34keIEn19JYTVuMFTlFrClclwWjHo/IRPg/8ELpkgNTl0o7WLP9WO9XGH6+tip9CPYtEOrIDJvBA=="],
 
