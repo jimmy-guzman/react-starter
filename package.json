@@ -26,12 +26,12 @@
   "prettier": "@jimmy.codes/prettier-config",
   "dependencies": {
     "@radix-ui/react-slot": "1.1.2",
-    "@tanstack/react-query": "5.69.0",
+    "@tanstack/react-query": "5.71.0",
     "@tanstack/react-router": "1.114.29",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
     "tailwind-merge": "3.0.2"
   },
   "devDependencies": {
