@@ -1,14 +1,15 @@
 import type { VariantProps } from "class-variance-authority";
+import type * as React from "react";
 
 import { Slot } from "@radix-ui/react-slot";
 import { cva } from "class-variance-authority";
-import { forwardRef } from "react";
 
 import { cn } from "@/lib/cn";
 
 const buttonVariants = cva("dsy-btn", {
   defaultVariants: {
     color: "default",
+    modifier: "default",
     size: "default",
     variant: "default",
   },
@@ -24,10 +25,18 @@ const buttonVariants = cva("dsy-btn", {
       success: "dsy-btn-success",
       warning: "dsy-btn-warning",
     },
+    modifier: {
+      block: "dsy-btn-block",
+      circle: "dsy-btn-circle",
+      default: "",
+      square: "dsy-btn-square",
+      wide: "dsy-btn-wide",
+    },
     size: {
       default: "dsy-btn-md",
       lg: "dsy-btn-lg",
       sm: "dsy-btn-sm",
+      xl: "dsy-btn-xl",
       xs: "dsy-btn-xs",
     },
     variant: {
@@ -35,33 +44,51 @@ const buttonVariants = cva("dsy-btn", {
       ghost: "dsy-btn-ghost",
       link: "dsy-btn-link",
       outline: "dsy-btn-outline",
+      soft: "dsy-btn-soft",
     },
   },
 });
 
-interface ButtonProps
-  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "color">,
-    VariantProps<typeof buttonVariants> {
+type HtmlButtonProps = Omit<
+  React.ButtonHTMLAttributes<HTMLButtonElement>,
+  "color"
+>;
+
+type ButtonVariants = VariantProps<typeof buttonVariants>;
+
+interface ButtonProps extends ButtonVariants, HtmlButtonProps {
   asChild?: boolean;
 }
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  (
-    { asChild = false, className, color, size, variant, ...props }: ButtonProps,
-    ref,
-  ) => {
-    const Comp = asChild ? Slot : "button";
+const Button = ({
+  asChild = false,
+  className,
+  color,
+  modifier,
+  ref,
+  size,
+  variant,
+  ...props
+}: ButtonProps & { ref?: React.RefObject<HTMLButtonElement | null> }) => {
+  const Comp = asChild ? Slot : "button";
 
-    return (
-      <Comp
-        className={cn(buttonVariants({ className, color, size, variant }))}
-        ref={ref}
-        type="button"
-        {...props}
-      />
-    );
-  },
-);
+  return (
+    <Comp
+      className={cn(
+        buttonVariants({
+          className,
+          color,
+          modifier,
+          size,
+          variant,
+        }),
+      )}
+      ref={ref}
+      type="button"
+      {...props}
+    />
+  );
+};
 
 Button.displayName = "Button";
 
