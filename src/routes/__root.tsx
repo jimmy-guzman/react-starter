@@ -3,7 +3,7 @@ import { lazy, Suspense } from "react";
 
 const RouterDevTools = import.meta.env.DEV
   ? lazy(async () => {
-      return import("@tanstack/router-devtools").then((res) => {
+      return import("@tanstack/react-router-devtools").then((res) => {
         return {
           default: res.TanStackRouterDevtools,
         };
