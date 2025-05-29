@@ -1,6 +1,6 @@
 import "../src/main.css";
 
-import type { Preview } from "@storybook/react";
+import type { Preview } from "@storybook/react-vite";
 
 import { withThemeByDataAttribute } from "@storybook/addon-themes";
 import { createRouter, RouterContextProvider } from "@tanstack/react-router";

@@ -93,6 +93,6 @@ const customRender = async (
   };
 };
 
-export { renderHook, screen, within } from "@testing-library/react";
+export { screen } from "@testing-library/react";
 
 export { customRender as render };
