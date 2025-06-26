@@ -20,6 +20,7 @@
     "tiged",
     "turborepo",
     "typecheck",
+    "unrs",
     "vite",
     "vitest",
     "zustand"
