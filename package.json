@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "vite build",
+    "build": "bunx --bun vite build",
     "check": "turbo format lint typecheck coverage build sb:build knip",
     "coverage": "vitest run --coverage",
-    "dev": "vite",
+    "dev": "bunx --bun vite",
     "e2e": "playwright test",
     "e2e:ui": "playwright test --ui",
     "format": "prettier --check --cache .",
@@ -24,6 +24,9 @@
     "typecheck": "tsc"
   },
   "prettier": "@jimmy.codes/prettier-config",
+  "overrides": {
+    "vite": "npm:rolldown-vite@7.0.11"
+  },
   "dependencies": {
     "@radix-ui/react-slot": "1.2.3",
     "@tanstack/react-query": "5.83.0",
@@ -59,11 +62,11 @@
     "@types/bun": "1.2.19",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
-    "@vitejs/plugin-react-swc": "3.11.0",
+    "@vitejs/plugin-react-oxc": "0.3.0",
     "@vitest/coverage-v8": "3.2.4",
     "@vitest/ui": "3.2.4",
-    "daisyui": "5.0.46",
-    "eslint": "9.31.0",
+    "daisyui": "5.0.47",
+    "eslint": "9.32.0",
     "gitzy": "5.9.0",
     "happy-dom": "18.0.1",
     "is-ci": "4.1.0",
@@ -76,13 +79,12 @@
     "tailwindcss": "4.1.11",
     "turbo": "2.5.5",
     "typescript": "5.8.3",
-    "vite": "7.0.6",
+    "vite": "npm:rolldown-vite@7.0.11",
     "vite-tsconfig-paths": "5.1.4",
     "vitest": "3.2.4"
   },
-  "packageManager": "bun@1.2.17",
+  "packageManager": "bun@1.2.19",
   "trustedDependencies": [
-    "@swc/core",
     "@tailwindcss/oxide",
     "unrs-resolver"
   ]
