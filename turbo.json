@@ -38,13 +38,6 @@
       "persistent": true,
       "cache": false
     },
-    "sb": {
-      "persistent": true,
-      "cache": false
-    },
-    "sb:build": {
-      "outputs": ["storybook-static/**"]
-    },
     "e2e": {
       "env": ["BASE_URL"],
       "passThroughEnv": ["BASE_URL"],

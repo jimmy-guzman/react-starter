@@ -36,10 +36,5 @@
 
     "types": ["vitest/globals"]
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**/.storybook/**/*.ts",
-    "**/.storybook/**/*.tsx"
-  ]
+  "include": ["**/*.ts", "**/*.tsx"]
 }

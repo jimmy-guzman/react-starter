@@ -11,7 +11,6 @@
 - 🏝️ [TanStack Query][TanStack Query] for asynchronous state management.
 - 💄 [tailwindcss][tailwindcss] for utility-first CSS.
 - 💄 [daisyUI](https://daisyui.com) for tailwindcss components.
-- 🧱 [storybook][storybook] for building UIs in isolation.
 - 🧪 [vitest][vitest] for fast testing.
 - 🧪 [Playwright][Playwright] for fast and reliable e2e testing.
 - 🧪 [Mock Service Worker][Mock Service Worker] for client-agnostic API mocks.
@@ -73,22 +72,20 @@ Your application will be available at http://localhost:5173/ ❤️
 
 ## 🧞 Available Tasks
 
-| Command            | Action                                                   |
-| :----------------- | :------------------------------------------------------- |
-| `bun install`      | Installs dependencies                                    |
-| `turbo dev`        | Starts local dev server at http://localhost:5173/        |
-| `turbo build`      | Build your production site to `./dist/`                  |
-| `turbo preview`    | Preview your build locally, before deploying             |
-| `turbo test`       | Unit tests your code with vitest                         |
-| `turbo e2e`        | E2E tests your code with playwright                      |
-| `turbo lint`       | Lints everything with eslint                             |
-| `turbo lint:fix`   | Fixes lint errors with eslint                            |
-| `turbo format`     | Checks formatting with prettier                          |
-| `turbo format:fix` | Fixes formatting errors with prettier                    |
-| `turbo typecheck`  | Checks types with TypeScript                             |
-| `turbo sb`         | Starts storybook at http://localhost:6006                |
-| `turbo sb:build`   | Build your production storybook to `./storybook-static/` |
-| `turbo check`      | Checks everything                                        |
+| Command            | Action                                            |
+| :----------------- | :------------------------------------------------ |
+| `bun install`      | Installs dependencies                             |
+| `turbo dev`        | Starts local dev server at http://localhost:5173/ |
+| `turbo build`      | Build your production site to `./dist/`           |
+| `turbo preview`    | Preview your build locally, before deploying      |
+| `turbo test`       | Unit tests your code with vitest                  |
+| `turbo e2e`        | E2E tests your code with playwright               |
+| `turbo lint`       | Lints everything with eslint                      |
+| `turbo lint:fix`   | Fixes lint errors with eslint                     |
+| `turbo format`     | Checks formatting with prettier                   |
+| `turbo format:fix` | Fixes formatting errors with prettier             |
+| `turbo typecheck`  | Checks types with TypeScript                      |
+| `turbo check`      | Checks everything                                 |
 
 _You can also run all tasks with `bun run`, i.e `bun run dev`_
 
@@ -98,7 +95,6 @@ _You can also run all tasks with `bun run`, i.e `bun run dev`_
 [react]: https://react.dev
 [TypeScript]: https://www.typescriptlang.org
 [tailwindcss]: https://tailwindcss.com
-[storybook]: https://storybook.js.org
 [eslint]: https://eslint.org
 [vitest]: https://vitest.dev/guide/why.html
 [Testing Library]: https://testing-library.com/docs/guiding-principles
