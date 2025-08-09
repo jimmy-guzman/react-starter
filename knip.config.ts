@@ -1,6 +1,16 @@
 import type { KnipConfig } from "knip";
 
 export default {
+  compilers: {
+    css: (text: string) => {
+      // https://www.jimmy.codes/blog/fix-knip-false-positives-tailwindcss-v4
+      return [...text.matchAll(/@(?:import|plugin)\s+["']([^"']+)["']/g)]
+        .map(([_, dep]) => {
+          return `import "${dep}";`;
+        })
+        .join("\n");
+    },
+  },
   eslint: {
     entry: ["eslint.config.ts"],
   },
@@ -8,9 +18,6 @@ export default {
   ignoreDependencies: [
     "gitzy",
     "@iconify-json/*",
-    "@iconify/tailwind4",
-    "tailwindcss",
-    "@tailwindcss/typography",
-    "daisyui",
+    "babel-plugin-react-compiler",
   ],
 } satisfies KnipConfig;
