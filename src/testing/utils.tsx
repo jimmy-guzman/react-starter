@@ -9,16 +9,11 @@ import {
   createRouter,
   RouterProvider,
 } from "@tanstack/react-router";
-import { act, cleanup, render } from "@testing-library/react";
+import { act, render } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
 import { useMemo } from "react";
-import { afterEach } from "vitest";
 
 import type { FileRoutesById } from "@/route-tree.gen";
-
-afterEach(() => {
-  cleanup();
-});
 
 interface WrapperProps {
   children: ReactNode;
