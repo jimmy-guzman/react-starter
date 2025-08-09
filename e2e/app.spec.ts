@@ -12,7 +12,9 @@ test("not found", async ({ page }) => {
   await expect(page).toHaveTitle(/React Starter/);
 
   await expect(
-    page.getByRole("heading", { level: 1, name: "Error" }),
+    page.getByRole("alert", {
+      name: /page not found/i,
+    }),
   ).toBeInViewport();
 });
 
