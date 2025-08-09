@@ -21,6 +21,7 @@
 - 👷 [Turborepo][Turborepo] for caching and task parallelization.
 - 👷 [GitHub Actions][GitHub Actions] for easy workflow automation.
 - 🔒️ [Dependabot][Dependabot] for monitoring vulnerabilities and keeping dependencies up-to-date.
+- 🐳 [Docker Friendly][Docker] for containerization.
 
 ## 🛠️ Usage
 
@@ -109,5 +110,6 @@ _You can also run all tasks with `bun run`, i.e `bun run dev`_
 [Mock Service Worker]: https://mswjs.io
 [Knip]: https://knip.dev
 [Dependabot]: https://docs.github.com/en/code-security/dependabot
+[Docker]: https://www.docker.com
 
 <!-- features references end -->
