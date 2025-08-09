@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "bunx --bun vite build",
-    "check": "turbo format lint typecheck coverage build sb:build knip",
+    "check": "turbo format lint typecheck coverage build knip",
     "coverage": "vitest run --coverage",
     "dev": "bunx --bun vite",
     "e2e": "playwright test",
