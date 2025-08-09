@@ -1,10 +1,10 @@
 import { render, screen } from "@/testing/utils";
 
-import { Home } from "./home";
+import { Hero } from "./hero";
 
-describe("<Home />", () => {
+describe("<Hero />", () => {
   it('should render "React Starter" heading', async () => {
-    await render(<Home />);
+    await render(<Hero />);
 
     expect(
       screen.getByRole("heading", { level: 1, name: "React Starter" }),

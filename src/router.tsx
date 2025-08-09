@@ -1,12 +1,24 @@
 import { createRouter } from "@tanstack/react-router";
 
-import { Error } from "./pages/error";
-import { NotFound } from "./pages/not-found";
+import { DefaultError } from "./components/default-error";
+import { DefaultNotFound } from "./components/default-not-found";
 import { routeTree } from "./route-tree.gen";
 
 export const router = createRouter({
-  defaultErrorComponent: Error,
-  defaultNotFoundComponent: NotFound,
+  defaultErrorComponent: ({ error, reset }) => {
+    return (
+      <main className="grid min-h-screen place-content-center">
+        <DefaultError error={error} reset={reset} />
+      </main>
+    );
+  },
+  defaultNotFoundComponent: () => {
+    return (
+      <main className="grid min-h-screen place-content-center">
+        <DefaultNotFound />
+      </main>
+    );
+  },
   routeTree,
 });
 
