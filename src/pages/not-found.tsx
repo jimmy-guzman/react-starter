@@ -1,7 +1,5 @@
 import { Link } from "@tanstack/react-router";
 
-import { Button } from "@/components/ui/button";
-
 export const NotFound = () => {
   return (
     <main className="grid min-h-screen place-content-center">
@@ -12,9 +10,9 @@ export const NotFound = () => {
               Error
             </h1>
             <p className="text-error mb-5">Not Found</p>
-            <Button asChild variant="outline">
+            <button className="dsy-btn dsy-btn-outline" type="button">
               <Link to="/">Go back</Link>
-            </Button>
+            </button>
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { links } from "@/config/links";
 
 export const Home = () => {
@@ -45,16 +44,22 @@ export const Home = () => {
               .
             </p>
             <div className="flex justify-center gap-2 sm:justify-end">
-              <Button asChild color="secondary" size="sm">
-                <a href={links.Deploy} rel="noreferrer" target="_blank">
-                  Deploy <span className="icon-[logos--vercel-icon]" />
-                </a>
-              </Button>
-              <Button asChild color="primary" size="sm">
-                <a href={links.GitHub} rel="noreferrer" target="_blank">
-                  GitHub <span className="icon-[logos--github-icon]" />
-                </a>
-              </Button>
+              <a
+                className="dsy-btn dsy-btn-secondary"
+                href={links.Deploy}
+                rel="noreferrer"
+                target="_blank"
+              >
+                Deploy <span className="icon-[logos--vercel-icon]" />
+              </a>
+              <a
+                className="dsy-btn dsy-btn-primary"
+                href={links.GitHub}
+                rel="noreferrer"
+                target="_blank"
+              >
+                GitHub <span className="icon-[logos--github-icon]" />
+              </a>
             </div>
           </div>
         </div>
