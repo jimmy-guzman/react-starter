@@ -5,13 +5,14 @@
 ## 🐣 Features
 
 - 🍞 [bun][bun] for a fast runtime and package manager.
-- ⚡️ [vite][vite] for instant server start and lighting fast HMR.
+- ⚡️ [vite][vite] for instant server start, lighting fast HMR and optimized build.
 - 🏷️ [TypeScript][TypeScript] for a less frustrating & consistent experience.
 - 🏝️ [TanStack Router][TanStack Router] for a fully type-safe React router.
 - 🏝️ [TanStack Query][TanStack Query] for asynchronous state management.
 - 💄 [tailwindcss][tailwindcss] for utility-first CSS.
 - 💄 [daisyUI](https://daisyui.com) for tailwindcss components.
 - 🧪 [vitest][vitest] for fast testing.
+- 🧪 [Testing Library][Testing Library] for ergonomic React component testing.
 - 🧪 [Playwright][Playwright] for fast and reliable e2e testing.
 - 🧪 [Mock Service Worker][Mock Service Worker] for client-agnostic API mocks.
 - 🩺 [eslint][eslint] for static analysis.
@@ -45,7 +46,7 @@ Now you can install dependencies, by running the following command:
 bun install
 ```
 
-Or if you already have `bun` installed you upgrade, by running the following command:
+Or if you already have `bun` installed, you can upgrade by running the following command:
 
 ```
 bun upgrade --stable
