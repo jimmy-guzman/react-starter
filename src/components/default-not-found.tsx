@@ -5,7 +5,7 @@ export const DefaultNotFound = () => {
     <div
       aria-describedby="not-found-description"
       aria-labelledby="not-found-title"
-      className="dsy-alert dsy-alert-info dsy-alert-vertical sm:dsy-alert-horizontal"
+      className="dsy-alert dsy-alert-vertical dsy-alert-info sm:dsy-alert-horizontal"
       role="alert"
     >
       <span aria-hidden="true" className="icon-[lucide--info] h-6 w-6" />
