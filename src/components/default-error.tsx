@@ -7,7 +7,7 @@ export const DefaultError = ({ error, reset }: ErrorComponentProps) => {
       aria-describedby="error-description"
       aria-labelledby="error-title"
       aria-live="assertive"
-      className="dsy-alert dsy-alert-error dsy-alert-vertical sm:dsy-alert-horizontal"
+      className="dsy-alert dsy-alert-vertical dsy-alert-error sm:dsy-alert-horizontal"
       role="alert"
     >
       <span
@@ -28,7 +28,7 @@ export const DefaultError = ({ error, reset }: ErrorComponentProps) => {
       </div>
 
       <button
-        className="dsy-btn dsy-btn-sm dsy-btn-outline"
+        className="dsy-btn dsy-btn-outline dsy-btn-sm"
         onClick={reset}
         type="button"
       >
