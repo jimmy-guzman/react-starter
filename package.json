@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@iconify-json/logos": "1.2.9",
-    "@iconify-json/lucide": "1.2.63",
+    "@iconify-json/lucide": "1.2.64",
     "@iconify/tailwind4": "1.0.6",
     "@jimmy.codes/eslint-config": "6.4.0",
     "@jimmy.codes/prettier-config": "2.0.2",
