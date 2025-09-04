@@ -26,7 +26,6 @@ describe("<DefaultError />", () => {
       <DefaultError error={new Error("Something went Wrong!")} reset={reset} />,
     );
 
-    // eslint-disable-next-line testing-library/no-node-access -- this is a false positive
     await user.click(screen.getByRole("button", { name: /reset/i }));
 
     expect(reset).toHaveBeenCalledOnce();
