@@ -1,25 +1,13 @@
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { createRootRouteWithContext, Outlet } from "@tanstack/react-router";
-import { lazy, Suspense } from "react";
-
-const RouterDevTools = import.meta.env.DEV
-  ? lazy(async () => {
-      return import("@tanstack/react-router-devtools").then((res) => {
-        return {
-          default: res.TanStackRouterDevtools,
-        };
-      });
-    })
-  : () => {
-      return null;
-    };
+import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
 const Root = () => {
   return (
     <>
       <Outlet />
-      <Suspense>
-        <RouterDevTools position="bottom-left" />
-      </Suspense>
+      <ReactQueryDevtools buttonPosition="bottom-left" />
+      <TanStackRouterDevtools position="bottom-right" />
     </>
   );
 };
