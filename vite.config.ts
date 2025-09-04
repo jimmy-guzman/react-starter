@@ -35,9 +35,8 @@ export default defineConfig(({ mode }) => {
         exclude: [
           ...(configDefaults.coverage.exclude ?? []),
           "playwright-report/**",
-          "**/*.stories.*",
           "**/main.tsx",
-          "{tailwind,postcss,playwright}.config.*",
+          "{knip,playwright}.config.*",
           "**/*.gen.*",
         ],
       },
