@@ -1,4 +1,5 @@
 import tailwindcss from "@tailwindcss/vite";
+import { devtools } from "@tanstack/devtools-vite";
 import { tanstackRouter } from "@tanstack/router-vite-plugin";
 import react from "@vitejs/plugin-react";
 import { defineConfig, loadEnv } from "vite";
@@ -13,6 +14,7 @@ export default defineConfig(({ mode }) => {
   return {
     entries: ["index.html"],
     plugins: [
+      devtools(),
       tailwindcss(),
       react({
         babel: {
