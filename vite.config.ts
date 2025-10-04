@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
       tailwindcss(),
       react({
         babel: {
-          plugins: mode === "test" ? [] : ["babel-plugin-react-compiler"],
+          plugins: ["babel-plugin-react-compiler"],
         },
       }),
       tanstackRouter({

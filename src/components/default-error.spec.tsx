@@ -28,6 +28,6 @@ describe("<DefaultError />", () => {
 
     await user.click(screen.getByRole("button", { name: /reset/i }));
 
-    expect(reset).toHaveBeenCalledOnce();
+    expect(reset).toHaveBeenCalledExactlyOnceWith(expect.anything());
   });
 });

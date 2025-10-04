@@ -16,7 +16,7 @@ export const Hero = () => {
           <h1 className="inline bg-linear-to-r from-primary to-secondary bg-clip-text text-8xl font-bold text-transparent">
             React Starter
           </h1>
-          <p className="prose dsy-prose py-6 dark:prose-invert">
+          <p className="dsy-prose prose py-6 dark:prose-invert">
             🍱 Another{" "}
             <a href={links.React} rel="noreferrer" target="_blank">
               React
