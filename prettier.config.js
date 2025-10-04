@@ -1,5 +1,6 @@
+/** @import * as prettier from 'prettier'; */
 // eslint-disable-next-line jsdoc/check-tag-names -- this is not typed file
-/** @type {import('prettier').Config} */
+/** @type {prettier.Config} */
 const config = {
   arrowParens: "always",
   jsxSingleQuote: false,
