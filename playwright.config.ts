@@ -26,6 +26,9 @@ export default defineConfig({
   reporter: "html",
   retries: isCI ? 2 : 0,
   testDir: "./e2e",
-  use: { baseURL, trace: "on-first-retry" },
+  use: {
+    baseURL,
+    trace: "on-first-retry",
+  },
   ...(isCI && { workers: 1 }),
 });

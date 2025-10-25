@@ -2,6 +2,3 @@
 exact = true
 saveTextLockfile = true
 peer = false
-
-[run]
-bun = true

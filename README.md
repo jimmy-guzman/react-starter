@@ -28,7 +28,7 @@
 
 You can either [use this template](https://github.com/jimmy-guzman/react-starter/generate) or [deploy on Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjimmy-guzman%2Freact-starter&project-name=my-awesome-react-project&repository-name=my-awesome-react-project) or use [tiged](https://github.com/tiged/tiged), by running the following command:
 
-```
+```bash
 bunx tiged jimmy-guzman/react-starter
 ```
 
@@ -36,65 +36,64 @@ bunx tiged jimmy-guzman/react-starter
 
 First install [bun](https://bun.sh/docs/installation), by running the following command:
 
-```
+```bash
 curl -fsSL https://bun.sh/install | bash
 ```
 
 Now you can install dependencies, by running the following command:
 
-```
+```bash
 bun install
 ```
 
 Or if you already have `bun` installed, you can upgrade by running the following command:
 
-```
+```bash
 bun upgrade --stable
 ```
 
 And to download new browsers for Playwright, run the following command:
 
-```
+```bash
 bunx playwright install
 ```
 
 And install Turborepo, run the following command:
 
-```
+```bash
 bun install --global turbo
 ```
 
 Then to run the development server, run the following command:
 
-```
+```bash
 turbo dev
 ```
 
-Your application will be available at http://localhost:5173/ ❤️
+Your application will be available at <http://localhost:5173/> ❤️
 
 ## 🧞 Available Tasks
 
-| Command            | Action                                            |
-| :----------------- | :------------------------------------------------ |
-| `bun install`      | Installs dependencies                             |
-| `turbo dev`        | Starts local dev server at http://localhost:5173/ |
-| `turbo build`      | Build your production site to `./dist/`           |
-| `turbo preview`    | Preview your build locally, before deploying      |
-| `turbo test`       | Unit tests your code with vitest                  |
-| `turbo e2e`        | E2E tests your code with playwright               |
-| `turbo lint`       | Lints everything with eslint                      |
-| `turbo lint:fix`   | Fixes lint errors with eslint                     |
-| `turbo format`     | Checks formatting with prettier                   |
-| `turbo format:fix` | Fixes formatting errors with prettier             |
-| `turbo typecheck`  | Checks types with TypeScript                      |
-| `turbo check`      | Checks everything                                 |
+| Command            | Action                                              |
+| :----------------- | :-------------------------------------------------- |
+| `bun install`      | Installs dependencies                               |
+| `turbo dev`        | Starts local dev server at <http://localhost:5173/> |
+| `turbo build`      | Build your production site to `./dist/`             |
+| `turbo preview`    | Preview your build locally, before deploying        |
+| `turbo test`       | Unit tests your code with vitest                    |
+| `turbo e2e`        | E2E tests your code with playwright                 |
+| `turbo lint`       | Lints everything with eslint                        |
+| `turbo lint:fix`   | Fixes lint errors with eslint                       |
+| `turbo format`     | Checks formatting with prettier                     |
+| `turbo format:fix` | Fixes formatting errors with prettier               |
+| `turbo typecheck`  | Checks types with TypeScript                        |
+| `turbo check`      | Checks everything                                   |
 
 _You can also run all tasks with `bun run`, i.e `bun run dev`_
 
 <!-- features references start -->
 
 [vite]: https://vite.dev
-[react]: https://react.dev
 [TypeScript]: https://www.typescriptlang.org
 [tailwindcss]: https://tailwindcss.com
 [eslint]: https://eslint.org
