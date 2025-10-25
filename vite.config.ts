@@ -33,15 +33,6 @@ export default defineConfig(({ mode }) => {
       port: Number(PORT),
     },
     test: {
-      coverage: {
-        exclude: [
-          ...(configDefaults.coverage.exclude ?? []),
-          "playwright-report/**",
-          "**/main.tsx",
-          "{knip,playwright}.config.*",
-          "**/*.gen.*",
-        ],
-      },
       environment: "happy-dom",
       exclude: [...configDefaults.exclude, "e2e/*"],
       globals: true,

@@ -94,7 +94,7 @@ test.describe("external links", () => {
 
     await newPage.waitForLoadState();
 
-    await expect(newPage).toHaveURL("https://bun.sh");
+    await expect(newPage).toHaveURL("https://bun.com");
   });
 
   test("opened daisyUI docs", async ({ context, page }) => {

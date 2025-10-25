@@ -1,4 +1,4 @@
-FROM oven/bun:1.2.19-alpine AS build
+FROM oven/bun:1.3.1-alpine AS build
 WORKDIR /app
 
 COPY package.json bun.lock ./
@@ -8,7 +8,7 @@ RUN bun install
 COPY . .
 RUN bunx --bun vite build
 
-FROM nginx:1.27-alpine AS runtime
+FROM nginx:1.29.2-alpine AS runtime
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/dist /usr/share/nginx/html
