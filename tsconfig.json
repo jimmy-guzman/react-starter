@@ -2,14 +2,14 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "target": "es2022",
+    "target": "es2024",
     "allowJs": true,
     "moduleDetection": "force",
     "isolatedModules": true,
 
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "lib": ["DOM", "DOM.Iterable", "es2024"],
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "noEmit": true,

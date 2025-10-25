@@ -27,9 +27,3 @@ export const router = createRouter({
   defaultPreloadStaleTime: 0,
   routeTree,
 });
-
-declare module "@tanstack/react-router" {
-  interface Register {
-    router: typeof router;
-  }
-}
