@@ -41,7 +41,7 @@ export const Hero = () => {
               daisyUI
             </a>{" "}
             and{" "}
-            <a href={links.GitHub} rel="noreferrer" target="_blank">
+            <a href={links.features} rel="noreferrer" target="_blank">
               more
             </a>
             .
