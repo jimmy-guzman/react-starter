@@ -20,7 +20,7 @@ export const DefaultError = ({ error, reset }: ErrorComponentProps) => {
           Error
         </h2>
         <p
-          className="text-sm break-words whitespace-pre-wrap"
+          className="text-sm wrap-break-word whitespace-pre-wrap"
           id="error-description"
         >
           {error.message}
