@@ -16,5 +16,5 @@ runs:
         cache: pnpm
 
     - name: 📦 Install Dependencies
-      run: pnpm install
+      run: pnpm install --frozen-lockfile
       shell: bash
