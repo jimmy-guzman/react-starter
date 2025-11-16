@@ -4,19 +4,17 @@ description: Install everything for the repo
 runs:
   using: composite
   steps:
-    - name: 🏗 Setup bun
-      uses: oven-sh/setup-bun@v2
+    - name: 🏗 Setup pnpm
+      uses: pnpm/action-setup@v4
       with:
-        bun-version-file: package.json
+        run_install: false
 
-    - name: 🏗 Setup bun cache
-      uses: actions/cache@v4
+    - name: 🏗 Setup Node.js
+      uses: actions/setup-node@v5
       with:
-        path: ~/.bun/install/cache
-        key: ${{ runner.os }}-${{ matrix.bun }}-bun-${{ hashFiles('**/bun.lockb') }}
-        restore-keys: |
-          ${{ runner.os }}-${{ matrix.bun }}-bun-
+        node-version-file: ".nvmrc"
+        cache: pnpm
 
-    - name: 📦 Install deps
-      run: bun install --frozen-lockfile
+    - name: 📦 Install Dependencies
+      run: pnpm install
       shell: bash

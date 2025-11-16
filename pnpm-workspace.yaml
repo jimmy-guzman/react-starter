@@ -1,0 +1,11 @@
+onlyBuiltDependencies:
+  - esbuild
+  - lefthook
+  - msw
+  - sharp
+  - unrs-resolver
+autoInstallPeers: false
+saveExact: true
+savePrefix: ""
+overrides:
+  vite: "npm:rolldown-vite@7.1.20"

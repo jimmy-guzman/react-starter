@@ -1,17 +1,27 @@
-FROM oven/bun:1.3.1-alpine AS build
+# Build stage
+
+FROM node:22-alpine AS build
+
 WORKDIR /app
 
-COPY package.json bun.lock ./
+RUN corepack enable && corepack prepare pnpm@10 --activate
+
+COPY package.json pnpm-workspace.yaml pnpm-lock.yaml ./
+
 ENV CI=true
-RUN bun install
+
+RUN pnpm install --frozen-lockfile
 
 COPY . .
-RUN bunx --bun vite build
+
+RUN pnpm run build
+
+# Runtime stage
 
 FROM nginx:1.29.2-alpine AS runtime
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/dist /usr/share/nginx/html
 
 EXPOSE 80
+
 CMD ["nginx", "-g", "daemon off;"]

@@ -5,7 +5,6 @@ export const Hero = () => {
     <div className="dsy-hero">
       <div className="dsy-hero-content flex-col gap-8">
         <div className="flex gap-4 text-4xl md:text-6xl">
-          <span className="icon-[logos--bun]" />
           <span className="icon-[logos--vitejs]" />
           <span className="icon-[logos--react]" />
           <span className="icon-[logos--typescript-icon]" />
@@ -22,10 +21,6 @@ export const Hero = () => {
               React
             </a>{" "}
             Starter using{" "}
-            <a href={links.Bun} rel="noreferrer" target="_blank">
-              Bun
-            </a>
-            ,{" "}
             <a href={links.Vite} rel="noreferrer" target="_blank">
               Vite
             </a>
