@@ -1,10 +1,10 @@
 # React Starter
 
-> 🍱 Another React Starter using Bun, Vite, TypeScript, tailwindcss, daisyUI and more.
+> 🍱 Another React Starter using Vite, TypeScript, tailwindcss, daisyUI and more.
 
 ## 🐣 Features
 
-- 🍞 [bun][bun] for a fast runtime and package manager.
+- 📦 [pnpm][pnpm] for a fast and efficient package manager.
 - ⚡️ [vite][vite] for instant server start, lighting fast HMR and optimized build.
 - ✨ [Vite PWA](https://vite-pwa-org.netlify.app) for PWAs with very little configuration.
 - 🏷️ [TypeScript][TypeScript] for a less frustrating & consistent experience.
@@ -30,39 +30,29 @@
 You can either [use this template](https://github.com/jimmy-guzman/react-starter/generate) or [deploy on Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjimmy-guzman%2Freact-starter&project-name=my-awesome-react-project&repository-name=my-awesome-react-project) or use [tiged](https://github.com/tiged/tiged), by running the following command:
 
 ```bash
-bunx tiged jimmy-guzman/react-starter
+pnpx tiged jimmy-guzman/react-starter
 ```
 
 ## 🏁 Getting Started
 
-First install [bun](https://bun.sh/docs/installation), by running the following command:
-
-```bash
-curl -fsSL https://bun.sh/install | bash
-```
+First install [pnpm](https://pnpm.io/installation).
 
 Now you can install dependencies, by running the following command:
 
 ```bash
-bun install
+pnpm install
 ```
 
-Or if you already have `bun` installed, you can upgrade by running the following command:
+And to [download new browsers for Playwright](https://playwright.dev/docs/test-cli#install-browsers), run the following command:
 
 ```bash
-bun upgrade --stable
+pnpx playwright install
 ```
 
-And to download new browsers for Playwright, run the following command:
+And [install Turborepo](https://turborepo.com/docs/getting-started#install-turborepo), run the following command:
 
 ```bash
-bunx playwright install
-```
-
-And install Turborepo, run the following command:
-
-```bash
-bun install --global turbo
+pnpm add turbo --global
 ```
 
 Then to run the development server, run the following command:
@@ -77,7 +67,6 @@ Your application will be available at <http://localhost:5173/> ❤️
 
 | Command            | Action                                              |
 | :----------------- | :-------------------------------------------------- |
-| `bun install`      | Installs dependencies                               |
 | `turbo dev`        | Starts local dev server at <http://localhost:5173/> |
 | `turbo build`      | Build your production site to `./dist/`             |
 | `turbo preview`    | Preview your build locally, before deploying        |
@@ -90,7 +79,7 @@ Your application will be available at <http://localhost:5173/> ❤️
 | `turbo typecheck`  | Checks types with TypeScript                        |
 | `turbo check`      | Checks everything                                   |
 
-_You can also run all tasks with `bun run`, i.e `bun run dev`_
+_You can also run all tasks with `pnpm`, i.e `pnpm dev`_
 
 <!-- features references start -->
 
@@ -102,7 +91,7 @@ _You can also run all tasks with `bun run`, i.e `bun run dev`_
 [Testing Library]: https://testing-library.com/docs/guiding-principles
 [Playwright]: https://playwright.dev
 [prettier]: https://prettier.io
-[bun]: https://bun.sh
+[pnpm]: https://pnpm.io
 [GitHub Actions]: https://github.com/features/actions
 [lefthook]: https://github.com/evilmartians/lefthook
 [TanStack Router]: https://tanstack.com/router/v1

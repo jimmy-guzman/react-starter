@@ -1,5 +1,4 @@
 export const links = {
-  "Bun": "https://bun.com",
   "daisyUI": "https://daisyui.com",
   "Deploy":
     "https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjimmy-guzman%2Freact-starter&project-name=my-awesome-react-project&repository-name=my-awesome-react-project",

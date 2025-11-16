@@ -2,9 +2,9 @@
   "cSpell.words": [
     "antfu",
     "autodocs",
-    "bunx",
     "clsx",
     "daisyui",
+    "esbuild",
     "gitzy",
     "iconify",
     "jiti",
@@ -13,6 +13,7 @@
     "lockb",
     "lucide",
     "noreferrer",
+    "nvmrc",
     "Parens",
     "prefersdark",
     "tailwindcss",

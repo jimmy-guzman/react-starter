@@ -5,6 +5,7 @@
 @plugin "daisyui" {
   prefix: "dsy-";
   logs: false;
+  exclude: properties; /* https://github.com/saadeghi/daisyui/issues/3882 */
 }
 
 @plugin "daisyui/theme" {

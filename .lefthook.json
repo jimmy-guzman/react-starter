@@ -5,16 +5,16 @@
     "commands": {
       "lint": {
         "glob": "*.{js,cjs,ts,tsx}",
-        "run": "bunx eslint --fix {staged_files}",
+        "run": "pnpm eslint --fix {staged_files}",
         "stage_fixed": true
       },
       "format": {
         "glob": "*.{md,json,yml,html,js,cjs,ts,tsx}",
-        "run": "bunx prettier --write {staged_files}",
+        "run": "pnpm prettier --write {staged_files}",
         "stage_fixed": true
       },
       "knip": {
-        "run": "bunx knip"
+        "run": "pnpm knip"
       }
     }
   }

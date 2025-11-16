@@ -17,7 +17,7 @@ jobs:
         uses: ./.github/actions/install
 
       - name: 🚨 Check
-        run: bun check
+        run: pnpm check
 
   auto-approve:
     permissions:
