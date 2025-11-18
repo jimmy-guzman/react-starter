@@ -15,6 +15,12 @@
       },
       "knip": {
         "run": "pnpm knip"
+      },
+      "spell-check": {
+        "skip": ["merge", "rebase"],
+        "stage_fixed": true,
+        "glob": "*.*",
+        "run": "pnpm cspell --no-progress {staged_files}"
       }
     }
   }
