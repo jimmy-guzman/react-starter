@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: 🏗 Setup Repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: 📦 Install
         uses: ./.github/actions/install
