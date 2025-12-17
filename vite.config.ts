@@ -28,7 +28,9 @@ export default defineConfig(({ mode }) => {
         quoteStyle: "double",
         semicolons: true,
       }),
-      tsconfigPaths(),
+      tsconfigPaths({
+        projectDiscovery: "lazy",
+      }),
       VitePWA({
         devOptions: {
           type: "module",
