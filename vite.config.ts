@@ -17,16 +17,16 @@ export default defineConfig(({ mode }) => {
     plugins: [
       devtools(),
       tailwindcss(),
-      react({
-        babel: {
-          plugins: ["babel-plugin-react-compiler"],
-        },
-      }),
       tanstackRouter({
         autoCodeSplitting: true,
         generatedRouteTree: "./src/route-tree.gen.ts",
         quoteStyle: "double",
         semicolons: true,
+      }),
+      react({
+        babel: {
+          plugins: ["babel-plugin-react-compiler"],
+        },
       }),
       tsconfigPaths({
         projectDiscovery: "lazy",
