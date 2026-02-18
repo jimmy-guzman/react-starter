@@ -8,8 +8,11 @@ export default defineConfig({
   words: [
     "antfu",
     "autodocs",
+    "bradlc",
     "clsx",
     "daisyui",
+    "dbaeumer",
+    "esbenp",
     "esbuild",
     "gitzy",
     "iconify",
@@ -20,6 +23,8 @@ export default defineConfig({
     "lucide",
     "noreferrer",
     "nvmrc",
+    "oxfmt",
+    "oxfmtrc",
     "Parens",
     "prefersdark",
     "tailwindcss",
@@ -31,6 +36,5 @@ export default defineConfig({
     "vite",
     "vitest",
     "zustand",
-    "esbenp",
   ],
 });

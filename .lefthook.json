@@ -8,9 +8,9 @@
         "run": "pnpm eslint --fix {staged_files}",
         "stage_fixed": true
       },
-      "format": {
+      "fmt": {
         "glob": "*.{md,json,yml,html,js,cjs,ts,tsx}",
-        "run": "pnpm prettier --write {staged_files}",
+        "run": "pnpm oxfmt --no-error-on-unmatched-pattern {staged_files}",
         "stage_fixed": true
       },
       "knip": {
