@@ -18,7 +18,7 @@
 - 🧪 [Mock Service Worker][Mock Service Worker] for client-agnostic API mocks.
 - 🩺 [eslint][eslint] for static analysis.
 - 🩺 [Knip][Knip] for finding dead code.
-- 🎨 [prettier][prettier] for formatting.
+- 🎨 [oxc][oxc] for formatting.
 - 🩺 [lefthook][lefthook] for fast Git hooks management.
 - 👷 [Turborepo][Turborepo] for caching and task parallelization.
 - 👷 [GitHub Actions][GitHub Actions] for easy workflow automation.
@@ -65,19 +65,19 @@ Your application will be available at <http://localhost:5173/> ❤️
 
 ## 🧞 Available Tasks
 
-| Command            | Action                                              |
-| :----------------- | :-------------------------------------------------- |
-| `turbo dev`        | Starts local dev server at <http://localhost:5173/> |
-| `turbo build`      | Build your production site to `./dist/`             |
-| `turbo preview`    | Preview your build locally, before deploying        |
-| `turbo test`       | Unit tests your code with vitest                    |
-| `turbo e2e`        | E2E tests your code with playwright                 |
-| `turbo lint`       | Lints everything with eslint                        |
-| `turbo lint:fix`   | Fixes lint errors with eslint                       |
-| `turbo format`     | Checks formatting with prettier                     |
-| `turbo format:fix` | Fixes formatting errors with prettier               |
-| `turbo typecheck`  | Checks types with TypeScript                        |
-| `turbo check`      | Checks everything                                   |
+| Command           | Action                                              |
+| :---------------- | :-------------------------------------------------- |
+| `turbo dev`       | Starts local dev server at <http://localhost:5173/> |
+| `turbo build`     | Build your production site to `./dist/`             |
+| `turbo preview`   | Preview your build locally, before deploying        |
+| `turbo test`      | Unit tests your code with vitest                    |
+| `turbo e2e`       | E2E tests your code with playwright                 |
+| `turbo lint`      | Lints everything with eslint                        |
+| `turbo lint:fix`  | Fixes lint errors with eslint                       |
+| `turbo fmt`       | Checks formatting with oxc                          |
+| `turbo fmt:fix`   | Fixes formatting errors with oxc                    |
+| `turbo typecheck` | Checks types with TypeScript                        |
+| `turbo check`     | Checks everything                                   |
 
 _You can also run all tasks with `pnpm`, i.e `pnpm dev`_
 
@@ -90,7 +90,7 @@ _You can also run all tasks with `pnpm`, i.e `pnpm dev`_
 [vitest]: https://vitest.dev/guide/why.html
 [Testing Library]: https://testing-library.com/docs/guiding-principles
 [Playwright]: https://playwright.dev
-[prettier]: https://prettier.io
+[oxc]: https://oxc.rs/
 [pnpm]: https://pnpm.io
 [GitHub Actions]: https://github.com/features/actions
 [lefthook]: https://github.com/evilmartians/lefthook
