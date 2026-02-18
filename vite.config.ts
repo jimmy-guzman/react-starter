@@ -4,7 +4,6 @@ import { tanstackRouter } from "@tanstack/router-vite-plugin";
 import react from "@vitejs/plugin-react";
 import { defineConfig, loadEnv } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
-import tsconfigPaths from "vite-tsconfig-paths";
 import { configDefaults } from "vitest/config";
 
 const DEFAULT_PORT = 5173;
@@ -27,9 +26,6 @@ export default defineConfig(({ mode }) => {
         babel: {
           plugins: ["babel-plugin-react-compiler"],
         },
-      }),
-      tsconfigPaths({
-        projectDiscovery: "lazy",
       }),
       VitePWA({
         devOptions: {
@@ -71,6 +67,9 @@ export default defineConfig(({ mode }) => {
         registerType: "autoUpdate",
       }),
     ],
+    resolve: {
+      tsconfigPaths: true,
+    },
     server: {
       port: Number(PORT),
     },
