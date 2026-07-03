@@ -5,9 +5,5 @@ export default {
     entry: ["eslint.config.ts"],
   },
   ignore: ["src/route-tree.gen.ts"],
-  ignoreDependencies: [
-    "gitzy",
-    "@iconify-json/*",
-    "babel-plugin-react-compiler",
-  ],
+  ignoreDependencies: ["gitzy", "@iconify-json/*"],
 } satisfies KnipConfig;

@@ -29,9 +29,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
 
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"]
     },
 
     "types": ["vitest/globals"]
