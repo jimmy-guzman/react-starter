@@ -34,8 +34,12 @@ const Wrapper = ({ children, initialEntries, path }: WrapperProps) => {
 
     const rootRoute = createRootRoute();
     const testingRoute = createRoute({
-      component: () => children,
-      getParentRoute: () => rootRoute,
+      component: () => {
+        return children;
+      },
+      getParentRoute: () => {
+        return rootRoute;
+      },
       path,
     });
 

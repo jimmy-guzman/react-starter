@@ -1,11 +1,17 @@
-onlyBuiltDependencies:
-  - esbuild
-  - lefthook
-  - msw
-  - sharp
-  - unrs-resolver
 autoInstallPeers: false
 saveExact: true
 savePrefix: ""
-overrides:
-  vite: "8.0.0-beta.14"
+minimumReleaseAgeExclude:
+  - "@iconify-json/lucide@1.2.116"
+  - "@turbo/darwin-64@2.10.3"
+  - "@turbo/darwin-arm64@2.10.3"
+  - "@turbo/linux-64@2.10.3"
+  - "@turbo/linux-arm64@2.10.3"
+  - "@turbo/windows-64@2.10.3"
+  - "@turbo/windows-arm64@2.10.3"
+  - turbo@2.10.3
+allowBuilds:
+  lefthook: true
+  msw: true
+  sharp: true
+  unrs-resolver: true
