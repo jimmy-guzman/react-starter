@@ -23,10 +23,10 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@tanstack/react-query": "5.101.2",
-    "@tanstack/react-router": "1.170.17",
-    "react": "19.2.7",
-    "react-dom": "19.2.7"
+    "@tanstack/react-query": "5.101.4",
+    "@tanstack/react-router": "1.170.18",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
   },
   "devDependencies": {
     "@babel/core": "8.0.1",
@@ -50,8 +50,8 @@
     "@testing-library/user-event": "14.6.3",
     "@total-typescript/ts-reset": "0.6.1",
     "@types/babel__core": "7.20.5",
-    "@types/react": "19.2.17",
-    "@types/react-dom": "19.2.3",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.4",
     "@vite-pwa/assets-generator": "1.0.2",
     "@vitejs/plugin-react": "6.0.5",
     "@vitest/coverage-v8": "4.1.10",
