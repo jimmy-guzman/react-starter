@@ -31,7 +31,7 @@
   "devDependencies": {
     "@babel/core": "8.0.6",
     "@iconify-json/logos": "1.2.14",
-    "@iconify-json/lucide": "1.2.136",
+    "@iconify-json/lucide": "1.2.137",
     "@iconify/tailwind4": "1.2.3",
     "@jimmy.codes/eslint-config": "9.0.0",
     "@playwright/test": "1.63.0",
@@ -41,7 +41,7 @@
     "@tanstack/devtools-vite": "0.8.5",
     "@tanstack/eslint-plugin-router": "1.162.0",
     "@tanstack/react-devtools": "0.10.13",
-    "@tanstack/react-query-devtools": "5.103.3",
+    "@tanstack/react-query-devtools": "5.104.0",
     "@tanstack/react-router-devtools": "1.167.2",
     "@tanstack/router-vite-plugin": "1.167.40",
     "@testing-library/dom": "10.4.2",
