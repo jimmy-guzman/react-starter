@@ -55,7 +55,7 @@
     "@vite-pwa/assets-generator": "2.0.0",
     "@vitejs/plugin-react": "6.1.1",
     "@vitest/coverage-v8": "5.0.2",
-    "@vitest/ui": "5.0.2",
+    "@vitest/ui": "5.0.5",
     "babel-plugin-react-compiler": "1.0.0",
     "cspell": "10.3.5",
     "daisyui": "5.7.46",
